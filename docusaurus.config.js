@@ -9,10 +9,10 @@ module.exports = {
   themeConfig: {
     navbar: {
       title: "Abhin Pai",
-      logo: {
-        alt: "My Site Logo",
-        src: "img/logo.svg",
-      },
+      // logo: {
+      //   alt: "My Site Logo",
+      //   src: "img/logo.svg",
+      // },
       links: [
         {
           to: "docs/",
