@@ -16,7 +16,7 @@ module.exports = {
     },
     announcementBar: {
       id: "underconstruction",
-      content: "⭐️ This website is under contruction  ⭐️",
+      content: "⭐️  This website is under contruction   ⭐️",
     },
     prism: {
       theme: require("prism-react-renderer/themes/github"),
