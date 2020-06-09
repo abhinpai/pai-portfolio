@@ -1,8 +1,12 @@
-import React from "react";
+import React, {useState} from "react";
+
 import classnames from "classnames";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./styles.module.css";
+
+const heroImage = ["hero_new.svg", "hero.svg"];
+
 
 const socialMedia = [
   {
@@ -39,6 +43,7 @@ function ReachMe({ name, url }) {
 }
 
 export default function Home() {
+  const [hero, setHero] = useState(heroImage[0]);
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
@@ -48,7 +53,7 @@ export default function Home() {
     >
       <main>
         <section className={styles.features}>
-          <div className="container">
+          <div className={classnames("container", styles.containerpadding)}>
             <div className="row">
               <div className={classnames("col col--4", styles.introduction)}>
                 <div>
@@ -69,13 +74,9 @@ export default function Home() {
                   </div> */}
                 </div>
               </div>
-              <div className={classnames("col col--8", styles.feature)}>
+              <div className={classnames("col col--8", styles.feature, styles.hero)}>
                 <div className="text--center">
-                  <img
-                    className={styles.featureImage}
-                    src={"img/undraw_docusaurus_mountain.svg"}
-                    alt={"title"}
-                  />
+                  <HeroImage imagename={hero}/>
                 </div>
               </div>
             </div>
@@ -86,3 +87,12 @@ export default function Home() {
   );
 }
 
+const HeroImage = ({imagename}) => {
+  return (
+    <img
+      className={styles.featureImage}
+      src={"img/"+imagename}
+      alt={"title"}
+    />
+  );
+};

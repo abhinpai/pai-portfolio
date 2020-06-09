@@ -16,7 +16,7 @@ module.exports = {
     },
     announcementBar: {
       id: "underconstruction",
-      content: "⭐️This website is under contruction ⭐️",
+      content: "⭐️ This website is under contruction  ⭐️",
     },
     prism: {
       theme: require("prism-react-renderer/themes/github"),
@@ -25,7 +25,7 @@ module.exports = {
     navbar: {
       logo: {
         alt: "My Site Logo",
-        src: "img/logo.svg",
+        src: "img/logo.png",
         // srcDark: 'img/docusaurus_keytar.svg',
       },
       links: [
@@ -35,7 +35,7 @@ module.exports = {
           label: "Technical Notes",
           position: "right",
         },
-        { to: "blog", label: "Blogs", position: "right" },
+        // { to: "blog", label: "Blogs", position: "right" },
         { to: "about", label: "About", position: "right" },
         { to: "contact", label: "Contact", position: "right" },
       ],

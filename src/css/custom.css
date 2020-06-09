@@ -7,13 +7,13 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: #ed9002;
+  --ifm-color-primary-dark: #fc9937;
+  --ifm-color-primary-darker: #fb8814;
+  --ifm-color-primary-darkest: #fb8209;
+  --ifm-color-primary-light: #008fd3;
+  --ifm-color-primary-lighter: #008fd3;
+  --ifm-color-primary-lightest: #008fd3;
   --ifm-code-font-size: 95%;
 }
 
@@ -22,4 +22,26 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+
+.plateletSet1 {
+ color: #008fd3;
+ color: #5f9a7f;
+ color: #a8a340;
+ color: #f1ab00;
+}
+
+.plateletset2 {
+  color: #f0ab00;
+  color: #ed9002;
+  color: #e87604;
+  color: #e45405;
+}
+
+.plateletset3 {
+  color: #e8af00;
+  color: #cc7a28;
+  color: #ae484c;
+  color: #890381;
 }

@@ -6,9 +6,9 @@ sidebar_label: Introduction
 
 ### all the introduction will go here 
 
-:::info Content Presence
+:::note Content Presence
 
-If content already cooked ✅
-If content is still cooking then indicating with ❌
+* If content is already cooked then representing in ✅
+* If content is still cooking then representing in ❌
 
 :::
