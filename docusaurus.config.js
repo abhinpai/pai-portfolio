@@ -8,11 +8,11 @@ module.exports = {
   projectName: "pai-portfolio",
   themeConfig: {
     navbar: {
-      title: "Abhin Pai",
-      // logo: {
-      //   alt: "My Site Logo",
-      //   src: "img/logo.svg",
-      // },
+      // title: "Abhin Pai",
+      logo: {
+        alt: "My Site Logo",
+        src: "img/logo.svg",
+      },
       links: [
         {
           to: "docs/",
@@ -24,46 +24,6 @@ module.exports = {
         { to: "about", label: "About", position: "right" },
         { to: "contact", label: "Contatct", position: "right" },
       ],
-    },
-    footer: {
-      style: "dark",
-      links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Technical Notes",
-              to: "docs/",
-            },
-            {
-              label: "Blogs",
-              to: "blog",
-            },
-            {
-              label: "About",
-              to: "about",
-            },
-            {
-              label: "Contact",
-              to: "contact",
-            },
-          ],
-        },
-        {
-          title: "Social",
-          items: [
-            {
-              label: "Twitter",
-              href: "https://twitter.com/PaiAbhin",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/abhinpai",
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Pai-Portfolio, Inc. Built with Docusaurus.`,
     },
   },
   presets: [

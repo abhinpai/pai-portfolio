@@ -6,7 +6,7 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -15,6 +15,9 @@
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
+  }
+  .introduction {
+    height: 200px;
   }
 }
 
@@ -27,11 +30,27 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
   width: 100%;
 }
 
 .featureImage {
-  height: 200px;
-  width: 200px;
+  height: 600px;
+  width: 600px;
+}
+
+.introduction {
+  display: flex !important;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialmediabtn {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nomargin {
+  margin: 0;
 }
