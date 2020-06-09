@@ -57,7 +57,7 @@ export default function Home() {
                   </h1>
                   <h1
                     className={classnames("hero__title", styles.nomargin)}
-                    style={{ fontSize: 80 }}
+                    style={{ fontSize: 70 }}
                   >
                     Abhin Pai
                   </h1>
