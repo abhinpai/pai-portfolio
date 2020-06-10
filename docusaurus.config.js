@@ -9,16 +9,18 @@ module.exports = {
   // plugins: ['@docusaurus/plugin-google-analytics'],
   themeConfig: {
     googleAnalytics: {
-      trackingID: 'G-8P8D7SPC6B'
+      trackingID: "G-8P8D7SPC6B",
+    },
+    gtag: {
+      trackingID: "G-8P8D7SPC6B",
     },
     announcementBar: {
       id: "underconstruction",
-      content:
-        '⭐️This website is under contruction ⭐️',
+      content: "⭐️This website is under contruction ⭐️",
     },
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/dracula'),
+      theme: require("prism-react-renderer/themes/github"),
+      darkTheme: require("prism-react-renderer/themes/dracula"),
     },
     navbar: {
       logo: {
@@ -45,7 +47,7 @@ module.exports = {
       {
         docs: {
           homePageId: "introduction",
-          sidebarPath: require.resolve("./sidebars.json"),
+          sidebarPath: require.resolve("./sidebars.js"),
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
