@@ -32,6 +32,11 @@ module.exports = {
       type: "category",
       label: "Web / Browser",
       items: ["web_index"],
-    }
+    },
+    {
+      type: "category",
+      label: "💎 UI Gem Box 💎",
+      items: ["ui_res"],
+    },
   ],
 };

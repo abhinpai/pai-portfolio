@@ -37,7 +37,7 @@ module.exports = {
         },
         { to: "blog", label: "Blogs", position: "right" },
         { to: "about", label: "About", position: "right" },
-        { to: "contact", label: "Contatct", position: "right" },
+        { to: "contact", label: "Contact", position: "right" },
       ],
     },
   },
