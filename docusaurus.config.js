@@ -2,7 +2,7 @@ module.exports = {
   title: "Abhin Pai",
   tagline: "Having a strong belief that Programming doesn't have any Language",
   url: "https://abhinpai.github.io",
-  baseUrl: "/pai-portfolio/",
+  baseUrl: "/",
   favicon: "img/favicon.ico",
   organizationName: "abhinpai",
   projectName: "pai-portfolio",
@@ -16,7 +16,7 @@ module.exports = {
     },
     announcementBar: {
       id: "underconstruction",
-      content: "⭐️  This website is under contruction   ⭐️",
+      content: "⭐️ This website is under contruction  ⭐️",
     },
     prism: {
       theme: require("prism-react-renderer/themes/github"),
