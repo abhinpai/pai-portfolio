@@ -7,7 +7,7 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "spinup": "node github-deploy.js"
+    "github": "node github-deploy.js"
   },
   "dependencies": {
     "@babel/plugin-transform-typescript": "^7.10.1",
