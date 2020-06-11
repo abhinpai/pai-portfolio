@@ -1,9 +1,8 @@
 ---
 id: js_index
-title: JS Index
+title: 🛡Javascript Battalion 🛡
 sidebar_label: JS Index
 ---
-
 
 ### Fundamentals
 ------
@@ -13,8 +12,6 @@ sidebar_label: JS Index
 * ❌ Use Strict
 * ❌ Interaction: alert, prompt, confirm
 * ❌ Nullish coalescing operator `??`
-* ❌ Arrow functions, the basics
-* ❌ Conditional Operator `? :`
 * ❌ Undefined and Null
 * ❌ Operators
 
@@ -45,14 +42,13 @@ sidebar_label: JS Index
 ------
 * ❌ Strings or Literals (Template Literals)
 * ❌ Arrays
-* ❌ Array methods
 * ❌ Iterables
 * ❌ Map and Set
 * ❌ WeakMap and WeakSet
 * ❌ Object.keys, values, entries
 * ❌ Destructuring assignment
 * ❌ Date and time
-* ❌ JSON methods, toJSON
+* ❌ JSON methods, toJSON, JSONP
 
 ### Advance working with functions
 ------
@@ -118,21 +114,6 @@ sidebar_label: JS Index
 * ❌ Modules, introduction
 * ❌ Export and Import
 
-### Miscellaneous
-------
-* ❌ Proxy and Reflect
-* ❌ Eval: run a code string
-* ❌ Currying
-* ❌ Mutation observer
-* ❌ Selection and Range
-* ❌ Debounce 
-* ❌ Throttling
-* ❌ Execution Context
-* ❌ Hoisting
-* ❌ Memorization
-* ❌ Clousers
-* ❌ Coression
-
 ### Document
 ------
 * ❌ Browser environment, specs
@@ -174,6 +155,20 @@ sidebar_label: JS Index
 * ❌ Shadow DOM
 * ❌ Template element
 
+### Miscellaneous
+------
+* ❌ Proxy and Reflect
+* ❌ Eval: run a code string
+* ❌ Currying
+* ❌ Mutation observer
+* ❌ Selection and Range
+* ❌ Debounce 
+* ❌ Throttling
+* ❌ Execution Context
+* ❌ Hoisting
+* ❌ Memorization
+* ❌ Clousers
+* ❌ Coression
 
 ## 🤩 Interview HUB 🤩
 

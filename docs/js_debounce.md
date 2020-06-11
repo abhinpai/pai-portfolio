@@ -1,5 +1,5 @@
 ---
-id: debounce
+id: js_debounce
 title: Debounce
 sidebar_label: Debounce
 ---
