@@ -9,10 +9,10 @@ module.exports = {
   // plugins: ['@docusaurus/plugin-google-analytics'],
   themeConfig: {
     googleAnalytics: {
-      trackingID: "G-8P8D7SPC6B",
+      trackingID: "G-61TLB4TLQ6",
     },
     gtag: {
-      trackingID: "G-8P8D7SPC6B",
+      trackingID: "G-61TLB4TLQ6",
     },
     announcementBar: {
       id: "underconstruction",
