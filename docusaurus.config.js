@@ -40,10 +40,6 @@ module.exports = {
         { to: "contact", label: "Contact", position: "right" },
       ],
     },
-    algolia: {
-      apiKey: "",
-      indexName: ""
-    },
     footer:{
       // style: 'dark',
       copyright: `Copyright © ${new Date().getFullYear()}, Abhin Pai`,
