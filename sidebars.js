@@ -12,7 +12,9 @@ module.exports = {
         "javascript/js_intrvw",
         {
           Modules:[
-            "javascript/modules/module1_basic"
+            "javascript/modules/module1_basic",
+            "javascript/modules/module3_object",
+            "javascript/modules/module4_datatypes"
           ]
         },
         // {

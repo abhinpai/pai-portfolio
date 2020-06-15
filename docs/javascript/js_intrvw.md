@@ -32,7 +32,7 @@ keywords:
 * ❌ What is Object copying, references?
 * ❌ How Garbage collection works
 * ❌ Constructor, operator `new`
-* ❌ Optional chaining `?.`
+* ✅ Optional chaining `?.`
 * ❌ Symbol type
 * ❌ Object to primitive conversion
 * ❌ Property flags and descriptors
@@ -40,6 +40,8 @@ keywords:
 * ❌ typeof and instanceof
 * ❌ Host object and Native object
 * ❌ What is `object.freez()`?
+* ❌ Nullish coalescing operator ?
+* ❌ What are the different ways to do a null check?
 * [https://www.taniarascia.com/how-to-use-object-methods-in-javascript/](https://www.taniarascia.com/how-to-use-object-methods-in-javascript/)
 * [https://www.taniarascia.com/understanding-objects-in-javascript/](https://www.taniarascia.com/understanding-objects-in-javascript/)
 * [https://www.jstips.co/en/javascript/return-objects-to-enable-chaining-of-functions/](https://www.jstips.co/en/javascript/return-objects-to-enable-chaining-of-functions/)
@@ -48,6 +50,7 @@ keywords:
 * [https://flaviocopes.com/javascript-access-object-property/](https://flaviocopes.com/javascript-access-object-property/)
 * [https://flaviocopes.com/javascript-optional-chaining/](https://flaviocopes.com/javascript-optional-chaining/)
 * [https://flaviocopes.com/javascript-symbols/](https://flaviocopes.com/javascript-symbols/)
+* [https://ponyfoo.com/articles/null-propagation-operator](https://ponyfoo.com/articles/null-propagation-operator)
 
 ### <Highlight color="#0090d9">Module 4</Highlight> Does data type matter 🤔
 ------
@@ -59,10 +62,6 @@ keywords:
 * ❌ Story of date 📅
 * ❌ JSON methods, toJSON, JSONP
 * ❌ `Undeined` vs `Null`
-* ❌ What are the different ways to do a null check? and Nullish coalescing operator ??
-* [https://www.taniarascia.com/real-world-examples-of-map-filter-and-reduce-in-javascript/](https://www.taniarascia.com/real-world-examples-of-map-filter-and-reduce-in-javascript/)
-* [https://www.jstips.co/en/javascript/using-json-stringify/](https://www.jstips.co/en/javascript/using-json-stringify/)
-* [https://ponyfoo.com/articles/null-propagation-operator](https://ponyfoo.com/articles/null-propagation-operator)
 
 ### <Highlight color="#0090d9">Module 5</Highlight> Function
 ------
