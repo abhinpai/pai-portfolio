@@ -11,25 +11,17 @@ keywords:
 
 ### <Highlight color="#0090d9">Module 1</Highlight>  Basic is the foundation of all programming language 😇 
 ------
-* ❌ New variable creation, uptaion and scopping [🔗](js_variables.md)
-* ❌ `var`, `let` and `const` difference? 
-* ❌ `TDZ` Temporal Dead Zone
-* ❌ Is `var` Dead? What should I use? 
-* ❌ Brief insight about data types 
-* ❌ What is the purpose of `use strict`
+sample
+* ❌ New variable creation, uptaion and scopping 🔗
+* ❌ `var`, `let` and `const` difference? 🔗
+* ❌ `TDZ` Temporal Dead Zone 🔗
+* ❌ Is `var` Dead? What should I use? 🔗
+* ❌ What is the purpose of `use strict` 🔗
 * ❌ `alert` vs `prompt` vs `confirm`
-* ❌ `Undeined` vs `Null`
-* ❌ What are the different ways to do a null check? and Nullish coalescing operator ??
 * ❌ `==` vs `===` operator
-* [https://www.jstips.co/en/javascript/use-strict-and-get-lazy/](https://www.jstips.co/en/javascript/use-strict-and-get-lazy/)
-* [https://www.jstips.co/en/javascript/differences-between-undefined-and-null/](https://www.jstips.co/en/javascript/differences-between-undefined-and-null/)
-* [https://www.jstips.co/en/javascript/use_===_instead_of_==/](https://www.jstips.co/en/javascript/use_===_instead_of_==/)
-* [https://flaviocopes.com/javascript-difference-null-undefined/](https://flaviocopes.com/javascript-difference-null-undefined/)
-* [https://flaviocopes.com/javascript-difference-let-var/](https://flaviocopes.com/javascript-difference-let-var/)
+* ❌ What does the double negation operator `!!` do?
 * [https://flaviocopes.com/javascript-comparison-operator-difference/](https://flaviocopes.com/javascript-comparison-operator-difference/)
 * [https://flaviocopes.com/javascript-double-negation-operator/](https://flaviocopes.com/javascript-double-negation-operator/)
-* [https://www.jstips.co/en/javascript/keyword-var-vs-let/](https://www.jstips.co/en/javascript/keyword-var-vs-let/)
-* [https://www.jstips.co/en/javascript/use-optional-arguments/](https://www.jstips.co/en/javascript/use-optional-arguments/)
 
 
 ### <Highlight color="#0090d9">Module 2</Highlight> Code Quality matter most 👌
@@ -64,11 +56,16 @@ keywords:
 
 ### <Highlight color="#0090d9">Module 4</Highlight> Does data type matter 🤔
 ------
+
+* ❌ Brief insight about data types 
 * ❌ What are the different ways to define a Template Literals?
 * ❌ What are the different Arrays methods?
 * ❌ What are the different String methods?
 * ❌ Story of date 📅
 * ❌ JSON methods, toJSON, JSONP
+* ❌ `Undeined` vs `Null`
+* ❌ What are the different ways to do a null check? and Nullish coalescing operator ??
+* [https://ponyfoo.com/articles/es6-strings-and-unicode-in-depth](https://ponyfoo.com/articles/es6-strings-and-unicode-in-depth)
 * [https://www.taniarascia.com/how-to-use-array-methods-in-javascript-iteration-methods/](https://www.taniarascia.com/how-to-use-array-methods-in-javascript-iteration-methods/)
 * [https://www.taniarascia.com/how-to-use-array-methods-in-javascript-accessor-methods/](https://www.taniarascia.com/how-to-use-array-methods-in-javascript-accessor-methods/)
 * [https://www.taniarascia.com/real-world-examples-of-map-filter-and-reduce-in-javascript/](https://www.taniarascia.com/real-world-examples-of-map-filter-and-reduce-in-javascript/)
@@ -80,6 +77,10 @@ keywords:
 * [https://flaviocopes.com/how-to-remove-duplicates-array-javascript/](https://flaviocopes.com/how-to-remove-duplicates-array-javascript/)
 * [https://flaviocopes.com/javascript-flatten-array/](https://flaviocopes.com/javascript-flatten-array/)
 * [https://www.jstips.co/en/javascript/looping-over-arrays/](https://www.jstips.co/en/javascript/looping-over-arrays/)
+* [https://ponyfoo.com/articles/null-propagation-operator](https://ponyfoo.com/articles/null-propagation-operator)
+* [https://www.jstips.co/en/javascript/differences-between-undefined-and-null/](https://www.jstips.co/en/javascript/differences-between-undefined-and-null/)
+* [https://www.jstips.co/en/javascript/use_===_instead_of_==/](https://www.jstips.co/en/javascript/use_===_instead_of_==/)
+* [https://flaviocopes.com/javascript-difference-null-undefined/](https://flaviocopes.com/javascript-difference-null-undefined/)
 
 ### <Highlight color="#0090d9">Module 5</Highlight> Function
 ------
@@ -99,6 +100,7 @@ keywords:
 * ❌ Pure Functions
 * ❌ Anonymous and Named Functions
 * ❌ Function borrowing
+* [https://ponyfoo.com/articles/es6-spread-and-butter-in-depth](https://ponyfoo.com/articles/es6-spread-and-butter-in-depth)
 * [https://www.taniarascia.com/this-bind-call-apply-javascript/](https://www.taniarascia.com/this-bind-call-apply-javascript/)
 * [https://www.taniarascia.com/how-to-define-functions-in-javascript/](https://www.taniarascia.com/how-to-define-functions-in-javascript/)
 * [https://www.jstips.co/en/javascript/fat-arrow-functions/](https://www.jstips.co/en/javascript/fat-arrow-functions/)
@@ -106,6 +108,7 @@ keywords:
 * [https://flaviocopes.com/javascript-functions-vs-arrow-functions/](https://flaviocopes.com/javascript-functions-vs-arrow-functions/)
 * [https://flaviocopes.com/javascript-return-multiple-values/](https://flaviocopes.com/javascript-return-multiple-values/)
 * [https://www.jstips.co/en/javascript/binding-objects-to-functions/](https://www.jstips.co/en/javascript/binding-objects-to-functions/)
+* [https://www.jstips.co/en/javascript/use-optional-arguments/](https://www.jstips.co/en/javascript/use-optional-arguments/)
 
 ### <Highlight color="#0090d9">Module 6</Highlight> Prototypes, inheritance
 ------
@@ -125,6 +128,7 @@ keywords:
 * ❌ Extending built-in classes
 * ❌ Class checking: "instanceof"
 * ❌ Mixins
+* [https://ponyfoo.com/articles/binding-methods-to-class-instance-objects](https://ponyfoo.com/articles/binding-methods-to-class-instance-objects)
 * [https://www.taniarascia.com/understanding-classes-in-javascript/](https://www.taniarascia.com/understanding-classes-in-javascript/)
 * [https://www.jstips.co/en/javascript/advanced-properties/](https://www.jstips.co/en/javascript/advanced-properties/)
 
@@ -134,9 +138,15 @@ keywords:
 * ❌ Destructuring Objects
 * ❌ Swapping Variables with Destructuring
 * ❌ Destructuring Functions - Multiple returns and named defaults
+* [https://ponyfoo.com/articles/es6-destructuring-in-depth](https://ponyfoo.com/articles/es6-destructuring-in-depth)
+* [https://codeburst.io/es6-destructuring-the-complete-guide-7f842d08b98f](https://codeburst.io/es6-destructuring-the-complete-guide-7f842d08b98f)
 * [https://www.taniarascia.com/understanding-destructuring-rest-spread/](https://www.taniarascia.com/understanding-destructuring-rest-spread/)
 * [https://flaviocopes.com/typescript-object-destructuring/](https://flaviocopes.com/typescript-object-destructuring/)
 * [https://www.jstips.co/en/javascript/use-destructuring-in-function-parameters/](https://www.jstips.co/en/javascript/use-destructuring-in-function-parameters/)
+
+### <Highlight color="#0090d9">Module 9</Highlight> Add Any other topic
+------
+* ❌Add topic once you find 
 
 ### <Highlight color="#0090d9">Module 10</Highlight> Error Handling
 ------
@@ -152,6 +162,7 @@ keywords:
 * ❌ Promise API
 * ❌ Promisification
 * ❌ Microtasks
+* [https://ponyfoo.com/articles/es6-promises-in-depth](https://ponyfoo.com/articles/es6-promises-in-depth)
 * [https://www.jstips.co/en/javascript/passing-arguments-to-callback-functions/](https://www.jstips.co/en/javascript/passing-arguments-to-callback-functions/)
 
 ### <Highlight color="#0090d9">Module 12</Highlight> Generators and Iterators
@@ -159,12 +170,15 @@ keywords:
 * ❌ Generators
 * ❌ Async iterators and generators
 * ❌ Looping Generators with for of
+* [https://ponyfoo.com/articles/es6-iterators-in-depth](https://ponyfoo.com/articles/es6-iterators-in-depth)
+* [https://codeburst.io/a-simple-guide-to-es6-iterators-in-javascript-with-examples-189d052c3d8e](https://codeburst.io/a-simple-guide-to-es6-iterators-in-javascript-with-examples-189d052c3d8e)
 * [https://www.taniarascia.com/understanding-generators-in-javascript/](https://www.taniarascia.com/understanding-generators-in-javascript/)
 
 ### <Highlight color="#0090d9">Module 13</Highlight> Modules
 ------
 * ❌ Modules, introduction
 * ❌ Export and Import
+* [https://ponyfoo.com/articles/es6-modules-in-depth](https://ponyfoo.com/articles/es6-modules-in-depth)
 
 ### <Highlight color="#0090d9">Module 14</Highlight> Proxy
 ------
@@ -172,6 +186,7 @@ keywords:
 * ❌ Another Proxy Example
 * ❌ Using Proxies to combat silly errors
 * ❌ Proxy and Reflect
+* [https://ponyfoo.com/articles/es6-proxies-in-depth](https://ponyfoo.com/articles/es6-proxies-in-depth)
 
 ### <Highlight color="#0090d9">Module 15</Highlight> Sets and WeakSets
 ------
@@ -185,6 +200,7 @@ keywords:
 * ❌ What is Map?
 * ❌ WeakMap and Garbage Collection?
 * ❌ Map Metadata with DOM Node Keys?
+* [https://ponyfoo.com/articles/es6-maps-in-depth](https://ponyfoo.com/articles/es6-maps-in-depth)
 * [https://www.taniarascia.com/understanding-map-and-set-javascript/](https://www.taniarascia.com/understanding-map-and-set-javascript/)
 
 ### <Highlight color="#0090d9">Module 17</Highlight> Async + Await Flow Control
@@ -193,6 +209,7 @@ keywords:
 * ❌ All About Async + Await
 * ❌ Waiting on Multiple Promises
 * ❌ Promisifying Callback Based Functions
+* [https://ponyfoo.com/articles/understanding-javascript-async-await](https://ponyfoo.com/articles/understanding-javascript-async-await)
 * [https://www.taniarascia.com/promise-all-with-async-await/](https://www.taniarascia.com/promise-all-with-async-await/)
 * [https://flaviocopes.com/javascript-await-top-level/](https://flaviocopes.com/javascript-await-top-level/)
 * [https://flaviocopes.com/how-to-return-result-asynchronous-function/](https://flaviocopes.com/how-to-return-result-asynchronous-function/)
