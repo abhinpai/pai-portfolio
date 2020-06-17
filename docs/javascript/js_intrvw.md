@@ -9,7 +9,7 @@ keywords:
     - sample 3
 ---
 
-### <Highlight color="#fba800">Module 1</Highlight>  Basic is the foundation of all programming language 😇 
+### <Highlight color="#0090d9">Module 1</Highlight>  Basic is the foundation of all programming language 😇 
 ------
 * ❌ New variable creation, uptaion and scopping [🔗](js_variables.md)
 * ❌ `var`, `let` and `const` difference? 
@@ -32,14 +32,14 @@ keywords:
 * [https://www.jstips.co/en/javascript/use-optional-arguments/](https://www.jstips.co/en/javascript/use-optional-arguments/)
 
 
-### <Highlight color="#fba800">Module 2</Highlight> Code Quality matter most 👌
+### <Highlight color="#0090d9">Module 2</Highlight> Code Quality matter most 👌
 ------
 * ❌ Polyfill for `bind()`
 * ❌ What is the difference between `Lodash` and `Underscore`
 * ❌ Code Quality with `ESlint`
 * ❌ Shim Vs Polyfill
 
-### <Highlight color="#fba800">Module 3</Highlight> Hello i am an Object 👋
+### <Highlight color="#0090d9">Module 3</Highlight> Hello i am an Object 👋
 ------
 * ❌ What is `this` 😵 
 * ❌ What is Object copying, references?
@@ -62,7 +62,7 @@ keywords:
 * [https://flaviocopes.com/javascript-optional-chaining/](https://flaviocopes.com/javascript-optional-chaining/)
 * [https://flaviocopes.com/javascript-symbols/](https://flaviocopes.com/javascript-symbols/)
 
-### <Highlight color="#fba800">Module 4</Highlight> Does data type matter 🤔
+### <Highlight color="#0090d9">Module 4</Highlight> Does data type matter 🤔
 ------
 * ❌ What are the different ways to define a Template Literals?
 * ❌ What are the different Arrays methods?
@@ -81,7 +81,7 @@ keywords:
 * [https://flaviocopes.com/javascript-flatten-array/](https://flaviocopes.com/javascript-flatten-array/)
 * [https://www.jstips.co/en/javascript/looping-over-arrays/](https://www.jstips.co/en/javascript/looping-over-arrays/)
 
-### <Highlight color="#fba800">Module 5</Highlight> Function
+### <Highlight color="#0090d9">Module 5</Highlight> Function
 ------
 * ❌ What are the different ways to declare a method?
 * ❌ Recursion and stack story
@@ -107,7 +107,7 @@ keywords:
 * [https://flaviocopes.com/javascript-return-multiple-values/](https://flaviocopes.com/javascript-return-multiple-values/)
 * [https://www.jstips.co/en/javascript/binding-objects-to-functions/](https://www.jstips.co/en/javascript/binding-objects-to-functions/)
 
-### <Highlight color="#fba800">Module 6</Highlight> Prototypes, inheritance
+### <Highlight color="#0090d9">Module 6</Highlight> Prototypes, inheritance
 ------
 * ❌ Prototypal inheritance
 * ❌ F.prototype
@@ -116,7 +116,7 @@ keywords:
 * [https://www.taniarascia.com/understanding-prototypes-and-inheritance-in-javascript/](https://www.taniarascia.com/understanding-prototypes-and-inheritance-in-javascript/)
 * [https://flaviocopes.com/javascript-why-not-modify-object-prototype/](https://flaviocopes.com/javascript-why-not-modify-object-prototype/)
 
-### <Highlight color="#fba800">Module 7</Highlight> Classes
+### <Highlight color="#0090d9">Module 7</Highlight> Classes
 ------
 * ❌ Class basic syntax
 * ❌ Class inheritance, Extending Classes and using super()
@@ -128,7 +128,7 @@ keywords:
 * [https://www.taniarascia.com/understanding-classes-in-javascript/](https://www.taniarascia.com/understanding-classes-in-javascript/)
 * [https://www.jstips.co/en/javascript/advanced-properties/](https://www.jstips.co/en/javascript/advanced-properties/)
 
-### <Highlight color="#fba800">Module 8</Highlight> Destructuring
+### <Highlight color="#0090d9">Module 8</Highlight> Destructuring
 ------
 * ❌ Desctructing Array
 * ❌ Destructuring Objects
@@ -138,12 +138,12 @@ keywords:
 * [https://flaviocopes.com/typescript-object-destructuring/](https://flaviocopes.com/typescript-object-destructuring/)
 * [https://www.jstips.co/en/javascript/use-destructuring-in-function-parameters/](https://www.jstips.co/en/javascript/use-destructuring-in-function-parameters/)
 
-### <Highlight color="#fba800">Module 10</Highlight> Error Handling
+### <Highlight color="#0090d9">Module 10</Highlight> Error Handling
 ------
 * ❌ Error handling, `try..catch`
 * ❌ Custom errors, extending Error
 
-### <Highlight color="#fba800">Module 11</Highlight> Promises its super cool [😎](js_index.md)
+### <Highlight color="#0090d9">Module 11</Highlight> Promises its super cool [😎](js_index.md)
 ------
 * ❌ ntroduction: callbacks
 * ❌ Promise
@@ -154,40 +154,40 @@ keywords:
 * ❌ Microtasks
 * [https://www.jstips.co/en/javascript/passing-arguments-to-callback-functions/](https://www.jstips.co/en/javascript/passing-arguments-to-callback-functions/)
 
-### <Highlight color="#fba800">Module 12</Highlight> Generators and Iterators
+### <Highlight color="#0090d9">Module 12</Highlight> Generators and Iterators
 ------
 * ❌ Generators
 * ❌ Async iterators and generators
 * ❌ Looping Generators with for of
 * [https://www.taniarascia.com/understanding-generators-in-javascript/](https://www.taniarascia.com/understanding-generators-in-javascript/)
 
-### <Highlight color="#fba800">Module 13</Highlight> Modules
+### <Highlight color="#0090d9">Module 13</Highlight> Modules
 ------
 * ❌ Modules, introduction
 * ❌ Export and Import
 
-### <Highlight color="#fba800">Module 14</Highlight> Proxy
+### <Highlight color="#0090d9">Module 14</Highlight> Proxy
 ------
 * ❌ What are Proxies?
 * ❌ Another Proxy Example
 * ❌ Using Proxies to combat silly errors
 * ❌ Proxy and Reflect
 
-### <Highlight color="#fba800">Module 15</Highlight> Sets and WeakSets
+### <Highlight color="#0090d9">Module 15</Highlight> Sets and WeakSets
 ------
 * ❌ What is Set?
 * ❌ What is WeakSet?
 * ❌ Understanding Sets with Brunch
 * [https://www.taniarascia.com/understanding-map-and-set-javascript/](https://www.taniarascia.com/understanding-map-and-set-javascript/)
 
-### <Highlight color="#fba800">Module 16</Highlight> Map and Weak Map
+### <Highlight color="#0090d9">Module 16</Highlight> Map and Weak Map
 ------
 * ❌ What is Map?
 * ❌ WeakMap and Garbage Collection?
 * ❌ Map Metadata with DOM Node Keys?
 * [https://www.taniarascia.com/understanding-map-and-set-javascript/](https://www.taniarascia.com/understanding-map-and-set-javascript/)
 
-### <Highlight color="#fba800">Module 17</Highlight> Async + Await Flow Control
+### <Highlight color="#0090d9">Module 17</Highlight> Async + Await Flow Control
 ------
 * ❌ Async Await - Native Promises Review
 * ❌ All About Async + Await
@@ -197,7 +197,7 @@ keywords:
 * [https://flaviocopes.com/javascript-await-top-level/](https://flaviocopes.com/javascript-await-top-level/)
 * [https://flaviocopes.com/how-to-return-result-asynchronous-function/](https://flaviocopes.com/how-to-return-result-asynchronous-function/)
 
-### <Highlight color="#fba800">Module 18</Highlight> Document Model
+### <Highlight color="#0090d9">Module 18</Highlight> Document Model
 ------
 * ❌ Browser environment, specs
 * ❌ DOM tree
@@ -206,7 +206,7 @@ keywords:
 * ❌ Node properties: type, tag and contents
 * ❌ Attributes and properties
 
-### <Highlight color="#fba800">Module 19</Highlight> Playing with Events
+### <Highlight color="#0090d9">Module 19</Highlight> Playing with Events
 ------
 * ❌ Introduction to browser events
 * ❌ Bubbling and capturing
@@ -220,27 +220,27 @@ keywords:
 * [https://flaviocopes.com/javascript-event-bubbling-capturing/](https://flaviocopes.com/javascript-event-bubbling-capturing/)
 * [https://www.jstips.co/en/javascript/DOM-event-listening-made-easy/](https://www.jstips.co/en/javascript/DOM-event-listening-made-easy/)
 
-### <Highlight color="#fba800">Module 20</Highlight> UI Events
+### <Highlight color="#0090d9">Module 20</Highlight> UI Events
 ------
 * ❌ Mouse events
 * ❌ Moving the mouse: mouseover/out, mouseenter/leave
 * ❌ Drag'n'Drop with mouse events
 
-### <Highlight color="#fba800">Module 21</Highlight> Forms, controls
+### <Highlight color="#0090d9">Module 21</Highlight> Forms, controls
 ------
 * ❌ Form properties and methods
 * ❌ Focusing: focus/blur
 * ❌ Events: change, input, cut, copy, paste
 * ❌ Forms: event and method submit
 
-### <Highlight color="#fba800">Module 22</Highlight> Web components
+### <Highlight color="#0090d9">Module 22</Highlight> Web components
 ------
 * ❌ From the orbital height
 * ❌ Custom elements
 * ❌ Shadow DOM
 * ❌ Template element
 
-### <Highlight color="#fba800">Module 23</Highlight> Miscellaneous
+### <Highlight color="#0090d9">Module 23</Highlight> Miscellaneous
 ------
 * ❌ Eval: run a code string
 * ❌ Currying
@@ -293,7 +293,8 @@ export const Highlight = ({children, color}) => (
       borderRadius: '10px',
       color: '#fff',
       padding: '0.4rem',
-      fontSize: '18px'
+      fontSize: '16px',
+      verticalAlign: '2px'
     }}>
     {children}
   </span>
