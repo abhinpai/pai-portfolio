@@ -40,6 +40,10 @@ module.exports = {
         { to: "contact", label: "Contact", position: "right" },
       ],
     },
+    // footer:{
+    //   style: 'dark',
+    //   copyright: `MIT License, Copyright © ${new Date().getFullYear()} Abhin Pai, Inc.`,
+    // }
   },
   presets: [
     [
@@ -60,4 +64,5 @@ module.exports = {
       },
     ],
   ],
+  
 };
