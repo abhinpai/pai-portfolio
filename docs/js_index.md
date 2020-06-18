@@ -87,7 +87,7 @@ sidebar_label: JS Index
 * ❌ Class checking: "instanceof"
 * ❌ Mixins
 
-### Classes
+### Error Handling
 ------
 * ❌ Error handling, `try..catch`
 * ❌ Custom errors, extending Error

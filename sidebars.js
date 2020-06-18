@@ -9,7 +9,7 @@ module.exports = {
       type: "category",
       label: "Javascript",
       items: [
-        "js_index",
+        "js_intrvw",
         {
           Fundamentals: [
             "js_variables",
@@ -64,7 +64,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "💎 UI Gem Box 💎",
+      label: "💎 Gem Box 💎",
       items: ["ui_res"],
     },
   ],
