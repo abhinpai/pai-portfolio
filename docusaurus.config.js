@@ -26,7 +26,7 @@ module.exports = {
       logo: {
         alt: "My Site Logo",
         src: "img/logo.png",
-        // srcDark: 'img/docusaurus_keytar.svg',
+        // srcDark: 'img/docusaurus_keytar.svg', // In case of different site logo
       },
       links: [
         {
@@ -40,10 +40,14 @@ module.exports = {
         { to: "contact", label: "Contact", position: "right" },
       ],
     },
-    // footer:{
-    //   style: 'dark',
-    //   copyright: `MIT License, Copyright © ${new Date().getFullYear()} Abhin Pai, Inc.`,
-    // }
+    algolia: {
+      apiKey: "",
+      indexName: ""
+    },
+    footer:{
+      // style: 'dark',
+      copyright: `Copyright © ${new Date().getFullYear()} Abhin Pai`,
+    }
   },
   presets: [
     [
@@ -64,5 +68,4 @@ module.exports = {
       },
     ],
   ],
-  
 };
