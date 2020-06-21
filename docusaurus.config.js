@@ -46,7 +46,7 @@ module.exports = {
     },
     footer:{
       // style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} Abhin Pai`,
+      copyright: `Copyright © ${new Date().getFullYear()}, Abhin Pai`,
     }
   },
   presets: [

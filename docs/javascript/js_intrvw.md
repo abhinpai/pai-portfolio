@@ -11,18 +11,13 @@ keywords:
 
 ### <Highlight color="#0090d9">Module 1</Highlight>  Basic is the foundation of all programming language 😇 
 ------
-sample
 * ❌ New variable creation, uptaion and scopping 🔗
 * ❌ `var`, `let` and `const` difference? 🔗
 * ❌ `TDZ` Temporal Dead Zone 🔗
 * ❌ Is `var` Dead? What should I use? 🔗
 * ❌ What is the purpose of `use strict` 🔗
-* ❌ `alert` vs `prompt` vs `confirm`
-* ❌ `==` vs `===` operator
-* ❌ What does the double negation operator `!!` do?
-* [https://flaviocopes.com/javascript-comparison-operator-difference/](https://flaviocopes.com/javascript-comparison-operator-difference/)
-* [https://flaviocopes.com/javascript-double-negation-operator/](https://flaviocopes.com/javascript-double-negation-operator/)
-
+* ❌ `==` vs `===` operator 🔗
+* ❌ What does the double negation operator `!!` do? 🔗
 
 ### <Highlight color="#0090d9">Module 2</Highlight> Code Quality matter most 👌
 ------
@@ -65,22 +60,9 @@ sample
 * ❌ JSON methods, toJSON, JSONP
 * ❌ `Undeined` vs `Null`
 * ❌ What are the different ways to do a null check? and Nullish coalescing operator ??
-* [https://ponyfoo.com/articles/es6-strings-and-unicode-in-depth](https://ponyfoo.com/articles/es6-strings-and-unicode-in-depth)
-* [https://www.taniarascia.com/how-to-use-array-methods-in-javascript-iteration-methods/](https://www.taniarascia.com/how-to-use-array-methods-in-javascript-iteration-methods/)
-* [https://www.taniarascia.com/how-to-use-array-methods-in-javascript-accessor-methods/](https://www.taniarascia.com/how-to-use-array-methods-in-javascript-accessor-methods/)
 * [https://www.taniarascia.com/real-world-examples-of-map-filter-and-reduce-in-javascript/](https://www.taniarascia.com/real-world-examples-of-map-filter-and-reduce-in-javascript/)
-* [https://www.taniarascia.com/how-to-use-array-methods-in-javascript-mutator-methods/](https://www.taniarascia.com/how-to-use-array-methods-in-javascript-mutator-methods/)
-* [https://www.jstips.co/en/javascript/map-to-the-rescue-adding-order-to-object-properties/](https://www.jstips.co/en/javascript/map-to-the-rescue-adding-order-to-object-properties/)
 * [https://www.jstips.co/en/javascript/using-json-stringify/](https://www.jstips.co/en/javascript/using-json-stringify/)
-* [https://www.jstips.co/en/javascript/reminders-about-reduce-function-usage/](https://www.jstips.co/en/javascript/reminders-about-reduce-function-usage/)
-* [https://flaviocopes.com/how-to-shuffle-array-javascript/](https://flaviocopes.com/how-to-shuffle-array-javascript/)
-* [https://flaviocopes.com/how-to-remove-duplicates-array-javascript/](https://flaviocopes.com/how-to-remove-duplicates-array-javascript/)
-* [https://flaviocopes.com/javascript-flatten-array/](https://flaviocopes.com/javascript-flatten-array/)
-* [https://www.jstips.co/en/javascript/looping-over-arrays/](https://www.jstips.co/en/javascript/looping-over-arrays/)
 * [https://ponyfoo.com/articles/null-propagation-operator](https://ponyfoo.com/articles/null-propagation-operator)
-* [https://www.jstips.co/en/javascript/differences-between-undefined-and-null/](https://www.jstips.co/en/javascript/differences-between-undefined-and-null/)
-* [https://www.jstips.co/en/javascript/use_===_instead_of_==/](https://www.jstips.co/en/javascript/use_===_instead_of_==/)
-* [https://flaviocopes.com/javascript-difference-null-undefined/](https://flaviocopes.com/javascript-difference-null-undefined/)
 
 ### <Highlight color="#0090d9">Module 5</Highlight> Function
 ------
