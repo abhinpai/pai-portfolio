@@ -11,13 +11,13 @@ keywords:
 
 ### <Highlight color="#0090d9">Module 1</Highlight>  Basic is the foundation of all programming language 😇 
 ------
-* ❌ New variable creation, uptaion and scopping 🔗
-* ❌ `var`, `let` and `const` difference? 🔗
-* ❌ `TDZ` Temporal Dead Zone 🔗
-* ❌ Is `var` Dead? What should I use? 🔗
-* ❌ What is the purpose of `use strict` 🔗
-* ❌ `==` vs `===` operator 🔗
-* ❌ What does the double negation operator `!!` do? 🔗
+* ❌ New variable creation, updation and scoping 
+* ✅ `var`, `let` and `const` [🔗](http://localhost:3000/docs/javascript/modules/module1_basic#%EF%B8%8F-a-story-of-var-let-and-const)
+* ✅ `TDZ` Temporal Dead Zone 🔗 [🔗](http://localhost:3000/docs/javascript/modules/module1_basic#how-about-the-const)
+* ✅ Is `var` Dead? What should I use? [🔗](http://localhost:3000/docs/javascript/modules/module1_basic#%EF%B8%8F-a-story-of-var-let-and-const)
+* ✅ use strict [🔗](http://localhost:3000/docs/javascript/modules/module1_basic#hey-im-very-strict-%E2%99%82%EF%B8%8F)
+* ✅ `==` vs `===` operator [🔗](http://localhost:3000/docs/javascript/modules/module1_basic#untold-story-of-operator-%F0%9F%A7%91)
+* ✅ `!!` double negation operator [🔗](http://localhost:3000/docs/javascript/modules/module1_basic#untold-story-of-operator-%F0%9F%A7%91)
 
 ### <Highlight color="#0090d9">Module 2</Highlight> Code Quality matter most 👌
 ------
