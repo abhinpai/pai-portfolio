@@ -52,16 +52,16 @@ keywords:
 * [https://flaviocopes.com/javascript-symbols/](https://flaviocopes.com/javascript-symbols/)
 * [https://ponyfoo.com/articles/null-propagation-operator](https://ponyfoo.com/articles/null-propagation-operator)
 
-### <Highlight color="#0090d9">Module 4</Highlight> Does data type matter 🤔
+### <Highlight color="#0090d9">Module 4</Highlight> Datatypes
 ------
 
 * ❌ Brief insight about data types 
-* ❌ What are the different ways to define a Template Literals?
-* ❌ What are the different Arrays methods?
-* ❌ What are the different String methods?
+* ✅ Template Literals / String Interpolation [🔗](http://localhost:3000/docs/javascript/modules/module4_datatypes#template-literals---expression-interpolation)
+* ❌ Array and its methods
+* ✅ String and its methods [🔗](http://localhost:3000/docs/javascript/modules/module4_datatypes#5-string)
 * ❌ Story of date 📅
 * ❌ JSON methods, toJSON, JSONP
-* ❌ `Undeined` vs `Null`
+* ✅ `Undefined` and `Null` [🔗](http://localhost:3000/docs/javascript/modules/module4_datatypes#4-null)
 
 ### <Highlight color="#0090d9">Module 5</Highlight> Function
 ------

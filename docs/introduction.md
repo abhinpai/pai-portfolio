@@ -6,9 +6,23 @@ sidebar_label: Introduction
 
 ### all the introduction will go here 
 
-:::note Content Presence
-
-* If content is already cooked then representing in ✅
-* If content is still cooking then representing in ❌
-
+:::note 
+Contain all the interview questions 🔎
 :::
+
+:::info 
+Contain Some pro tip 💡, Things to remember 🧠
+:::
+
+:::caution 
+Contain declaimers❗ 
+:::
+
+<!-- :::tip 
+Contain all the interview questions
+::: -->
+
+:::danger
+Some serious message like never try things 🚫
+:::
+

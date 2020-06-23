@@ -177,7 +177,7 @@ console.log(year); // 'year' is not declared
 🔸Strict mode will help to prevent the unexpected errors, exception which can arise during runtime of the application<br/>
 🔸**use strict** is very helpful to avoid a conflict between variable. If we missed to declare it will notify a developer
 
-:::info Remember 🧠
+:::caution Remember 🧠
 * `use strict` should always declare at the top of a script to enable throughout the script or declare inside a block to enable only for a block. It wont work if we declare somewhere else
 * There is no way to cancel a strict mode
 * Strict mode can be eliminate from modern scripting language, Infact modern language and framework internally does it for you
@@ -217,11 +217,6 @@ then `!!` is the solution <br/>
 🔸 If you wan to get `True` or `False` from Not a string, 0, empty string, undefined, NAN or something else<br/>
 🔸 In reality there is no `!!` operator in javascript. Its just one negate after another negate.
 It just negate the result then negate it again.<br/>
-
-
-
-
-
 
 
 
