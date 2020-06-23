@@ -14,15 +14,37 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Ensuring any object or variable is contain any value or not is primary focus area of any developer to get rid of application crashing. To rescue that 'null Propagation Operator' is a savior else we need to check each and every element explicitly
 
-<p align='center'>
-<img src={useBaseUrl('img/codeshot/null.svg')}  alt='null Propagation' />
-</p>
+
+
+```ts 
+const marvel = {
+  movie: {
+    infinityWar: {
+      character1: "Iron Man",
+      character2: "Captain America",
+      character3: null,
+    },
+  },
+};
+
+// Traditional Way for null check
+let character =
+  marvel &&
+  marvel.movie &&
+  marvel.movie.infinityWar &&
+  marvel.movie.infinityWar.character1; // Oops complex logic 😪
+
+// Smart way with Optional Chaining
+let character = marvel?.movie?.infinityWar?.character1; // Awesome thats soo simple 🤩
+
+```
 
 `lodash` can also help to solve this problem, with less unwanted complexity
 
-<p align='center'>
-<img src={useBaseUrl('img/codeshot/loadsh_null.svg')}  alt='null Propagation' />
-</p>
+```js 
+import { get } from 'lodash'
+const character = get(marvel, ['movie', 'infinityWar', 'character1'])
+```
 
 The optional chaining `?.` stops the evaluation and returns undefined if the part before `?.` is undefined or null.
 
