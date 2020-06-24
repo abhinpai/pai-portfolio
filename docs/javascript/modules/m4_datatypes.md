@@ -175,53 +175,50 @@ double equal test for the loose equality and perform `type coercion`.
 
 > Javascript is both dynamically typed language meaning its strongly and weakly typed game. And all the master game is being played by `COERCION`. This is kind of debatable topic
 
-### 5. String
+### 6. String
 
 String datatype is most commonly used datatype to store textual data. In javascript there is no separate type for single character `char` like any other programming language.
 
 #### String Extension Methods
 
-#### 🔸charAt 
+#### 🔸 charAt 
 Return character for a given index (subscript) value <br/>
 
-#### 🔸toUpperCase 
+#### 🔸 toUpperCase 
 Convert sting to uppercase <br/>
 
-#### 🔸toLowerCase 
+#### 🔸 toLowerCase 
 Convert string to lowercase <br/>
 
-#### 🔸indexOf 
+#### 🔸 indexOf 
 Get the index of given character from the beginning of the string  <br/>
 
-#### 🔸lastIndexOf 
+#### 🔸 lastIndexOf 
 Get the index of given character from the end of the string  <br/>
 
-#### 🔸include 
+#### 🔸 include 
 Check if string include given string or not and return true or false <br/>
 
-#### 🔸startWith 
+#### 🔸 startWith 
 Check if any string start with given string or not and return true or false <br/>
 
-#### 🔸endsWith 
+#### 🔸 endsWith 
 Check if any string ends with given string or not and return true or false <br/>
 
-#### 🔸slice 
+#### 🔸 slice 
 Break the string based on given character and return an array <br/>
 
-#### 🔸subString 
+#### 🔸 subString 
 Return part of the string <br/>
 
-#### 🔸codePointAt 
+#### 🔸 codePointAt 
 Return code for the character at position <br/>
 
-#### 🔸frameCodePoint 
+#### 🔸 frameCodePoint 
 Create character by its numeric code <br/>
 
-#### 🔸padStart 
+#### 🔸 padStart 
 Add space at the beginning of the string based on the given value <br/>
-
-#### 🔸padEnd 
-Add space at the end of the string based on the given value <br/>
 
 ### 7. Symbol
 
@@ -229,6 +226,56 @@ Add space at the end of the string based on the given value <br/>
 Apart from 7 primitive datatype everything else is an Object in javascript <br/>
 **Ex:** Array, function, Object, Set, Regexp etc are Object
 
+### 1. Array
+
+An array is most commonly used data type in all of the programming language to store list of objects.
+
+#### Array Extension Methods
+
+#### 🔸 Array.push
+Pushing new element at the end of the queue AKA `enqueue`
+
+```js
+let sports = ['⛹🏻‍♂️', '🏋🏻‍♀️', '🚵🏻‍♂️', '🤽🏻‍♀️'];
+sports.push('🤾🏻‍♂️');
+console.log(sports); // ['⛹🏻‍♂️', '🏋🏻‍♀️', '🚵🏻‍♂️', '🤽🏻‍♀️', '🤾🏻‍♂️'];
+```
+
+#### 🔸 Array.pop
+Removing new element at the end of the queue AKA `dequeue`
+
+```js
+let sports = ['⛹🏻‍♂️', '🏋🏻‍♀️', '🚵🏻‍♂️', '🤽🏻‍♀️'];
+sports.pop();
+console.log(sports); // ['⛹🏻‍♂️', '🏋🏻‍♀️', '🚵🏻‍♂️', '🤽🏻‍♀️'];
+```
+
+#### 🔸 Array.shift
+Add an object from front and push all the element
+
+```js
+let sports = ['⛹🏻‍♂️', '🏋🏻‍♀️', '🚵🏻‍♂️', '🤽🏻‍♀️'];
+sports.shift('🤾🏻‍♂️');
+console.log(sports); // ['🤾🏻‍♂️', '⛹🏻‍♂️', '🏋🏻‍♀️', '🚵🏻‍♂️', '🤽🏻‍♀️'];
+```
+
+#### 🔸 Array.unshift
+Remove element from the first and shift all the element one step before
+
+```js
+let sports = ['⛹🏻‍♂️', '🏋🏻‍♀️', '🚵🏻‍♂️', '🤽🏻‍♀️'];
+sports.unShift();
+console.log(sports); // ['🏋🏻‍♀️', '🚵🏻‍♂️', '🤽🏻‍♀️'];
+```
+
+:::info Array Fact 😳
+In javascript array can act as both `Queue` and `Stack` data structure
+* If we perform `shift` and `push` operation then we can achieve `Queue`
+* If we perform `push` and `pop` operation then we can achieve `Stack`
+* Both push and unshift can add multiple items at once
+
+Internally `sports[0]` is nothing but `object[0]` since array is an object everything behind the scene deals with an object
+:::
 
 ## Template Literals - Expression Interpolation 
 

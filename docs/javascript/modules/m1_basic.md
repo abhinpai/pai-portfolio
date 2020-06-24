@@ -11,9 +11,10 @@ sidebar_label: "Module 1: Basics"
   2. What is `Temporal Dead Zone` or `TDZ`? How that Occur?
   3. How `let` work in for loop when let doesn't allow reassignment?
   4. is `var` Dead? What should I use? 
-  5. What is the purpose of `use strict`?
-  6. What does the double negation operator `!!` do?
-  7. `==` vs `===`
+  5. How `let` and `const` is scoped in Js? 
+  6. What is the purpose of `use strict`?
+  7. What does the double negation operator `!!` do?
+  8. `==` vs `===`
 :::
 
 ## A Story of `var`, `let` and `const`
@@ -106,7 +107,7 @@ This behavior is called `Hoisting` (Raising) where all `var` are hoisted at glob
 ### `let` it go 
 
 🔸 **let** has a sensible scoping. Once the scope is declare the scope will remain in its own block <br/>
-🔸 **let** don't allow re-assignment
+🔸 **let** don't allow re-declaration
 
 ```js
 let superHero = "Iron Man";
