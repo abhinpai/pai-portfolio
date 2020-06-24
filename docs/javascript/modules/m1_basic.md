@@ -156,7 +156,7 @@ console.log(marvelHero); // { actorName: "Robert, Jr.", characterName: "Tony Sta
 
 :::info Pro Tip 💡
   If we try to read or write `let` or `const` variable before its declaration and initialization an error
-  will raise. This phenomenon is called `Temporal Dead Zone` or `TSZ`
+  will raise. This phenomenon is called `Temporal Dead Zone` or `TDZ`
 :::
 
 ## Hey i'm very strict 👮🏻‍♂️

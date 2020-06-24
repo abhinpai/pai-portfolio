@@ -12,12 +12,12 @@ keywords:
 ### <Highlight color="#0090d9">Module 1</Highlight>  Basics the foundation 🏗️
 ------
 * ❌ New variable creation, updation and scoping 
-* ✅ `var`, `let` and `const` [🔗](http://localhost:3000/docs/javascript/modules/module1_basic#%EF%B8%8F-a-story-of-var-let-and-const)
-* ✅ `TDZ` Temporal Dead Zone [🔗](http://localhost:3000/docs/javascript/modules/module1_basic#how-about-the-const)
-* ✅ Is `var` Dead? What should I use? [🔗](http://localhost:3000/docs/javascript/modules/module1_basic#%EF%B8%8F-a-story-of-var-let-and-const)
-* ✅ use strict [🔗](http://localhost:3000/docs/javascript/modules/module1_basic#hey-im-very-strict-%E2%99%82%EF%B8%8F)
-* ✅ `==` vs `===` operator [🔗](http://localhost:3000/docs/javascript/modules/module1_basic#untold-story-of-operator-%F0%9F%A7%91)
-* ✅ `!!` double negation operator [🔗](http://localhost:3000/docs/javascript/modules/module1_basic#untold-story-of-operator-%F0%9F%A7%91)
+* ✅ `var`, `let` and `const` [🔗](modules/module1_basic#%EF%B8%8F-a-story-of-var-let-and-const)
+* ✅ `TDZ` Temporal Dead Zone [🔗](modules/module1_basic#how-about-the-const)
+* ✅ Is `var` Dead? What should I use? [🔗](modules/module1_basic#%EF%B8%8F-a-story-of-var-let-and-const)
+* ✅ use strict [🔗](modules/module1_basic#hey-im-very-strict-♂%EF%B8%8F)
+* ✅ `==` vs `===` operator [🔗](modules/module1_basic#untold-story-of-operator-%F0%9F%A7%91)
+* ✅ `!!` double negation operator [🔗](modules/module1_basic#untold-story-of-operator-%F0%9F%A7%91)
 
 ### <Highlight color="#0090d9">Module 2</Highlight> Code Quality matter most 👌
 ------
@@ -55,13 +55,13 @@ keywords:
 ### <Highlight color="#0090d9">Module 4</Highlight> Datatypes
 ------
 
-* ❌ Brief insight about data types 
-* ✅ Template Literals / String Interpolation [🔗](http://localhost:3000/docs/javascript/modules/module4_datatypes#template-literals---expression-interpolation)
-* ❌ Array and its methods
-* ✅ String and its methods [🔗](http://localhost:3000/docs/javascript/modules/module4_datatypes#5-string)
+* ✅ Brief insight about data types [🔗](modules/module4_datatypes)
+* ✅ Template Literals / String Interpolation [🔗](modules/module4_datatypes#template-literals---expression-interpolation)
+* ✅ Array and its methods [🔗](modules/module4_datatypes#1-array)
+* ✅ String and its methods [🔗](modules/module4_datatypes#6-string)
+* ✅ `Undefined` and `Null` [🔗](modules/module4_datatypes#4-null)
 * ❌ Story of date 📅
 * ❌ JSON methods, toJSON, JSONP
-* ✅ `Undefined` and `Null` [🔗](http://localhost:3000/docs/javascript/modules/module4_datatypes#4-null)
 
 ### <Highlight color="#0090d9">Module 5</Highlight> Function
 ------

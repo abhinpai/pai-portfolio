@@ -18,6 +18,14 @@ keywords:
   6. What is array and its methods?
   7. What is string and its methods?
   8. Template Literals in JS or String Interpolation?
+  9. What is the difference between map and foreach
+  10. What are the different ways to iterate over an array?
+  11. How to achieve both stack and queue for an array?
+  12. How can we shuffle array elements?
+  13. Different ways to empty an array
+  14. Remove duplicated from an array
+  15. How do you flatten an array
+  16. What are the different ways to merge and concat an array? 
 :::
 
 Yes, type matters a lot in all of the programming language. which is an identity to a variable.
@@ -50,7 +58,7 @@ console.log(Infinity); // Infinity
 Doing Math is safe in Js. We can divide 1/0, treat non-numeric string or number to the expression, script will never not with fatal error (die). At worst case you can get NaN as a  result
 :::
 
-#### Number Extension Methods
+<CustomStyledText styleClass="primary-bold-head">Number Extension Methods</CustomStyledText>
 
 #### 🔸 Binary and Octal Literals 
  
@@ -179,7 +187,7 @@ double equal test for the loose equality and perform `type coercion`.
 
 String datatype is most commonly used datatype to store textual data. In javascript there is no separate type for single character `char` like any other programming language.
 
-#### String Extension Methods
+<CustomStyledText styleClass="primary-bold-head">String Extension Methods</CustomStyledText>
 
 #### 🔸 charAt 
 Return character for a given index (subscript) value <br/>
@@ -222,6 +230,10 @@ Add space at the beginning of the string based on the given value <br/>
 
 ### 7. Symbol
 
+:::danger Symbol
+  Update about symbol
+:::
+
 ## Non-Primitive Datatype
 Apart from 7 primitive datatype everything else is an Object in javascript <br/>
 **Ex:** Array, function, Object, Set, Regexp etc are Object
@@ -230,7 +242,7 @@ Apart from 7 primitive datatype everything else is an Object in javascript <br/>
 
 An array is most commonly used data type in all of the programming language to store list of objects.
 
-#### Array Extension Methods
+<CustomStyledText styleClass="primary-bold-head">Array Extension Methods</CustomStyledText>
 
 #### 🔸 Array.push
 Pushing new element at the end of the queue AKA `enqueue`
@@ -269,13 +281,205 @@ console.log(sports); // ['🏋🏻‍♀️', '🚵🏻‍♂️', '🤽🏻‍�
 ```
 
 :::info Array Fact 😳
-In javascript array can act as both `Queue` and `Stack` data structure
+**Fact 1:** In javascript array can act as both `Queue` and `Stack` data structure
 * If we perform `shift` and `push` operation then we can achieve `Queue`
 * If we perform `push` and `pop` operation then we can achieve `Stack`
-* Both push and unshift can add multiple items at once
 
-Internally `sports[0]` is nothing but `object[0]` since array is an object everything behind the scene deals with an object
+**Fact 2:** Both push and unshift can add multiple items at once
+
+**Fact 3:** Internally `sports[0]` is nothing but `object[0]` since array is an object everything behind the scene deals with an object. 
+
+```js
+  let expression = ['🤣','🥳','😡'];
+  let humanExpression = expression;
+
+  console.log(expression); // ['🤣','🥳','😡']
+  console.log(humanExpression); // ['🤣','🥳','😡']
+  console.log(expression === humanExpression); // true
+
+  expression.pop();
+
+  console.log(expression); // ['🤣','🥳']
+  console.log(humanExpression); // ['🤣','🥳']
+```
+Notice above snippet i declared `expression` array and assigned to `humanExpression` array and did comparison and the result is true. Then i removed one element from the `expression` array and logged both array and the changes is also reflected in `humanExpression` array. This is because when we assign one object to another object both object will refer to same address 
+
+**Fact 4:** Since array is object we can add different kind of property to an array as a property
+
+```js
+let expressions = ['🤣','🥳','😡'];
+expressions[9999] = "humanExp"; // assigning value to random subscript value
+expressions.totalEmoji = 3; // create property with arbitrary name
+console.log(expressions); // ["🤣", "🥳", "😡", empty × 9996, "humanExp", totalEmoji: 3]
+```
+
+In the log we can see `empty x 9996` since we have added a value at position 9999 js engine left the remaining empty positioned value
 :::
+
+#### 🔸 Array.spice
+Splice can be used to delete an array element
+
+```js 
+let message = ['I', '❤️', 3000];
+delete message[0];
+console.log(message); // ❤️ 3000
+console.log(message.length) // 3 WTF 🤷🏻‍♂️  
+```
+
+In the above code we created array and then we deleted item from position one but the length of the array si still 3.
+This is because `delete` keyword will just delete a content but space will remain. Which cost the memory hence `delete` keyword is not recommend solution to delete any item
+
+So to solve this problem we can use `splice`
+
+```js
+let message = ['I', '❤️', 3000];
+message.splice(0,1);
+console.log(message); // ❤️ 3000
+console.log(message.length) // 2 👍🏻
+```
+
+We can also play more with `splice`
+
+```js
+let message = ['I', '❤️', 3000];
+message.splice(2,1, "India");
+console.log(message); // ["I", "❤️", 3000]
+console.log(message) // ["I", "❤️", "India"]
+```
+
+#### 🔸 Array.concat
+
+To merge two array different array into one single array
+
+#### 🔸 Array.slice
+
+`slice` is used to split an array into smaller array chunk
+
+```js
+let hero = ['H','U','L','K'];
+let removedItem = hero.splice(1,2); 
+console.log(hero); // ['H', 'K']
+console.log(removedItem); // ['U', 'L']
+```
+
+We can use `slice` without any arg to create copy of an original array without affecting the original one 
+
+#### 🔸 Array.indexOf
+
+Look for an array item based on given index and return item else it will return -1
+
+#### 🔸 Array.lastIndexOf
+
+Same as indexof but Look for an array item from the end and based on given index and return item else it will return -1
+
+#### 🔸 Array.includes
+
+Look for a given item in the array and return true if it found else it will return false
+
+#### 🔸 Array.isArray
+
+Similar to typeOf for an array
+
+#### 🔸 Array.sort
+
+Sort the given array item
+
+```js
+let numbers = [1, 15, 2];
+console.log(numbers.sort((a,b) => a-b)); // [1, 2, 15] peace ✌️
+```
+
+Am i lying? 🤔 even after sort it dint sort why? 🤯
+This is because, javascript converts an array element to string for comparison and for sort it in string lexicographic order (Like Dictionary order)
+
+to achieve sorting we need to struggle a bit 
+
+#### 🔸 Array.reverse
+
+```js
+let numbers = [1, 15, 25];
+console.log(numbers.reverse(); // [25, 15, 1] 
+```
+
+#### Iterate over an array
+
+#### 🔸 While loop
+
+ ```js
+ while (success) {
+  try();
+}
+ ```
+
+#### 🔸 for loop
+
+```js
+for(let i=0; i< 10;  i++) {
+  // do some operation
+}
+```
+
+#### 🔸 for each loop
+
+```js
+let expressions = ['🤣','🥳','😡'];
+forEach(let expression in expressions) {
+  console.log(expression);
+}
+```
+
+> `forEach` loop do not provide index of item
+
+#### 🔸 map
+
+```js
+let expressions = ['🤣','🥳','😡'];
+let result = expressions.map((expression, index) => {
+  return {expression, index};
+});
+console.log(result) // object {expression:'🤣', index: 0 } ......
+```
+
+> `map` will provide an index of an item
+
+#### 🔸 reduce
+as name says it reduce the array item and resulting a single result 
+
+```js
+const marks = [87, 98, 55, 67, 70, 59];
+var total = (memorizedValue, initialValue) => (memorizedValue+initialValue);
+console.log(marks.reduce(total)); // 436
+```
+
+#### 🔸 filter
+
+To filter the array item based on boolean expression
+
+```js
+const numberList = [87, 98, 55, 67, 70, 59];
+const getEvenNumbers = (number) => (number%2 ===0);
+console.log(numberList.filter(getEvenNumbers)); // [98, 70]
+```
+
+#### 🔸 every
+
+When we want to check given condition is satisfied with all array element or not 
+
+```js
+const numberList = [-87, 98, 0, Infinity, NaN, 59];
+var checkPositiveNumber = (number) => number > 0;
+console.log(numberList.every(checkPositiveNumber)); // false
+```
+
+#### 🔸 some
+
+When we want to check given condition is satisfied with at least some array element or not 
+
+```js
+const numberList = [-87, 98, 0, Infinity, NaN, 59];
+var checkPositiveNumber = (number) => number > 0;
+console.log(numberList.some(checkPositiveNumber)); // true
+```
 
 ## Template Literals - Expression Interpolation 
 
@@ -295,6 +499,9 @@ let hero = 'Iron Man';
 console.log(`I love ${number} Says ${hero}`); // I Love 3000 says Iron Man;
 ```
 
+<!-- JSX Component -->
 
-
+export const CustomStyledText = ({children, styleClass}) => (
+  <p className={styleClass}>{children}</p>
+); 
 
