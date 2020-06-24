@@ -24,7 +24,6 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-
 .plateletSet1 {
  color: #008fd3;
  color: #5f9a7f;
@@ -44,4 +43,29 @@
   color: #cc7a28;
   color: #ae484c;
   color: #890381;
+}
+
+
+/* document styles */
+
+.primary {
+  color: #ed9002;
+}
+
+.primary-bold {
+  color: #ed9002;
+  font-weight: bold;
+}
+
+.primary-bold-head{
+  color: #ed9002;
+  font-weight: bold;
+  font-size: 24px !important;
+}
+
+
+.primary-bold-subhead{
+  color: #ed9002;
+  font-weight: bold;
+  font-size: 18px !important;
 }
