@@ -48,6 +48,15 @@
 
 /* document styles */
 
+.heading-1 {
+  font-weight: bold;
+  font-size: 24px !important;
+}
+
+.heading-2 {
+  font-size: 18px !important;
+}
+
 .primary {
   color: #ed9002;
 }
