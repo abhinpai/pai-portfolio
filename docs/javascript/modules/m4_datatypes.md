@@ -26,6 +26,7 @@ keywords:
   14. Remove duplicated from an array
   15. How do you flatten an array
   16. What are the different ways to merge and concat an array? 
+  17. What is symbol and what are the benefit of using `symbol`
 :::
 
 Yes, type matters a lot in all of the programming language. which is an identity to a variable.
@@ -230,9 +231,129 @@ Add space at the beginning of the string based on the given value <br/>
 
 ### 7. Symbol
 
-:::danger Symbol
-  Update about symbol
+It’s a very peculiar data type. Once you create a `symbol`, its value is kept private and for internal use.
+It represent as `unique` identifier.
+
+One can create a symbol just by calling the Symbol() global factory function and upon creation, we can give symbol a description (also called a symbol name)
+
+```js
+const hero = Symbol(); // Create a symbol
+let id = Symbol("id"); // symbol(id) with provided symbol name
+```
+
+Symbols are guaranteed to be unique. Even if we create many symbols with the same description, they are different values. The description is just a label that doesn’t affect anything.
+
+```js
+const hero1 = Symbol();
+const hero2 = Symbol();
+
+console.log(Symbol() === Symbol()); // false
+console.log(hero1 === hero2); // false
+```
+
+:::caution Remember
+Most values in JavaScript support implicit conversion to a string. For instance, we can alert almost any value, and it will work. Symbols are special. They don’t auto-convert.
+
+```js
+let id = Symbol("id");
+alert(id); // TypeError: Cannot convert a Symbol value to a string
+```
+
+That’s a “language guard” against messing up, because strings and symbols are fundamentally different and should not accidentally convert one into another.
+
+If we really want to show a symbol, we need to explicitly call .toString() on it
+
+```js
+let id = Symbol("id");
+alert(id.toString()); // Symbol(id)
+```
+Or get `symbol.description` property to show the description only
+
+```js
+let id = Symbol("id");
+alert(id.description); // id
+```
 :::
+
+#### Hidden properties of symbol
+
+Symbols allow us to create `hidden` properties of an object, that no other part of code can accidentally access or overwrite.
+
+```js
+let user = { name: "John" };
+
+let id = Symbol("id");
+
+user[id] = 1;
+
+alert( user[id] ); // we can access symbol as a key
+```
+
+#### What’s the benefit of using Symbol("id") over a string "id"?
+The best benefit is to avoid the name clash since symbol create a new instance even with a same name we can eliminate the risk of name collision and this hidden properties can be use for the internal functionality purpose.
+
+Consider you have a user object which is used by many other class in your project but you want to add one more key with a same property present in a user object you can achieve that with symbol. 
+
+This is also called `symbol literal` for an object
+
+```js
+let user = { name: "Abhin Pai" };
+user.name = "Abhin"; // it will override the previous value i.e Abhin Pai 
+
+let name = Symbol("name");
+user[name] = "Abhin"; // Created new hidden property with same name
+
+console.log(user); // {name: "Abhin", Symbol(name): "Abhin"}
+```
+
+:::caution Remember
+* Symbols are not enumerated, which means that they do not get included in a for..of or for..in loop ran upon an object.
+* Symbols are not part of the Object.keys() or Object.getOwnPropertyNames() result.
+* You can access all the symbols assigned to an object using the Object.getOwnPropertySymbols() method.
+
+  ```js
+  let user = { name: "John" };
+  let id = Symbol("id");
+
+  user[id] = 1;
+
+  Object.getOwnPropertySymbols(user); // [Symbol(id)]
+  ```
+:::
+
+#### Global Symbol
+
+Usually all symbols are different, even if they have the same name. But sometimes we want same-named symbols to be same entities. For instance, different parts of our application want to access symbol "name" meaning exactly the same property.
+
+To achieve that, there exists a global symbol registry. We can create symbols in it and access them later, and it guarantees that repeated accesses by the same name return exactly the same symbol.
+
+In order to read (create if absent) a symbol from the registry, use Symbol.for(key).
+
+This checks the global registry if there is symbol described by a key then it will return else it will create a new one byt he given key in registry and return it 
+
+```js
+// read from the global registry
+let name = Symbol.for("name"); // if the symbol did not exist, it is created
+
+// read it again (maybe from another part of the code)
+let myName = Symbol.for("name");
+
+console.log( id === idAgain ); // true
+```
+
+:::info GLobal Symbol
+Symbols inside the registry are called global symbols. If we want an application-wide symbol, accessible everywhere in the code – that’s what they are for.
+:::
+
+There are various other `symbol` method which serve different purposes
+
+#### * Symbol.keyFor
+Not only Symbol.for(key) returns a symbol by name, but there’s a reverse call: Symbol.keyFor(sym), that does the reverse: returns a name by a global symbol
+
+#### * Symbol.hasInstance
+#### * Symbol.isConcatSpreadable
+#### * Symbol.iterator
+#### * Symbol.toPrimitive
 
 ## Non-Primitive Datatype
 Apart from 7 primitive datatype everything else is an Object in javascript <br/>
