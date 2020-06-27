@@ -22,10 +22,10 @@ module.exports = {
       darkTheme: require("prism-react-renderer/themes/dracula"),
     },
     navbar: {
+      hideOnScroll: false,
       logo: {
         alt: "My Site Logo",
         src: "img/logo.png",
-        // srcDark: 'img/docusaurus_keytar.svg', // In case of different site logo
       },
       links: [
         {
