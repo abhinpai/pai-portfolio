@@ -26,12 +26,11 @@ keywords:
 * ❌ Code Quality with `ESlint`
 * ❌ Shim Vs Polyfill
 
-### <Highlight color="#0090d9">Module 3</Highlight> Hello i am an Object 👋
+### <Highlight color="#0090d9">Module 3</Highlight> Object
 ------
-* ❌ What is `this` 😵 
+* ❌ `this` keyword
 * ❌ What is Object copying, references?
 * ❌ How Garbage collection works
-* ❌ Constructor, operator `new`
 * ✅ Optional chaining `?.`
 * ❌ Symbol type
 * ❌ Object to primitive conversion
@@ -39,7 +38,7 @@ keywords:
 * ❌ Property getters and setters
 * ❌ typeof and instanceof
 * ❌ Host object and Native object
-* ❌ What is `object.freez()`?
+* ❌ What is `object.freeze()`?
 * ❌ Nullish coalescing operator ?
 * ❌ What are the different ways to do a null check?
 * [https://www.taniarascia.com/how-to-use-object-methods-in-javascript/](https://www.taniarascia.com/how-to-use-object-methods-in-javascript/)
