@@ -743,6 +743,124 @@ export const CustomStyledText = ({children, styleClass}) => (
   <p className={styleClass}>{children}</p>
 ); 
 
+## Null coalescing operator `??`
+
+Null coalescing operator returns its right-hand-side operand when its left-hand-side operand is null or undefined, and otherwise returns its left-hand-side operand.
+
+#### The result of a ?? b is
+
+* a if it’s not null or undefined,
+* b, otherwise.
 
 
+```js
+// Traditional way to check falsy value and executing a logic
+let developer1 = undefined;
+let developer2 = "Frontend Developer";
 
+let result = (developer1 !== null && developer1 !== undefined) ?
+    developer1 :
+    developer2;
+console.log(`Nullish coalescing results in: ${result}`);
+
+// Shorthand solution with Null coalescing operator ??
+let developer1 = undefined;
+let developer2 = "Frontend Developer";
+
+let result = developer1 ?? developer2;
+console.log(`Nullish coalescing results in: ${result}`);
+```
+
+:::caution Things to remember 
+  * This is a recent addition to Javascript. Old browsers may need polyfills.
+  * nullish coalescing will not threat falsy values
+:::
+
+### Operator `||` to support `??`
+
+The OR `||` operator can be used in the same way as `??`. Actually, we can replace `??` with `||` 
+
+#### The important difference is that:
+
+* || returns the first truthy value
+* ?? returns the first defined value
+
+```js
+let githubStar = 0; // 
+
+console.log(githubStar || 100); // 100
+console.log(githubStar ?? 100); // 0
+```
+
+## `typeOf` and `instanceOf`
+
+These operator are used to check the in which family that instance is belongs to
+
+### 🔸 `typeOf`
+`typeof` is a unary operator that returns a string indicating the type of the unevaluated operand.
+
+Use `typeOf` operator for built in types (primitive and objects)
+
+```js
+'Frontend Developer' instanceof String; // false
+typeof 'Frontend Developer' == 'string'; // true
+
+'Frontend Developer' instanceof Object; // false
+typeof 'Frontend Developer' == 'object'; // false
+
+true instanceof Boolean; // false
+typeof true == 'boolean'; // true
+
+99.99 instanceof Number; // false
+typeof 99.99 == 'number'; // true
+
+function() {} instanceof Function; // true
+typeof function() {} == 'function'; // true
+```
+
+### 🔸 `instanceOf`
+
+`instanceof` is a binary operator, accepting an object and a constructor. It returns a boolean indicating whether or not the object has the given constructor in its prototype chain.
+
+Use `instanceof` for custom types and complex built in types
+
+```js
+var ClassFirst = function () {};
+var ClassSecond = function () {};
+var instance = new ClassFirst();
+
+typeof instance; // object
+typeof instance == 'ClassFirst'; // false
+
+instance instanceof Object; // true
+instance instanceof ClassFirst; // true
+instance instanceof ClassSecond; // false 
+
+/regularexpression/ instanceof RegExp; // true
+typeof /regularexpression/; // object
+
+[] instanceof Array; // true
+typeof []; //object
+
+{} instanceof Object; // true
+typeof {}; // object
+```
+
+## Host Object and Native Object
+
+### Host Object
+Host Objects are created by the environment and are environment specific. Best known environment would be a web-browser or could be any other platform.
+
+The host objects created in web-browser could be the window object or the document. 
+
+Typically a browser uses an API to create Host Objects to reflect the `Document Object Model` or `DOM` into JavaScript. (Web browser have different JavaScript Engines that do this) A host object is created automatically the moment the page renders in a browser.
+
+**Example** `Window`, `Document`, `History`, `XMLHttpRequest` (part of Web API), `http`, `https`, `url`, etc
+
+### Native Object
+
+A Native Object is created by the developer using predefined classes of JavaScript. These objects will have fully defined specification rather than by the host environment by
+
+Standard native objects are defined in this specification. Some native objects are built-in; others may be constructed during the course of execution of an ECMAScript program.
+
+**Example** `Object` (constructor), `function`, `Date`, `Math`, `parseInt`, `eval`, `string methods`, `array methods`, etc 
