@@ -6,7 +6,6 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "abhinpai",
   projectName: "pai-portfolio",
-  // plugins: ['@docusaurus/plugin-google-analytics'],
   themeConfig: {
     googleAnalytics: {
       trackingID: "G-61TLB4TLQ6",
@@ -16,7 +15,7 @@ module.exports = {
     },
     announcementBar: {
       id: "underconstruction",
-      content: "⭐️ This website is under contruction  ⭐️",
+      content: "⭐️ This website is under construction  ⭐️",
     },
     prism: {
       theme: require("prism-react-renderer/themes/github"),
@@ -38,6 +37,12 @@ module.exports = {
         // { to: "blog", label: "Blogs", position: "right" },
         { to: "about", label: "About", position: "right" },
         { to: "contact", label: "Contact", position: "right" },
+        {
+          href: 'https://github.com/abhinpai',
+          position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
+        },
       ],
     },
     footer:{
