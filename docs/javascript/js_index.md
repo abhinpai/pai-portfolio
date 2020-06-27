@@ -11,13 +11,13 @@ keywords:
 
 ### <Highlight color="#0090d9">Module 1</Highlight>  Basics the foundation 🏗️
 ------
-* ❌ New variable creation, updation and scoping 
 * ✅ `var`, `let` and `const` [🔗](modules/module1_basic#%EF%B8%8F-a-story-of-var-let-and-const)
 * ✅ `TDZ` Temporal Dead Zone [🔗](modules/module1_basic#how-about-the-const)
 * ✅ Is `var` Dead? What should I use? [🔗](modules/module1_basic#%EF%B8%8F-a-story-of-var-let-and-const)
 * ✅ use strict [🔗](modules/module1_basic#hey-im-very-strict-♂%EF%B8%8F)
 * ✅ `==` vs `===` operator [🔗](modules/module1_basic#untold-story-of-operator-%F0%9F%A7%91)
 * ✅ `!!` double negation operator [🔗](modules/module1_basic#untold-story-of-operator-%F0%9F%A7%91)
+* ✅ List of Falsy values
 
 ### <Highlight color="#0090d9">Module 2</Highlight> Code Quality matter most 👌
 ------
@@ -36,20 +36,9 @@ keywords:
 * ✅ Object Property getters and setters
 * ✅ protecting Objects
 * ✅ Objects Methods
-* ❌ Symbol type
-* ❌ typeof and instanceof
-* ❌ Host object and Native object
-* ❌ Nullish coalescing operator ?
-* ❌ What are the different ways to do a null check?
-* [https://www.taniarascia.com/how-to-use-object-methods-in-javascript/](https://www.taniarascia.com/how-to-use-object-methods-in-javascript/)
-* [https://www.taniarascia.com/understanding-objects-in-javascript/](https://www.taniarascia.com/understanding-objects-in-javascript/)
-* [https://www.jstips.co/en/javascript/return-objects-to-enable-chaining-of-functions/](https://www.jstips.co/en/javascript/return-objects-to-enable-chaining-of-functions/)
-* [https://www.jstips.co/en/javascript/why-you-should-use-Object.is()-in-equality-comparison/](https://www.jstips.co/en/javascript/why-you-should-use-Object.is()-in-equality-comparison/)
-* [https://flaviocopes.com/javascript-value-type/](https://flaviocopes.com/javascript-value-type/)
-* [https://flaviocopes.com/javascript-access-object-property/](https://flaviocopes.com/javascript-access-object-property/)
-* [https://flaviocopes.com/javascript-optional-chaining/](https://flaviocopes.com/javascript-optional-chaining/)
-* [https://flaviocopes.com/javascript-symbols/](https://flaviocopes.com/javascript-symbols/)
-* [https://ponyfoo.com/articles/null-propagation-operator](https://ponyfoo.com/articles/null-propagation-operator)
+* ✅ Nullish coalescing operator `??`
+* ✅ typeof and instanceof
+* ✅ Host object and Native object
 
 ### <Highlight color="#0090d9">Module 4</Highlight> Datatypes
 ------
@@ -59,6 +48,7 @@ keywords:
 * ✅ Array and its methods [🔗](modules/module4_datatypes#1-array)
 * ✅ String and its methods [🔗](modules/module4_datatypes#6-string)
 * ✅ `Undefined` and `Null` [🔗](modules/module4_datatypes#4-null)
+* ✅ Symbols
 * ❌ Story of date 📅
 * ❌ JSON methods, toJSON, JSONP
 
@@ -75,9 +65,10 @@ keywords:
 * ❌ Decorators and forwarding, call/apply and bind
 * ❌ Function binding
 * ❌ Arrow functions revisited
-* ❌ High Order Fucntion
-* ❌ Immidiate execution function `IIEF`
+* ❌ High Order Function
+* ❌ Immediate execution function `IIEF`
 * ❌ Pure Functions
+* ❌ Return objects to enable chaining of functions
 * ❌ Anonymous and Named Functions
 * ❌ Function borrowing
 * [https://ponyfoo.com/articles/es6-spread-and-butter-in-depth](https://ponyfoo.com/articles/es6-spread-and-butter-in-depth)

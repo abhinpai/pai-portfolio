@@ -15,6 +15,7 @@ sidebar_label: "Module 1: Basics"
   6. What is the purpose of `use strict`?
   7. What does the double negation operator `!!` do?
   8. `==` vs `===`
+  9. What are the falsy values in js
 :::
 
 ## A Story of `var`, `let` and `const`
@@ -246,3 +247,16 @@ export const BulletSentence = ({children, keyword}) => (
         paddingBottom: '2px'}}>{keyword}:</span>  {children}
   </p>
 );
+
+## List of falsy values in Javascript
+
+| Falsey Value | Description                                                                       |
+|--------------|-----------------------------------------------------------------------------------|
+| false        | The keyword false                                                                 |
+| 0            | The number zero                                                                   |
+| \-0          | The number negative zero                                                          |
+| 0n           | BigInt, when used as a boolean, follows the same rule as a Number\. 0n is falsy\. |
+| ""           | Empty string value without space                                                  |
+| null         | Absence of any value                                                              |
+| undefined    | The primitive value where the value is not defined                                |
+| NaN          | Not a Number                                                                      |
