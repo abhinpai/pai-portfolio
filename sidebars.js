@@ -1,9 +1,8 @@
 module.exports = {
   docs: [
     {
-      type: "category",
-      label: "Introduction",
-      items: ["introduction"],
+      type: "doc",
+      id: "introduction"
     },
     {
       type: "category",
@@ -34,5 +33,9 @@ module.exports = {
       label: "💎 Gem Box 💎",
       items: ["ui_res"],
     },
+    {
+      type: 'doc',
+      id: 'misc/credits',
+    }
   ],
 };

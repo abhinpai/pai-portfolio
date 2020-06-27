@@ -28,17 +28,17 @@ keywords:
 
 ### <Highlight color="#0090d9">Module 3</Highlight> Object
 ------
-* ❌ `this` keyword
-* ❌ What is Object copying, references?
-* ❌ How Garbage collection works
+* ✅ `this` keyword
+* ✅ Details about object
 * ✅ Optional chaining `?.`
+* ✅ Object to primitive conversion
+* ✅ Object descriptors
+* ✅ Object Property getters and setters
+* ✅ protecting Objects
+* ✅ Objects Methods
 * ❌ Symbol type
-* ❌ Object to primitive conversion
-* ❌ Property flags and descriptors
-* ❌ Property getters and setters
 * ❌ typeof and instanceof
 * ❌ Host object and Native object
-* ❌ What is `object.freeze()`?
 * ❌ Nullish coalescing operator ?
 * ❌ What are the different ways to do a null check?
 * [https://www.taniarascia.com/how-to-use-object-methods-in-javascript/](https://www.taniarascia.com/how-to-use-object-methods-in-javascript/)
@@ -250,8 +250,9 @@ keywords:
 * ❌ Execution Context
 * ❌ Hoisting
 * ❌ Memorization
-* ❌ Clousers
-* ❌ Coression
+* ❌ Closure
+* ❌ Coercion
+* ❌ How Garbage collection works
 * [https://www.taniarascia.com/understanding-variables-scope-hoisting-in-javascript/](https://www.taniarascia.com/understanding-variables-scope-hoisting-in-javascript/)
 * [https://www.jstips.co/en/javascript/hoisting/](https://www.jstips.co/en/javascript/hoisting/)
 * [https://www.jstips.co/en/javascript/curry-vs-partial-application/](https://www.jstips.co/en/javascript/curry-vs-partial-application/)

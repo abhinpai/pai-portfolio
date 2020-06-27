@@ -591,6 +591,11 @@ delete obj.name; // doesn't work
 | Object\.seal             | ❌     | ✅    | ✅      | ❌      |
 | Object\.preventExtension | ❌     | ✅    | ✅      | ✅      |
 
+:::info 
+`const` makes the variable binding immutable but it’s value can still be modified.
+`Object.freeze()` ignores the value modification to an object but there is no restriction on the binding.
+:::
+
 ### Other Object Methods
 
 #### 🔸 Object.Keys
