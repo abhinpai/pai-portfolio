@@ -105,8 +105,8 @@ description: Javascript Interview preparation material
 * ✅ Destructuring Objects
 * ✅ Destructuring Array
 * ✅ Destructuring Functions Arguments
-* ❌ Spread Operator
-* ❌ Rest Operator
+* ✅ Spread Operator
+* ✅ Rest Operator
 
 ### <Highlight color="#0090d9">Module 9</Highlight> Add Any other topic
 ------

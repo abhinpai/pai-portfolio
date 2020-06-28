@@ -4,25 +4,25 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
-### all the introduction will go here 
+<!-- ### all the introduction will go here -->
 
-:::note 
+<!-- :::note
 Contain all the interview questions 🔎
 :::
 
-:::info 
+:::info
 Contain Some pro tip 💡, Things to remember 🧠
 :::
 
-:::caution 
-Contain declaimers❗ 
+:::caution
+Contain declaimers❗
 :::
 
-<!-- :::tip 
-Contain all the interview questions
-::: -->
 
 :::danger
 Some serious message like never try things 🚫
-:::
+::: -->
 
+<p className={"message"} align='center'>
+    An introduction content will be updated soon
+</p>

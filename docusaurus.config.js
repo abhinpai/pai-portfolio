@@ -34,9 +34,8 @@ module.exports = {
           label: "Technical Notes",
           position: "right",
         },
-        // { to: "blog", label: "Blogs", position: "right" },
-        { to: "about", label: "About", position: "right" },
-        { to: "contact", label: "Contact", position: "right" },
+        { to: "blog", label: "Blogs", position: "right" },
+        { to: "about/Abhin-Pai", label: "About Me", position: "right" },
         {
           href: 'https://github.com/abhinpai',
           position: 'right',

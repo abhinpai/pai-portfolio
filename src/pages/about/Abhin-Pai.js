@@ -1,7 +1,8 @@
 import React from "react";
 import Layout from "@theme/Layout";
+import styles from './style.module.css';
 
-function About() {
+export default function About() {
   return (
     <Layout title="About">
       <div
@@ -13,12 +14,10 @@ function About() {
           fontSize: "20px",
         }}
       >
-        <p>
-          Edit <code>pages/about.js</code> and save to reload.
+        <p className={"message"} align='center'>
+         Hold tight this page is under construction
         </p>
       </div>
     </Layout>
   );
 }
-
-export default About;
