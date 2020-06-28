@@ -1,12 +1,8 @@
 ---
 id: js_index
 title: 🛡 Javascript Battalion  🛡
-sidebar_label: JS Index
+sidebar_label: Index
 description: Javascript Interview preparation material
-keywords:
-    - sample 1
-    - sample 2
-    - sample 3
 ---
 
 ### <Highlight color="#0090d9">Module 1</Highlight>  Basics the foundation 🏗️
@@ -49,8 +45,8 @@ keywords:
 * ✅ String and its methods [🔗](modules/module4_datatypes#6-string)
 * ✅ `Undefined` and `Null` [🔗](modules/module4_datatypes#4-null)
 * ✅ Symbols
-* ❌ Story of date 📅
-* ❌ JSON methods, toJSON, JSONP
+* ❌ Date 📅
+* ❌ JSONP and JSON methods
 
 ### <Highlight color="#0090d9">Module 5</Highlight> Function
 ------
@@ -105,15 +101,12 @@ keywords:
 
 ### <Highlight color="#0090d9">Module 8</Highlight> Destructuring
 ------
-* ❌ Desctructing Array
-* ❌ Destructuring Objects
-* ❌ Swapping Variables with Destructuring
-* ❌ Destructuring Functions - Multiple returns and named defaults
-* [https://ponyfoo.com/articles/es6-destructuring-in-depth](https://ponyfoo.com/articles/es6-destructuring-in-depth)
-* [https://codeburst.io/es6-destructuring-the-complete-guide-7f842d08b98f](https://codeburst.io/es6-destructuring-the-complete-guide-7f842d08b98f)
-* [https://www.taniarascia.com/understanding-destructuring-rest-spread/](https://www.taniarascia.com/understanding-destructuring-rest-spread/)
-* [https://flaviocopes.com/typescript-object-destructuring/](https://flaviocopes.com/typescript-object-destructuring/)
-* [https://www.jstips.co/en/javascript/use-destructuring-in-function-parameters/](https://www.jstips.co/en/javascript/use-destructuring-in-function-parameters/)
+* ✅ Destruction Assignment
+* ✅ Destructuring Objects
+* ✅ Destructuring Array
+* ✅ Destructuring Functions Arguments
+* ❌ Spread Operator
+* ❌ Rest Operator
 
 ### <Highlight color="#0090d9">Module 9</Highlight> Add Any other topic
 ------

@@ -13,7 +13,8 @@ module.exports = {
           Modules:[
             "javascript/modules/module1_basic",
             "javascript/modules/module3_object",
-            "javascript/modules/module4_datatypes"
+            "javascript/modules/module4_datatypes",
+            "javascript/modules/module8_destruct"
           ]
         },
       ],
