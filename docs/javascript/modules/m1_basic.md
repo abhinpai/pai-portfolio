@@ -4,7 +4,7 @@ title: Basic is the foundation of all programming language 😇
 sidebar_label: "Module 1: Basics"
 ---
 
-<br/>
+import GlowBullet from '../../../src/components/glowBullet.jsx';
 
 :::note Possible Interview Questions 🔎
   1. `let` vs `const` vs `var`
@@ -28,6 +28,8 @@ sidebar_label: "Module 1: Basics"
 ### The Story of Var 🌈
 
 A variable can be declare as `var` or `let`. But even if we declare the variable with let, var is beast in it own way
+
+<!-- <GlowBullet highlightWord="var"> has no block scope meaning it can be access globally (its subjective to strict mode) </GlowBullet> -->
 
 🔸 `var` has no block scope meaning it can be access globally _(its subjective to strict mode)_
 
