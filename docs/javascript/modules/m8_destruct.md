@@ -223,3 +223,187 @@ import statements have a different syntax. When compared against destructuring, 
 * `Deep destructuring` style like `import {component: { someOtherComponent }} from react` is not possible 
 * Aliasing syntax `import {pureComponent = component} from react`
 :::
+
+## Spread Operator
+------
+<!-- 🔸 -->
+`Spread syntax (...)` is another helpful addition to JavaScript for working with arrays, objects, and function calls. 
+
+Spread allows objects and iterables (such as arrays) to be unpacked, or expanded, which can be used to make shallow copies of data structures to increase the ease of data manipulation
+
+Spear unpack a array or object
+
+### Spread with Arrays
+
+Spread can simplify common tasks with arrays like concatenating or some other array manipulation 
+
+```js
+// Traditional way to concatenating an array
+let animals = ['🦊', '🐻', '🐼', '🐯', '🦁'];
+let birds = ['🦆', '🐔', '🐧', '🐦', '🐤'];
+
+let leavingBeings = animals.concat(birds);
+console.log(leavingBeings); //["🦊", "🐻", "🐼", "🐯", "🦁", "🦆", "🐔", "🐧", "🐦", "🐤"]
+
+// Concatenating with spread operator 
+let leavingBeings = [...animals, ...birds];
+console.log(leavingBeings); //["🦊", "🐻", "🐼", "🐯", "🦁", "🦆", "🐔", "🐧", "🐦", "🐤"]
+```
+You can also use spread operator with an array. 
+
+```js
+let animals = [ 
+  { tiger: '🐯' },
+  { lion: '🦁' },
+];
+
+let updateAnimal = [...animals, { wolf: '🦊' }];
+console.log(updateAnimal); // [ {tiger: "🐯"}, {lion: "🦁"},  {wolf: "🦊"}]
+```
+
+Spread can also be used to convert a `set`, or any other `iterable`, or `String` to an `Array`.
+
+```js
+// Converting set into an array
+let animals = new Set();
+
+animals.add('Lion');
+animals.add('Tiger');
+animals.add('Wolf');
+
+console.log(...animals); // [Lion, Tiger, Wolf]
+
+// Converting an string to an array
+let animalName = "Lion";
+console.log(...animalName); // ['L', 'i', 'o', 'n']
+```
+
+
+### Spread with Object
+
+When working with objects, spread can be used to shallow copy and update objects.
+
+```js
+// Copying object with Object.Assign();
+let animals = {tiger: '🐯', lion: '🦁' };
+let copyAnimal = Object.assign({}, animals);
+
+console.log(copyAnimal); // {tiger: "🐯", lion: "🦁"}
+
+// Copy using spread operator 
+let copyAnimal = {...animals};
+console.log(copyAnimal); // {tiger: "🐯", lion: "🦁"}
+```
+
+#### Adding new property into an existing property
+
+```js
+let developer = {
+  name: `Abhin Pai`,
+  gadgets: ["📱", "🖥", "💻", "🖨"],
+  nationality: { india: "🇮🇳" },
+}
+
+let userInfo = {...developer, blog: "www.abhinpai.github.io"};
+console.log(userInfo); // {name: "Abhin Pai", gadgets: Array(4), nationality: {…}, blog: "www.abhinpai.github.io"}
+```
+
+:::caution Remember
+One important thing to note with updating objects via spread is that any nested object will have to be spread as well
+
+```js
+let developer = {
+  name: `Abhin Pai`,
+  gadgets: ["📱", "🖥", "💻", "🖨"],
+  nationality: { india: "🇮🇳" },
+}
+
+let userInfo = {...developer, gadgets: {smartWatch: '⌚️'}};
+console.log(userInfo); // {name: "Abhin Pai", gadgets: {smartWatch: '⌚️'}, nationality: {…}}
+```
+
+In the above example i tried to add smart-watch into existing gadget object but guess what it overwrite with the new value and we lost the original content
+
+To achieve our result we can spread inner object as well
+
+```js
+let developer = {
+  name: `Abhin Pai`,
+  gadgets: ["📱", "🖥", "💻", "🖨"],
+  nationality: { india: "🇮🇳" },
+}
+
+let userInfo = {...developer, gadgets: {smartWatch: '⌚️', ...developer.gadgets}};
+console.log(userInfo); // {name: "Abhin Pai", gadgets: {…}, nationality: {…}} 
+```
+:::
+
+
+
+
+### Spread with function
+
+We can also take advantage of spread operator in function
+
+```js
+let developer = [
+  { name: `Abhin Pai` },
+  { gadgets: ["📱", "🖥", "💻", "🖨"] },
+  { nationality: { india: "🇮🇳" } },
+];
+
+function printUser(name) {
+  console.log(name); // Abhin Pai
+}
+
+printUser(...developer);
+```
+
+## Rest Operator
+------
+
+The syntax of rest parameter is same as spread i.e `...` but rest do have opposite effect 
+
+Rest pack an array or object by creating an array of an indefinite number of arguments.
+
+```js 
+function gadgets(...args) {
+  console.log(args); // ["📱", "🖥", "💻", "🖨"]
+}
+
+gadgets("📱", "🖥", "💻", "🖨");
+```
+
+Rest syntax can be used as the only parameter or as the last parameter in the list. If used as the only parameter, it will gather all arguments, but if it's at the end of a list, it will gather every argument that is remaining.
+
+```js
+function gadgets(mobile, monitor, ...args) {
+  console.log(args); // ["💻", "🖨"]
+  console.log(mobile);  // 📱
+  console.log(monitor); // 🖥
+}
+
+gadgets("📱", "🖥", "💻", "🖨");
+```
+
+:::caution Remember
+* One can't use rest in between parameter which will throw an exception
+
+```js
+function gadgets(...args, mobile) {
+  console.log(args); // SyntaxError: Rest parameter must be last formal parameter
+}
+
+gadgets("📱", "🖥", "💻", "🖨");
+```
+
+* Older code, the arguments variable could be used to gather all the arguments passed through to which is not possible now with rest
+
+```js
+function gadgets() {
+  console.log(arguments); // Arguments(4) ["📱", "🖥", "💻", "🖨", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+}
+
+gadgets("📱", "🖥", "💻", "🖨");
+```
+:::
