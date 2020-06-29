@@ -88,16 +88,13 @@ description: Javascript Interview preparation material
 
 ### <Highlight color="#0090d9">Module 7</Highlight> Classes
 ------
-* ❌ Class basic syntax
+* ✅ Class basic syntax
+* ✅ Class Fields
+* ✅ Private and protected properties and methods
+* ✅ Static properties and methods
 * ❌ Class inheritance, Extending Classes and using super()
-* ❌ Static properties and methods
-* ❌ Private and protected properties and methods
 * ❌ Extending built-in classes
-* ❌ Class checking: "instanceof"
 * ❌ Mixins
-* [https://ponyfoo.com/articles/binding-methods-to-class-instance-objects](https://ponyfoo.com/articles/binding-methods-to-class-instance-objects)
-* [https://www.taniarascia.com/understanding-classes-in-javascript/](https://www.taniarascia.com/understanding-classes-in-javascript/)
-* [https://www.jstips.co/en/javascript/advanced-properties/](https://www.jstips.co/en/javascript/advanced-properties/)
 
 ### <Highlight color="#0090d9">Module 8</Highlight> Destructuring
 ------

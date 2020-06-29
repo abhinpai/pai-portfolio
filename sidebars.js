@@ -14,7 +14,8 @@ module.exports = {
             "javascript/modules/module1_basic",
             "javascript/modules/module3_object",
             "javascript/modules/module4_datatypes",
-            "javascript/modules/module8_destruct"
+            "javascript/modules/module7_classes",
+            "javascript/modules/module8_destruct",
           ]
         },
       ],
