@@ -21,6 +21,10 @@ module.exports = {
       theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("prism-react-renderer/themes/dracula"),
     },
+    algolia: {
+      apiKey: '182fa59875da31eb97b079236300f6ed',
+      indexName: 'abhinpai',
+    },
     navbar: {
       hideOnScroll: false,
       logo: {
