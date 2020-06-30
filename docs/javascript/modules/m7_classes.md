@@ -250,7 +250,7 @@ state.powerState = "ON";
 console.log(state.powerState); // ON
 ```
 
-## methods
+## Methods
 
 ### Instance Methods
 
@@ -367,6 +367,10 @@ config.activetheme();
 
 Sometime we may required to bind a method to a class to access class fields. Its depends on the context of call
 
+This is the least elegant solution, but it works. 
+
+Drawbacks include having to keep track of which methods use this and need to be bound, or ensuring every method is bound, remembering to `.bind` new methods as they are added, and removing `.bind` statements for methods that are removed
+
 ```js
 class Select {
   constructor(value) {
@@ -400,12 +404,130 @@ let select = new Select("hello");
 select.click // hello
 ```
 
+#### Auto Bind 
+
+A similar but less painful approach is using a module that takes care of this on our behalf. Sindre’s auto-bind goes through an object’s methods and binds them to itself.
+
+```js
+class Select {
+  constructor(value) {
+    this.value = value;
+    autoBind(this);
+  }
+
+  click = () => {
+    console.log(this.value);
+  }
+}
+
+let select = new Select("hello");
+select.click // hello
+```
 
 
 ## Inheritance 👴🏻 ⬅️ 🧔🏻 ⬅️ 👦🏻 ⬅️ 👶🏻
 
-### Parent Constructor: Super() 👌🏼
+Class inheritance is a way for one class to extend another class. So we can create new functionality on top of the existing.
 
-### Parent Instance: Super() in method
+JavaScript support single inheritance using the `extends` keyword
 
-### Class feature availability
+```js
+class Professional {
+    let developerName = "Abhin Pai";
+    constructor(name) {
+        this.developerName = developerName;
+    }
+}
+
+class Bio extends Professional {
+    let hobby = ["Gaming", "Travelling" "etc"];
+}
+
+let user = new Bio();
+console.log(user.hobby); // ["Gaming", "Travelling" "etc"]
+console.log(user.developerName); // Abhin Pai
+```
+
+:::danger   
+Add the working illustration of `extends`
+:::
+
+:::info remember
+Class syntax allows to specify not just a class, but any expression after `extends`
+
+For instance, a function call that generates the parent class:
+
+```js
+function user(name) {
+    console.log(name);
+}
+
+class Developer extends user("Abhin Pai") {
+    // Class body
+}
+```
+
+This might be useful for advance programming when some wants to create class dynamically on the fly
+
+:::
+
+### Parent Constructor: `Super()` 👌🏼
+
+If you’d like to call the parent constructor in a child class, you need to use the `super()` 
+
+```js
+class Professional {
+    let developerName;
+    constructor(name) {
+        this.developerName = developerName;
+    }
+}
+
+class Bio extends Professional {
+    let hobby = ["Gaming", "Travelling" "etc"];
+    constructor(name) {
+        super(name); // Calling constructor of parent class
+    }
+}
+
+let user = new Bio("Abhin Pai");
+console.log(user.hobby); // ["Gaming", "Travelling" "etc"]
+console.log(user.developerName); // Abhin Pai
+```
+
+### Parent Instance: `Super()` in method
+
+If you’d like to access the parent method inside of a child method, you can use the special shortcut `super`.
+
+We can also override a method of parent class
+
+```js
+class Professional {
+    let developerName;
+    constructor(name) {
+        this.developerName = developerName;
+    }
+
+    get Name() {
+        return this.developerName;
+    }
+}
+
+class Bio extends Professional {
+    let hobby = ["Gaming", "Travelling" "etc"];
+    constructor(name) {
+        super(name); // Calling constructor of parent class
+    }
+
+    get Name(){ // override the method of parent class
+        console.log(super.Name); // called parent method using super
+    }
+
+}
+
+let user = new Bio("Abhin Pai");
+console.log(user.hobby); // ["Gaming", "Travelling" "etc"]
+console.log(user.Name); // Abhin Pai
+```
+
+> Arrow functions do not have `super`.
