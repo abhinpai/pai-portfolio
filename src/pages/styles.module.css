@@ -5,14 +5,15 @@
  * and scoped locally.
  */
 
- @media screen and (min-width: 966px) {
- .containerpadding{
-   margin-right: 4% !important;
- }
+/*  Media Query */
+@media screen and (min-width: 966px) {
+  .containerpadding {
+    margin-right: 4% !important;
+  }
 }
 
 @media screen and (max-width: 622px) {
-  .hero{
+  .hero {
     height: 300px;
   }
   .featureImage {
@@ -20,13 +21,13 @@
   }
 }
 
-
 @media screen and (max-width: 966px) {
   .introduction {
     height: 200px;
   }
-  
 }
+
+/* Custom CSS */
 
 .buttons {
   display: flex;
@@ -43,6 +44,7 @@
 .featureImage {
   height: 600px;
   width: 600px;
+  animation: fade 10s infinite;
 }
 
 .introduction {
@@ -52,12 +54,16 @@
   align-items: center;
 }
 
-.socialmediabtn {
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 600;
-}
-
 .nomargin {
   margin: 0;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }

@@ -1,5 +1,4 @@
-import React, {useState} from "react";
-
+import React, { useState, useEffect } from "react";
 import classnames from "classnames";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
@@ -7,45 +6,19 @@ import styles from "./styles.module.css";
 
 const heroImage = ["hero_new.svg", "hero.svg"];
 
-
-const socialMedia = [
-  {
-    name: "Blog",
-    url: "https://dev.to/abhinpai",
-  },
-  {
-    name: "Github",
-    url: "https://github.com/abhinpai",
-  },
-  {
-    name: "Twitter",
-    url: "https://twitter.com/PaiAbhin",
-  },
-  {
-    name: "Linkedin",
-    url: "https://www.linkedin.com/in/abhinpai",
-  },
-];
-
-function ReachMe({ name, url }) {
-  return (
-    <div
-      className={classnames("col col--3", styles.feature)}
-      style={{ paddingRight: 6 }}
-    >
-      <p className={styles.socialmediabtn}>
-        <a href={url} target="_blank">
-          {name}
-        </a>
-      </p>
-    </div>
-  );
-}
-
 export default function Home() {
-  const [hero, setHero] = useState(heroImage[0]);
+  let interval = null;
+  const [currentImageIndex, setIndex] = useState(0);
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
+
+  useEffect(() => {
+    interval = setInterval(() => {
+      currentImageIndex === 0 ? setIndex(1) : setIndex(0);
+    }, 10000);
+    clearInterval(interval);
+  });
+
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
@@ -67,16 +40,17 @@ export default function Home() {
                     Abhin Pai
                   </h1>
                   <p className="hero__subtitle">Fullstack Software Engineer</p>
-                  {/* <div className="row">
-                    {socialMedia.map((item, index) => (
-                      <ReachMe key={index} {...item} />
-                    ))}
-                  </div> */}
                 </div>
               </div>
-              <div className={classnames("col col--8", styles.feature, styles.hero)}>
+              <div
+                className={classnames(
+                  "col col--8",
+                  styles.feature,
+                  styles.hero
+                )}
+              >
                 <div className="text--center">
-                  <HeroImage imagename={hero}/>
+                  <HeroImage imageName={heroImage[currentImageIndex]} />
                 </div>
               </div>
             </div>
@@ -87,11 +61,11 @@ export default function Home() {
   );
 }
 
-const HeroImage = ({imagename}) => {
+const HeroImage = ({ imageName }) => {
   return (
     <img
       className={styles.featureImage}
-      src={"img/"+imagename}
+      src={"img/" + imageName}
       alt={"title"}
     />
   );
