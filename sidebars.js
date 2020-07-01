@@ -34,7 +34,7 @@ module.exports = {
     {
       type: "category",
       label: "💎 Gem Box 💎",
-      items: ["ui_res"],
+      items: ["ui_res", "learning_res", "hosting_res", "css_res", "browser_res"],
     },
     {
       type: 'doc',
