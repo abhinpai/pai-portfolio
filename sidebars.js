@@ -14,6 +14,7 @@ module.exports = {
             "javascript/modules/module1_basic",
             "javascript/modules/module3_object",
             "javascript/modules/module4_datatypes",
+            "javascript/modules/module6_prototype",
             "javascript/modules/module7_classes",
             "javascript/modules/module8_destruct",
           ]

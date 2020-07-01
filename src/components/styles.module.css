@@ -39,6 +39,7 @@
   border-radius: 0.4rem;
   padding: 2px 8px;
   font-size: 18px;
+  margin-right: 4px;
 }
 
 html[data-theme="dark"] .focus {

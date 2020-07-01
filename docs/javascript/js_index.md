@@ -79,12 +79,10 @@ description: Javascript Interview preparation material
 
 ### <Highlight color="#0090d9">Module 6</Highlight> Prototypes, inheritance
 ------
-* ❌ Prototypal inheritance
-* ❌ F.prototype
-* ❌ Native prototypes
-* ❌ Prototype methods, objects without `__proto__`
-* [https://www.taniarascia.com/understanding-prototypes-and-inheritance-in-javascript/](https://www.taniarascia.com/understanding-prototypes-and-inheritance-in-javascript/)
-* [https://flaviocopes.com/javascript-why-not-modify-object-prototype/](https://flaviocopes.com/javascript-why-not-modify-object-prototype/)
+* ✅ Prototypal inheritance
+* ✅ Prototype in constructor function
+* ✅ Prototype in class
+* ✅ Prototype methods, objects without `__proto__` 
 
 ### <Highlight color="#0090d9">Module 7</Highlight> Classes
 ------
@@ -92,9 +90,9 @@ description: Javascript Interview preparation material
 * ✅ Class Fields
 * ✅ Private and protected properties and methods
 * ✅ Static properties and methods
-* ❌ Class inheritance, Extending Classes and using super()
+* ✅ Class inheritance, Extending Classes and using super()
 * ❌ Extending built-in classes
-* ❌ Mixins
+* ❌ [Mixins](https://www.barbarianmeetscoding.com/blog/2015/12/28/black-tower-summoning-object-composition-with-mixins)
 
 ### <Highlight color="#0090d9">Module 8</Highlight> Destructuring
 ------
