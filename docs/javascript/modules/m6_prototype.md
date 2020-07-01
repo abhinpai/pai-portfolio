@@ -4,7 +4,7 @@ title: Prototypal Inheritance ⛓
 sidebar_label: "Module 6: Prototype Inheritance"
 ---
 
-import GlowBullet from '../../../src/components/glowBullet.jsx';
+import GlowBullet from '../../../src/components/glowBullet/glowBullet.jsx';
 
 :::note Possible Interview Questions 🔎
 1. What is Prototypal inheritance
