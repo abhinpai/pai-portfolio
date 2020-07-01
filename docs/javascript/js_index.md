@@ -52,7 +52,6 @@ description: Javascript Interview preparation material
 ------
 * ❌ What are the different ways to declare a method?
 * ❌ Recursion and stack story
-* ❌ Say Hello to ...Spread and ...Rest
 * ❌ What is the Variable scope?
 * ❌ Global object
 * ❌ Function object, NFE
