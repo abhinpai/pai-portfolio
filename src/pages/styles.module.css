@@ -44,7 +44,7 @@
 .featureImage {
   height: 600px;
   width: 600px;
-  /* animation: fade 10s infinite; */
+  animation: fade 10s infinite;
 }
 
 .introduction {

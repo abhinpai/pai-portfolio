@@ -12,12 +12,12 @@ export default function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
 
-  // useEffect(() => {
-  //   interval = setInterval(() => {
-  //     currentImageIndex === 0 ? setIndex(1) : setIndex(0);
-  //   }, 10000);
-  //   // clearInterval(interval);
-  // });
+  useEffect(() => {
+    interval = setInterval(() => {
+      currentImageIndex === 0 ? setIndex(1) : setIndex(0);
+    }, 10000);
+    () => clearInterval(interval);
+  },[interval]);
 
   return (
     <Layout
