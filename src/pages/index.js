@@ -17,7 +17,7 @@ export default function Home() {
       currentImageIndex === 0 ? setIndex(1) : setIndex(0);
     }, 10000);
     () => clearInterval(interval);
-  },[interval]);
+  });
 
   return (
     <Layout
