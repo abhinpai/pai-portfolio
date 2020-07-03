@@ -2,7 +2,7 @@ module.exports = {
   docs: [
     {
       type: "doc",
-      id: "introduction"
+      id: "introduction",
     },
     {
       type: "category",
@@ -10,14 +10,15 @@ module.exports = {
       items: [
         "javascript/js_index",
         {
-          Modules:[
+          Modules: [
             "javascript/modules/module1_basic",
             "javascript/modules/module3_object",
+            "javascript/modules/module5_function",
             "javascript/modules/module4_datatypes",
             "javascript/modules/module6_prototype",
             "javascript/modules/module7_classes",
             "javascript/modules/module8_destruct",
-          ]
+          ],
         },
       ],
     },
@@ -34,11 +35,17 @@ module.exports = {
     {
       type: "category",
       label: "💎 Gem Box 💎",
-      items: ["ui_res", "learning_res", "hosting_res", "css_res", "browser_res"],
+      items: [
+        "gemBox/ui_res",
+        "gemBox/learning_res",
+        "gemBox/hosting_res",
+        "gemBox/css_res",
+        "gemBox/browser_res",
+      ],
     },
     {
-      type: 'doc',
-      id: 'misc/credits',
-    }
+      type: "doc",
+      id: "misc/credits",
+    },
   ],
 };

@@ -136,6 +136,8 @@ description: Javascript Interview preparation material
 ------
 * ❌ Modules, introduction
 * ❌ Export and Import
+* Where can you import a module? is it possible to import module inside block?
+* Where can you export a module? is it possible to export module inside block?
 * [https://ponyfoo.com/articles/es6-modules-in-depth](https://ponyfoo.com/articles/es6-modules-in-depth)
 
 ### <Highlight color="#0090d9">Module 14</Highlight> Proxy

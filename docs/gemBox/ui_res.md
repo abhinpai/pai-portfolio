@@ -4,7 +4,7 @@ title: 🎨 UI Resources 🖍
 sidebar_label: UI Resources
 ---
 
-import GB from '../src/components/glowBulletList/glowBulletList.jsx';
+import GB from '../../src/components/glowBulletList/glowBulletList.jsx';
 
 ### 🖼️ Frontend Challenge Websites
 

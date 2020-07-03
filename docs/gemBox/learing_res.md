@@ -4,7 +4,7 @@ title: 📝 Learning Resources 🖥
 sidebar_label: Learning Resources
 ---
 
-import GB from '../src/components/glowBulletList/glowBulletList.jsx';
+import GB from '../../src/components/glowBulletList/glowBulletList.jsx';
 
 ### 📝 Docs
 

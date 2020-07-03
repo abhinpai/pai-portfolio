@@ -4,7 +4,7 @@ title: Browser Resources 🔌
 sidebar_label: Browser Resources
 ---
 
-import GB from '../src/components/glowBulletList/glowBulletList.jsx';
+import GB from '../../src/components/glowBulletList/glowBulletList.jsx';
 
 ### 🔌 Chrome Extensions
 

@@ -4,7 +4,7 @@ title: Hosting Resources 🚀
 sidebar_label: Hosting Resources
 ---
 
-import GB from '../src/components/glowBulletList/glowBulletList.jsx';
+import GB from '../../src/components/glowBulletList/glowBulletList.jsx';
 
 ### 🚀 Free Hosting
 

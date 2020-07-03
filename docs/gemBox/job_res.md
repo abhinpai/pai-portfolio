@@ -4,7 +4,7 @@ title: 💵 Job Resources 💸
 sidebar_label: Job Resources
 ---
 
-import GB from '../src/components/glowBulletList/glowBulletList.jsx';
+import GB from '../../src/components/glowBulletList/glowBulletList.jsx';
 
 ### 💵 Freelancing platforms
 
