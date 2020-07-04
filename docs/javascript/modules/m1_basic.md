@@ -6,7 +6,7 @@ sidebar_label: "Module 1: Basics"
 
 import GlowBullet from '../../../src/components/glowBullet/glowBullet.jsx';
 
-:::note Possible Interview Questions 🔎
+:::note Questions 🤔
   1. `let` vs `const` vs `var`
   2. What is `Temporal Dead Zone` or `TDZ`? How that Occur?
   3. How `let` work in for loop when let doesn't allow reassignment?

@@ -7,20 +7,20 @@ description: Object description
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-:::note Possible Interview Questions 🔎
-  1. What is `this`? hows that works?
-  2. Why do we bind `this` key word in react application? <br/>
-     _we use `class-based components` we need to bind this keyword to the class. Because the method we are passing to the event Handler is invoked in the global environment where this keyword refers to the window object._
-  3. How object works in javascript?
-  4. How to make a object property undeletable?
-  5. const vs Object.freeze()
-  6. What are the different ways to clone an object?
-  7. Shortcut method to declare an object
-  8. What are the different ways to access an object properties
-  9. Object.is() vs ===
-  10. What are the different ways to check the existence of object property
-  11. How do you loop over Objects
-  12. Object to primitive conversion
+:::note Questions 🤔
+1. What is `this`? hows that works?
+2. **Why do we bind `this` key word in react application?** <br/>
+  we use `class-based components` we need to bind this keyword to the class. Because the method we are passing to the event Handler is invoked in the global environment where this keyword refers to the window object 
+3. How object works in javascript?
+4. How to make a object property undeletable?
+5. const vs Object.freeze()
+6. What are the different ways to clone an object?
+7. Shortcut method to declare an object
+8. What are the different ways to access an object properties
+9. Object.is() vs ===
+10. What are the different ways to check the existence of object property
+11. How do you loop over Objects
+12. Object to primitive conversion
 :::
 
 ## What the hell is `this` 😨 

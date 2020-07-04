@@ -4,11 +4,11 @@ title: Function
 sidebar_label: "Module 5: Function"
 ---
 
-:::note Possible Interview Questions 🔎
+:::note Questions 🤔
 1. How arrow function is different from regular function
 2. Explain `call`, `apply` and `bind`
 3. What is IIFE
-4. How do you return multiple values from a function
+4. **How do you return multiple values from a function**
    ```js
     let song = {
         name: "Jai Ho",
@@ -19,7 +19,7 @@ sidebar_label: "Module 5: Function"
     let {composer, getSong} = getSongDetails();
     getSong(); // Jai Ho
    ```
-5. How do you use the optional argument with an optional callback
+5. **How do you use the optional argument with an optional callback**
     ```js
     function sampleMethod(...args) {
         let message = args[0];

@@ -9,7 +9,7 @@ keywords:
     - Non-Primitive
 ---
 
-:::note Possible Interview Questions 🔎
+:::note Questions 🤔
   1. Does JS have have any type or is it strongly typed?
   2. What are the primitive and non-primitive datatypes?
   3. What is difference between global.isFinite and Number.isFinite?

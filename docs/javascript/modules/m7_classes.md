@@ -4,7 +4,7 @@ title: Its a Classsssss 😎
 sidebar_label: "Module 7: Class"
 ---
 
-:::note Possible Interview Questions 🔎
+:::note Questions 🤔
 1. Is it possible to have multiple constructor in a class?
 2. How do you declare private and static fields in the class
 3. How static fields work behind the scene

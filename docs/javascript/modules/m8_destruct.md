@@ -4,7 +4,7 @@ title: Destructor 🔨
 sidebar_label: "Module 8: Destructor"
 ---
 
-:::note Possible Interview Questions 🔎
+:::note Questions 🤔
 1. What is destructing?
 2. How do you destruct an array?
 3. How do you destruct an object?

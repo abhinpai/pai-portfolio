@@ -22,16 +22,23 @@ module.exports = {
         },
       ],
     },
-    // {
-    //   type: "category",
-    //   label: "Typescript",
-    //   items: ["ts_index"],
-    // },
-    // {
-    //   type: "category",
-    //   label: "Web / Browser",
-    //   items: ["web_index"],
-    // },
+    {
+      type: "category",
+      label: "React",
+      items: ["react/react_profile", {
+        Hooks: [
+          "react/hooks/hooks_intro",
+          {"Build-in Hooks": [
+            "react/hooks/hooks_state",
+            "react/hooks/hooks_effect",
+            "react/hooks/hooks_ctx",
+            "react/hooks/hooks_memo",
+            "react/hooks/hooks_reducer",
+          ]},
+          "react/hooks/hooks_rules",
+        ]
+      }],
+    },
     {
       type: "category",
       label: "💎 Gem Box 💎",
@@ -41,6 +48,7 @@ module.exports = {
         "gemBox/hosting_res",
         "gemBox/css_res",
         "gemBox/browser_res",
+        "gemBox/react_res"
       ],
     },
     {

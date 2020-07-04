@@ -6,19 +6,19 @@ sidebar_label: "Module 6: Prototype Inheritance"
 
 import GlowBullet from '../../../src/components/glowBullet/glowBullet.jsx';
 
-:::note Possible Interview Questions 🔎
+:::note Questions 🤔
 1. What is Prototypal inheritance
 2. What is difference between Prototype and [[Prototype]] and `__proto__`
 3. What happens when you try to use or mutate any object using `__proto__` in your production code?
-4. What happens when you call a constructor function with the `new` keyword
+4. **What happens when you call a constructor function with the `new` keyword**
    * A new empty object is created
    * The context object `this` is bound to the new empty object
    * The new object is linked to the function’s prototype property
-   * If we see the empty object prototype it will return its own constructor unless another value is add explicitly to the function
-5. After an object is created, for example using the `new` keyword, how can we access the prototype object that the instantiated object is linked to?
-   There is two way to access a prototype in javascript
-   * Object.getPrototypeOf(yourObject)
-   * yourObject.__proto__
+   * If we see the empty object prototype it will return its own constructor unless another value is add explicitly to the function 
+5. **After an object is created, for example using the `new` keyword, how can we access the prototype object that the instantiated object is linked to?** <br/>
+    There is two way to access a prototype in javascript
+    * Object.getPrototypeOf(yourObject)
+    * yourObject.__proto__
 6. What is the difference between the classical and the prototypical inheritance?
 :::
 
