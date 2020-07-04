@@ -55,14 +55,12 @@ description: Javascript Interview preparation material
 * ✅ Arrow functions
 * ✅ Immediate execution function `IIEF`
 * ✅ Decorators and forwarding
-
-* ❌ Function binding and borrowing (call, bind and apply)
+* ✅ Function binding and borrowing (bind, call and apply)
 * ❌ Anonymous and Named Functions
 * ❌ Scheduling: `setTimeout` and `setInterval`
 * ❌ High Order Function
 * ❌ Pure Functions
 * ❌ Function Chaining
-
 
 ### <Highlight color="#0090d9">Module 6</Highlight> Prototypes, inheritance
 ------
