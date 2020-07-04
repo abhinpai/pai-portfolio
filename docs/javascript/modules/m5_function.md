@@ -37,6 +37,7 @@ sidebar_label: "Module 5: Function"
 8. What are the different ways to declare a method?
 9. `setInterval` vs `setTimeout`
 10. How do you achieve function chaining 
+11. What is High Order Function
 :::
 
 ## Regular Function
@@ -56,6 +57,15 @@ var sayHi = function (name) {
     return 'Hi' + name;
 }
 
+```
+
+### Pure Function
+
+The function always returns the same result if the same arguments are passed in. It does not depend on any state, or data, change during a program’s execution. It must only depend on its input arguments.
+The function does not produce any observable side effects such as network requests, input and output devices, or data mutation.
+
+```js
+const sum = (x, y) => x+y;
 ```
 
 ## Function Parameter
@@ -243,6 +253,8 @@ wrapped();
 // Finished
 ```
 
+Decorator function can also be treated as high order function
+
 For more details check out decorator example in [JavascriptInfo](https://javascript.info/call-apply-decorators)
 
 ## `Call`, `apply` and `bind`
@@ -321,3 +333,107 @@ We can also pass the additional parameters via `bind` methods like `call` and `a
 :::danger TBU
 Add pictorial Demonstration of call, bind and apply
 :::
+
+## Method Chaining
+
+There are different reasons for method chaining for different people. One of the major reasons for chaining methods is to ensure a cleaner and more readable code
+
+Method chaining is a mechanism of calling a method on another method of the same object
+
+```js
+class SnacksFactory {
+  constructor() {
+    this.ingredients = [];
+  }
+
+  addIngredient = (ingredient) => {
+    this.ingredients.push(ingredient);
+    // highlight-next-line
+    return this;
+  }
+
+  getIngredients = () => {
+    if (!this.ingredients.length) {
+     console.log('There is no ingredient in this recipe');
+   } else {
+     console.log(this.ingredients.toString());
+   }
+  }
+}
+
+ const snacks = new SnacksFactory();
+
+ snacks
+ .addIngredient(🍟)
+ .addIngredient(🍔)
+ .addIngredient(🥪)
+ .getIngredients(); // [🍟, 🍔, 🥪]
+ ```
+
+ In the above example, we highlighted the `addIngredient` method which returns the current object i.e `this` which enables us to chain the methods. If we don't return `this` from the method `addIngredient` chining will throw an exception
+
+ ## Scheduling: `setTimeout` and `setInterval`
+
+ Any activity that is planned at a future time interval is generally referred to as scheduling. Both the functions allow you to execute a piece of JavaScript code/function at a certain point in the future.
+
+### setTimeout()
+
+The setTimeout() function is used when you wish to run your JavaScript function after a specified number of milliseconds from when the setTimeout() method was called.
+
+```js
+window.setTimeout ( expression, timeout, param1, param2, ... );
+// OR
+setTimeout(expression, timeout, param1, param2, ...);
+
+// NOTE: the params are optional
+```
+
+#### setTimeout() with expression
+
+where expression is the JavaScript code to run after the timeout milliseconds have elapsed. The params are optional.
+
+```js
+setTimeout("console.log('Hello Developer')", 2000);
+```
+
+In the above snippet **Hello Developer** will print after 2 seconds
+
+#### setTimeout() with function
+
+```js
+setTimeout(function() {
+   console.log('Hello Developer 🙋🏻‍♂️');
+ }, 4000);
+
+// OR
+
+ function message() {
+    console.log('Hello Developer 🙋🏻‍♂️');
+}
+
+setTimeout(showMotivation, 4000);
+ ```
+
+ **NOTE**: The function name 'message' does not have a brackets when passed in as a parameter to the setTimeout function.
+
+ When we invoke setTimeout it will return unique Id, which can be used for the tracking purpose. If any need to clear the timeout we can use that id to do so
+
+ ```js
+let timeoutId = setTimeout("console.log('Hello Developer')", 2000);
+// highlight-next-line
+clearTimeout(timeoutId);
+```
+
+### setInterval()
+
+The setInterval() function, as the name suggests is commonly used to set a delay for functions that are executed repeatedly. The setInterval() function is very closely related to setTimeout() and they even have same syntax
+
+```js
+setInterval ( expression, interval, param1, param2, ... );
+```
+
+The only difference is,
+
+setTimeout() triggers the function call once. While, the setInterval() triggers the function repeatedly after the specified interval of time.
+
+similar to the setTimeout, setInterval function will also return unique id to track which can also used to create the expression from memory

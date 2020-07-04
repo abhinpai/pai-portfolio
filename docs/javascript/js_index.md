@@ -56,11 +56,10 @@ description: Javascript Interview preparation material
 * ✅ Immediate execution function `IIEF`
 * ✅ Decorators and forwarding
 * ✅ Function binding and borrowing (bind, call and apply)
-* ❌ Anonymous and Named Functions
-* ❌ Scheduling: `setTimeout` and `setInterval`
-* ❌ High Order Function
-* ❌ Pure Functions
-* ❌ Function Chaining
+* ✅ Anonymous and Named Functions
+* ✅ Pure Functions
+* ✅ Function Chaining
+* ✅ Scheduling: `setTimeout` and `setInterval`
 
 ### <Highlight color="#0090d9">Module 6</Highlight> Prototypes, inheritance
 ------
