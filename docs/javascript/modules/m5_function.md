@@ -247,6 +247,77 @@ For more details check out decorator example in [JavascriptInfo](https://javascr
 
 ## `Call`, `apply` and `bind`
 
+### `call` and `apply` methods also known as `Function borrowing`
+
+Every object in the javascript will have access to the call method out of the box which makes developer life easy.
+
+`call` and `apply` are very similar—they invoke a function with a specified context.
+
+`call` and `apply` method is also called as Function borrowing meaning you are borrowing a method from object function or any other function which will then take a context that is passed in the method parameter and on later part we can call the method on behalf of the passed context
+
+```js 
+let developer = {
+  name: "Abhin Pai",
+  url: "www.abhinpai.github.io"
+}
+
+function developerDetails() {
+  // highlight-next-line
+  console.log(`${this.name} you can reach me via ${this.url}`)
+}
+
+// highlight-start
+developerDetails.call(developer); // Abhin Pai you can reach me via www.abhinpai.github.io
+developerDetails.apply(developer); // Abhin Pai you can reach me via www.abhinpai.github.io
+// highlight-end
+```
+
+In the above code `this` is referring to the object developer because we have passed developer as a current reference object and the output of call and apply method is same the only difference of `call` and `apply` is the second argument
+
+```js 
+let developer = {
+  name: "Abhin Pai",
+  url: "www.abhinpai.github.io"
+}
+
+function developerDetails(country) {
+  // highlight-next-line
+  console.log(`${this.name} you can reach me via ${this.url} from ${country}`)
+}
+
+// highlight-start
+developerDetails.call(developer, "India"); // Abhin Pai you can reach me via www.abhinpai.github.io from India
+developerDetails.apply(developer, ["India"]); // Abhin Pai you can reach me via www.abhinpai.github.io from India
+// highlight-end
+```
+
+If you observe the above code snippet `developerDetails` is expecting one more additional argument `country` which we are passing via `call` and `apply` method.
+
+Where `call` method allows passing the argument as an independent `string` but in `apply` method we need to pass 2 and further arguments in an array of string
+
+### `bind` method
+
+Even bind method is similar to the Function borrowing methods but bind method buckle up with an object that passed as an argument to it and return the copy of that method which can be used in later part of code
+
+```js
+ let developer = {
+  name: "Abhin Pai",
+  url: "www.abhinpai.github.io"
+}
+
+function developerDetails(country) {
+  // highlight-next-line
+  console.log(`${this.name} you can reach me via ${this.url} from ${country}`)
+}
+
+// highlight-next-line
+let devDetails = developerDetails.bind(developer, "India");
+devDetails(); // Abhin Pai you can reach me via www.abhinpai.github.io from India
+```
+
+We can also pass the additional parameters via `bind` methods like `call` and `apply`
+
+
 :::danger TBU
-Add content for call, apply and bind
+Add pictorial Demonstration of call, bind and apply
 :::
