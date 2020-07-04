@@ -82,6 +82,18 @@
   color: #333;
 }
 
+/*  Code highlight */
+.docusaurus-highlight-code-line {
+  background-color: rgb(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
 /* Heder Github Icon */
 .header-github-link:hover {
   opacity: 0.6;
