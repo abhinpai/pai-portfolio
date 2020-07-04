@@ -34,6 +34,9 @@ sidebar_label: "Module 5: Function"
     ```
 6. What is the callback function
 7. What is the benefit of `IIFE`
+8. What are the different ways to declare a method?
+9. `setInterval` vs `setTimeout`
+10. How do you achieve function chaining 
 :::
 
 ## Regular Function

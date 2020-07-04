@@ -50,31 +50,19 @@ description: Javascript Interview preparation material
 
 ### <Highlight color="#0090d9">Module 5</Highlight> Function
 ------
-* ❌ What are the different ways to declare a method?
-* ❌ Recursion and stack story
-* ❌ What is the Variable scope?
-* ❌ Global object
-* ❌ Function object, NFE
-* ❌ The `new Function` syntax
-* ❌ Scheduling: setTimeout and setInterval
-* ❌ Decorators and forwarding, call/apply and bind
-* ❌ Function binding
-* ❌ Arrow functions revisited
-* ❌ High Order Function
-* ❌ Immediate execution function `IIEF`
-* ❌ Pure Functions
-* ❌ Return objects to enable chaining of functions
+* ✅ Regular Function
+* ✅ Function Parameters
+* ✅ Arrow functions
+* ✅ Immediate execution function `IIEF`
+* ✅ Decorators and forwarding
+
+* ❌ Function binding and borrowing (call, bind and apply)
 * ❌ Anonymous and Named Functions
-* ❌ Function borrowing
-* [https://ponyfoo.com/articles/es6-spread-and-butter-in-depth](https://ponyfoo.com/articles/es6-spread-and-butter-in-depth)
-* [https://www.taniarascia.com/this-bind-call-apply-javascript/](https://www.taniarascia.com/this-bind-call-apply-javascript/)
-* [https://www.taniarascia.com/how-to-define-functions-in-javascript/](https://www.taniarascia.com/how-to-define-functions-in-javascript/)
-* [https://www.jstips.co/en/javascript/fat-arrow-functions/](https://www.jstips.co/en/javascript/fat-arrow-functions/)
-* [https://www.jstips.co/en/javascript/Using-immediately-invoked-function-expression/](https://www.jstips.co/en/javascript/Using-immediately-invoked-function-expression/)
-* [https://flaviocopes.com/javascript-functions-vs-arrow-functions/](https://flaviocopes.com/javascript-functions-vs-arrow-functions/)
-* [https://flaviocopes.com/javascript-return-multiple-values/](https://flaviocopes.com/javascript-return-multiple-values/)
-* [https://www.jstips.co/en/javascript/binding-objects-to-functions/](https://www.jstips.co/en/javascript/binding-objects-to-functions/)
-* [https://www.jstips.co/en/javascript/use-optional-arguments/](https://www.jstips.co/en/javascript/use-optional-arguments/)
+* ❌ Scheduling: `setTimeout` and `setInterval`
+* ❌ High Order Function
+* ❌ Pure Functions
+* ❌ Function Chaining
+
 
 ### <Highlight color="#0090d9">Module 6</Highlight> Prototypes, inheritance
 ------
