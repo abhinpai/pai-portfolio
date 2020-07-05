@@ -44,4 +44,6 @@ React provided many built-in hooks those are
 * 💾 `useMemo()` 
 * ✂️ `useReducer()`
 
+**I recommend to watch [Dan Abramov](https://twitter.com/dan_abramov) and [Ryan Florence](https://twitter.com/ryanflorence) video on React Hooks it really awesome**
 
+<iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/dpw9EHDh2bM" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
