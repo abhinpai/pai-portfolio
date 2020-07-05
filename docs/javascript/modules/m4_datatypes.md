@@ -620,9 +620,3 @@ let hero = 'Iron Man';
 console.log(`I love ${number} Says ${hero}`); // I Love 3000 says Iron Man;
 ```
 
-<!-- JSX Component -->
-
-export const CustomStyledText = ({children, styleClass}) => (
-  <p className={styleClass}>{children}</p>
-); 
-

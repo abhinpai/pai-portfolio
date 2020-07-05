@@ -1,7 +1,7 @@
 ---
 id: module6_prototype
-title: Prototypal Inheritance ⛓
-sidebar_label: "Module 6: Prototype Inheritance"
+title: Prototype Inheritance ⛓
+sidebar_label: "Module 6: Prototype"
 ---
 
 import GlowBullet from '../../../src/components/glowBullet/glowBullet.jsx';

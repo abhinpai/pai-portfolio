@@ -1,6 +1,6 @@
 ---
 id: hooks_reducer
-title: useReducer an alternative to useState
+title: useReducer a state Hook ✂️
 sidebar_label: useReducer
 ---
 

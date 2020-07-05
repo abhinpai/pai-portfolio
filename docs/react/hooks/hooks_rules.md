@@ -1,6 +1,6 @@
 ---
 id: hooks_rules
-title: Rules of Hooks
+title: Rules of Hooks 📋
 sidebar_label: Hooks Rules
 ---
 

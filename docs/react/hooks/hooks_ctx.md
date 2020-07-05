@@ -1,6 +1,6 @@
 ---
 id: hooks_ctx
-title: useContext a context hook
+title: useContext a context hook 🧵
 sidebar_label: useContext
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: hooks_intro
-title: React Hooks Introduction
+title: React Hooks Introduction 🎣
 sidebar_label: Introduction
 ---
 
@@ -43,4 +43,5 @@ React provided many built-in hooks those are
 * 🧵 `useContext()` 
 * 💾 `useMemo()` 
 * ✂️ `useReducer()`
+
 

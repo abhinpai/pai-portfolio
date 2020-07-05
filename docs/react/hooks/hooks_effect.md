@@ -1,6 +1,6 @@
 ---
 id: hooks_effect
-title: useEffect a effect hook
+title: useEffect a effect hook ⚡️
 sidebar_label: useEffect
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: hooks_memo
-title: useMemo, Memorization hook
+title: useMemo, Memorization hook 💾
 sidebar_label: useMemo
 ---
 

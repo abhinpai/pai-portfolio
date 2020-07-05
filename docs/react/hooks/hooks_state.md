@@ -1,6 +1,6 @@
 ---
 id: hooks_state
-title: useState a state hook
+title: useState a state hook 📌
 sidebar_label: useState
 ---
 
