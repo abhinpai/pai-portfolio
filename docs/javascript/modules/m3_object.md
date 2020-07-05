@@ -736,13 +736,6 @@ Optional chaining also works with also works with functions and square brackets.
 `obj?.method()` – calls `obj.method()` if obj exists, otherwise returns undefined 
 :::
 
-
-<!-- jsx -->
-
-export const CustomStyledText = ({children, styleClass}) => (
-  <p className={styleClass}>{children}</p>
-); 
-
 ## Null coalescing operator `??`
 
 Null coalescing operator returns its right-hand-side operand when its left-hand-side operand is null or undefined, and otherwise returns its left-hand-side operand.

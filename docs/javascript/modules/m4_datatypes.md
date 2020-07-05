@@ -9,6 +9,8 @@ keywords:
     - Non-Primitive
 ---
 
+import {CustomText} from '../../../src/components/customText/customText.jsx'
+
 :::note Questions 🤔
   1. Does JS have have any type or is it strongly typed?
   2. What are the primitive and non-primitive datatypes?
@@ -59,7 +61,7 @@ console.log(Infinity); // Infinity
 Doing Math is safe in Js. We can divide 1/0, treat non-numeric string or number to the expression, script will never not with fatal error (die). At worst case you can get NaN as a  result
 :::
 
-<CustomStyledText styleClass="primary-bold-head">Number Extension Methods</CustomStyledText>
+<CustomText styleClass="primary-bold-head">Number Extension Methods</CustomText>
 
 #### 🔸 Binary and Octal Literals 
  
@@ -188,7 +190,7 @@ double equal test for the loose equality and perform `type coercion`.
 
 String datatype is most commonly used datatype to store textual data. In javascript there is no separate type for single character `char` like any other programming language.
 
-<CustomStyledText styleClass="primary-bold-head">String Extension Methods</CustomStyledText>
+<CustomText styleClass="primary-bold-head">String Extension Methods</CustomText>
 
 #### 🔸 charAt 
 Return character for a given index (subscript) value <br/>
@@ -363,7 +365,7 @@ Apart from 7 primitive datatype everything else is an Object in javascript <br/>
 
 An array is most commonly used data type in all of the programming language to store list of objects.
 
-<CustomStyledText styleClass="primary-bold-head">Array Extension Methods</CustomStyledText>
+<CustomText styleClass="primary-bold-head">Array Extension Methods</CustomText>
 
 #### 🔸 Array.push
 Pushing new element at the end of the queue AKA `enqueue`
