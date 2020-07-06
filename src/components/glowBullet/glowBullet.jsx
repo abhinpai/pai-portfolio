@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./styles.module.css";
+import React from 'react';
+import styles from './styles.module.css';
 
 export default function GlowBullet({
   fontWeight,
@@ -11,7 +11,7 @@ export default function GlowBullet({
   return (
     <div className={styles.masterDiv}>
       <span className={styles.blob} />
-      {(fontWeight == "h1" && (
+      {(fontWeight == 'h1' && (
         <h1>
           <GlowChild
             focusWord={focusWord}
@@ -21,7 +21,7 @@ export default function GlowBullet({
           />
         </h1>
       )) ||
-        (fontWeight == "h2" && (
+        (fontWeight == 'h2' && (
           <h2>
             <GlowChild
               focusWord={focusWord}
@@ -31,7 +31,7 @@ export default function GlowBullet({
             />
           </h2>
         )) ||
-        (fontWeight == "h3" && (
+        (fontWeight == 'h3' && (
           <h3>
             <GlowChild
               focusWord={focusWord}
@@ -41,17 +41,16 @@ export default function GlowBullet({
             />
           </h3>
         )) ||
-        (fontWeight ==
-          "h4" && (
-            <h4>
-              <GlowChild
-                focusWord={focusWord}
-                highlightWord={highlightWord}
-                highlightWords={highlightWords}
-                childText={children}
-              />
-            </h4>
-          )) || (
+        (fontWeight == 'h4' && (
+          <h4>
+            <GlowChild
+              focusWord={focusWord}
+              highlightWord={highlightWord}
+              highlightWords={highlightWords}
+              childText={children}
+            />
+          </h4>
+        )) || (
           <p>
             <GlowChild
               focusWord={focusWord}

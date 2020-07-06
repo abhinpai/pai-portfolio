@@ -1,7 +1,7 @@
 ---
 id: module3_object
 title: Hello i am an Object 👋
-sidebar_label: "Module 3: Object"
+sidebar_label: "Module 2: Object"
 description: Object description
 --- 
 

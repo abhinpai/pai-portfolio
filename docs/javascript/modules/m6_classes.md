@@ -1,7 +1,7 @@
 ---
 id: module7_classes
 title: Its a Classsssss 😎
-sidebar_label: "Module 7: Class"
+sidebar_label: "Module 6: Class"
 ---
 
 :::note Questions 🤔

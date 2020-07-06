@@ -4,12 +4,12 @@ title: Basic is the foundation of all programming language 😇
 sidebar_label: "Module 1: Basics"
 ---
 
-import GlowBullet from '../../../src/components/glowBullet/glowBullet.jsx';
+import BulletSentence from '../../../src/components/bulletSentence/bulletSentnce.jsx';
 
 :::note Questions 🤔
   1. `let` vs `const` vs `var`
   2. What is `Temporal Dead Zone` or `TDZ`? How that Occur?
-  3. How `let` work in for loop when let doesn't allow reassignment?
+  3. How `let` work in for a loop when let doesn't allow reassignment?
   4. is `var` Dead? What should I use? 
   5. How `let` and `const` is scoped in Js? 
   6. What is the purpose of `use strict`?
@@ -23,15 +23,15 @@ import GlowBullet from '../../../src/components/glowBullet/glowBullet.jsx';
 
 <BulletSentence keyword="var">An old school technique to declare a variable</BulletSentence>
 <BulletSentence keyword="let">An alternative to var and its a modern way to declare any variable</BulletSentence>
-<BulletSentence keyword="const">Const values never gonna be replace once its declared</BulletSentence>
+<BulletSentence keyword="const">Const values never gonna be replaced once it's declared</BulletSentence>
 
 ### The Story of Var 🌈
 
-A variable can be declare as `var` or `let`. But even if we declare the variable with let, var is beast in it own way
+A variable can be declared as `var` or `let`. But even if we declare the variable with let, var is beast in it own way
 
-<!-- <GlowBullet highlightWord="var"> has no block scope meaning it can be access globally (its subjective to strict mode) </GlowBullet> -->
+<!-- <GlowBullet highlightWord="var"> has no block scope meaning it can be accessed globally (it's subjective to strict mode) </GlowBullet> -->
 
-🔸 `var` has no block scope meaning it can be access globally _(its subjective to strict mode)_
+🔸 `var` has no block scope meaning it can be accessed globally _(its subjective to strict mode)_
 
 ```ts
 // var accessibility
@@ -51,7 +51,7 @@ console.log(superHero); // Error ❌, undefined
 // let scope is restricted to the block
 ```
 
-If a codeblock is inside a function then scope will remain to the function level
+If a code block is inside a function then the scope will remain to the function level
 
 ```js
 function IAmIronMan() {
@@ -65,7 +65,7 @@ IAmIronMan(); // true ✅
 console.log(isHeIronMan); // ReferenceError: isHeIronMan is not defined
 ```
 
-If `var` declared outside any function or block that instance will be assigned to the global object. which means a `window` object inside the browser and `global` object in node
+If `var` declared outside any function or block that instance will be assigned to the global object. which means a `window` object inside the browser and `global` object in the node
 
 🔸 `var` do tolerate re-declaration
 
@@ -79,7 +79,7 @@ let superHero = "Iron Man";
 let superHero = "Batman"; // SyntaxError: Identifier 'superHero' has already been declared
 ```
 
-🔸 `var` variable(s) can be declare below their use
+🔸 `var` variable(s) can be declared below their use
 
 ```js
 // Example 1
@@ -99,17 +99,17 @@ function whoAmI() {
 }
 ```
 
-This behavior is called `Hoisting` (Raising) where all `var` are hoisted at global context
+This behavior is called `Hoisting` (Raising) where all `var` is hoisted at the global context
 
 :::caution Note 📝
-* Only declaration can be Hoist not an assignment
-* During the execution all the variable declaration will go at the top of execution context
+* the Only declaration can be Hoist, not an assignment
+* During the execution, all the variable declaration will go at the top of the execution context
 :::
 
 
 ### `let` it go 
 
-🔸 **let** has a sensible scoping. Once the scope is declare the scope will remain in its own block <br/>
+🔸 **let** has a sensible scoping. Once the scope is declared the scope will remain in its block <br/>
 🔸 **let** don't allow re-declaration
 
 ```js
@@ -117,9 +117,9 @@ let superHero = "Iron Man";
 let superHero = "Batman"; // SyntaxError: Identifier 'superHero' has already been declared
 ```
 
-🔸 If we declare variable with **let** it will not be attach to the global scope hence it will not be reachable 
+🔸 If we declare variable with **let** it will not be attached to the global scope hence it will not be reachable 
 outside the file <br/>
-🔸 **let** in the loop can re-bind in each iteration making sure to reassign the value from the end of previous iteration
+🔸 **let** in the loop can re-bind in each iteration making sure to reassign the value from the end of the previous iteration
 
 ```js
 for (let i = 0; i < 5; i++) {
@@ -127,10 +127,10 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-What the heck 🤯 how is that even working when let wont allow re-assignment 🤔
+What the heck 🤯 how is that even working when let won't allow re-assignment 🤔
 
 :::danger TBU
-Add behind scene of for loop with let
+Add behind the scene of for loop with let
 :::
 
 
@@ -158,36 +158,35 @@ console.log(marvelHero); // { actorName: "Robert, Jr.", characterName: "Tony Sta
 ```
 
 :::info Pro Tip 💡
-  If we try to read or write `let` or `const` variable before its declaration and initialization an error
-  will raise. This phenomenon is called `Temporal Dead Zone` or `TDZ`
+  If we try to read or write `let` or `const` variable before its declaration and initialization an error will raise. This phenomenon is called `Temporal Dead Zone` or `TDZ`
 :::
 
-## Hey i'm very strict 👮🏻‍♂️
+## Hey I'm very strict 👮🏻‍♂️
 ---- 
 
 `use strict` is a literal expression to enable strict mode in coding. This strict context prevents certain actions from being taken and throws more exceptions.
 
-🔸In early javascript it was allowed to use write code how ever we want 
+🔸In early javascript, it was allowed to use write code however we want 
 ```js
 year = 2020; 
 console.log(year); // 2020, print the result even if you don't declare
 ```
-but when you use strict mode at the top of the strict its not possible to write code however we want
+but when you use strict mode at the top of the strict it's not possible to write code however we want
 ```js
 'use strict'
 year = 2020; 
 console.log(year); // 'year' is not declared
 ```
 🔸Strict mode will help to prevent the unexpected errors, exception which can arise during runtime of the application<br/>
-🔸**use strict** is very helpful to avoid a conflict between variable. If we missed to declare it will notify a developer
+🔸**use strict** is very helpful to avoid a conflict between variables. If we missed declaring it will notify a developer
 
 :::caution Remember 🧠
-* `use strict` should always declare at the top of a script to enable throughout the script or declare inside a block to enable only for a block. It wont work if we declare somewhere else
+* `use strict` should always declare at the top of a script to enable throughout the script or declare inside a block to enable only for a block. It won't work if we declare somewhere else
 * There is no way to cancel a strict mode
-* Strict mode can be eliminate from modern scripting language, Infact modern language and framework internally does it for you
+* Strict mode can be eliminated from a modern scripting language, In fact, modern language and framework internally does it for you
 :::
 
-## Untold story of operator 🧑🏻‍🚀
+## Untold story of an operator 🧑🏻‍🚀
 -----
 Both == and === operator serve the same purpose which is to check the object equality
 
@@ -197,7 +196,7 @@ Both == and === operator serve the same purpose which is to check the object equ
 "4" == 4; // return  true
 ```
 
-Behind the scene javascript convert the string into a number and the equate them this is called `COERCION`
+Behind the scene, javascript convert the string into a number and the equate them this is called `COERCION`
 
 ### `===` Operator 
 🔸 === is super strict. It want both content and type should equal
@@ -208,7 +207,7 @@ Behind the scene javascript convert the string into a number and the equate them
 ``` 
 
 :::info Recommendation 
-Always prefer to use `===` instead of `==` because `==` is fickle and quickly leads to a hidden bugs
+Always prefer to use `===` instead of `==` because `==` is fickle and quickly leads to hidden bugs
 :::
 
 Same goes for `!=` and `!==` which perform same things but negate
@@ -218,37 +217,10 @@ Same goes for `!=` and `!==` which perform same things but negate
 
 🔸 Suppose you have an expression which gives result & if you want that result to be boolean (true/false) 
 then `!!` is the solution <br/>
-🔸 If you wan to get `True` or `False` from Not a string, 0, empty string, undefined, NAN or something else<br/>
-🔸 In reality there is no `!!` operator in javascript. Its just one negate after another negate.
-It just negate the result then negate it again.<br/>
+🔸 If you want to get `True` or `False` from Not a string, 0, empty string, undefined, NAN or something else<br/>
+🔸 In reality, there is no `!!` operator in javascript. Its just one negates after another negate.
+It just negates the result then negate it again.<br/>
 
-
-
-
-
-
-
-
-
-
-<!-- Placement for the JSX components -->
-
-export const CWord = ({children, color}) => (
-    <span style={{color: color}}>{children}</span>
-);
-
-export const BulletSentence = ({children, keyword}) => (
-  <p style={{fontSize: '22px', margin: '0'}}>
-    <span style={{
-        backgroundColor: '#0090d9',
-        borderRadius: '6px',
-        margin: '0',
-        paddingLeft: '6px',
-        paddingRight: '6px',
-        color: 'white',
-        paddingBottom: '2px'}}>{keyword}:</span>  {children}
-  </p>
-);
 
 ## List of falsy values in Javascript
 

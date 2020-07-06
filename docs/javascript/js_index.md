@@ -15,14 +15,9 @@ description: Javascript Interview preparation material
 * ✅ `!!` double negation operator [🔗](modules/module1_basic#untold-story-of-operator-%F0%9F%A7%91)
 * ✅ List of Falsy values
 
-### <Highlight color="#0090d9">Module 2</Highlight> Code Quality matter most 👌
-------
-* ❌ Polyfill for `bind()`
-* ❌ What is the difference between `Lodash` and `Underscore`
-* ❌ Code Quality with `ESlint`
-* ❌ Shim Vs Polyfill
 
-### <Highlight color="#0090d9">Module 3</Highlight> Object
+
+### <Highlight color="#0090d9">Module 2</Highlight> Object
 ------
 * ✅ `this` keyword
 * ✅ Details about object
@@ -36,7 +31,7 @@ description: Javascript Interview preparation material
 * ✅ typeof and instanceof
 * ✅ Host object and Native object
 
-### <Highlight color="#0090d9">Module 4</Highlight> Datatypes
+### <Highlight color="#0090d9">Module 3</Highlight> Datatypes
 ------
 
 * ✅ Brief insight about data types [🔗](modules/module4_datatypes)
@@ -48,7 +43,7 @@ description: Javascript Interview preparation material
 * ❌ Date 📅
 * ❌ JSONP and JSON methods
 
-### <Highlight color="#0090d9">Module 5</Highlight> Function
+### <Highlight color="#0090d9">Module 4</Highlight> Function
 ------
 * ✅ Regular Function
 * ✅ Function Parameters
@@ -61,14 +56,14 @@ description: Javascript Interview preparation material
 * ✅ Function Chaining
 * ✅ Scheduling: `setTimeout` and `setInterval`
 
-### <Highlight color="#0090d9">Module 6</Highlight> Prototypes, inheritance
+### <Highlight color="#0090d9">Module 5</Highlight> Prototypes, inheritance
 ------
 * ✅ Prototypal inheritance
 * ✅ Prototype in constructor function
 * ✅ Prototype in class
 * ✅ Prototype methods, objects without `__proto__` 
 
-### <Highlight color="#0090d9">Module 7</Highlight> Classes
+### <Highlight color="#0090d9">Module 6</Highlight> Classes
 ------
 * ✅ Class basic syntax
 * ✅ Class Fields
@@ -78,7 +73,7 @@ description: Javascript Interview preparation material
 * ❌ Extending built-in classes
 * ❌ [Mixins](https://www.barbarianmeetscoding.com/blog/2015/12/28/black-tower-summoning-object-composition-with-mixins)
 
-### <Highlight color="#0090d9">Module 8</Highlight> Destructuring
+### <Highlight color="#0090d9">Module 7</Highlight> Destructuring
 ------
 * ✅ Destruction Assignment
 * ✅ Destructuring Objects
@@ -87,12 +82,12 @@ description: Javascript Interview preparation material
 * ✅ Spread Operator
 * ✅ Rest Operator
 
-### <Highlight color="#0090d9">Module 9</Highlight> Error Handling
+### <Highlight color="#0090d9">Module 8</Highlight> Error Handling
 ------
 * ❌ Error handling, `try..catch`
 * ❌ Custom errors, extending Error
 
-### <Highlight color="#0090d9">Module 10</Highlight> Promises its super cool [😎](js_index.md)
+### <Highlight color="#0090d9">Module 9</Highlight> Promises its super cool [😎](js_index.md)
 ------
 * ❌ ntroduction: callbacks
 * ❌ Promise
@@ -104,7 +99,7 @@ description: Javascript Interview preparation material
 * [https://ponyfoo.com/articles/es6-promises-in-depth](https://ponyfoo.com/articles/es6-promises-in-depth)
 * [https://www.jstips.co/en/javascript/passing-arguments-to-callback-functions/](https://www.jstips.co/en/javascript/passing-arguments-to-callback-functions/)
 
-### <Highlight color="#0090d9">Module 11</Highlight> Generators and Iterators
+### <Highlight color="#0090d9">Module 10</Highlight> Generators and Iterators
 ------
 * ❌ Generators
 * ❌ Async iterators and generators
@@ -113,7 +108,7 @@ description: Javascript Interview preparation material
 * [https://codeburst.io/a-simple-guide-to-es6-iterators-in-javascript-with-examples-189d052c3d8e](https://codeburst.io/a-simple-guide-to-es6-iterators-in-javascript-with-examples-189d052c3d8e)
 * [https://www.taniarascia.com/understanding-generators-in-javascript/](https://www.taniarascia.com/understanding-generators-in-javascript/)
 
-### <Highlight color="#0090d9">Module 12</Highlight> Modules
+### <Highlight color="#0090d9">Module 11</Highlight> Modules
 ------
 * ❌ Modules, introduction
 * ❌ Export and Import
@@ -121,7 +116,7 @@ description: Javascript Interview preparation material
 * Where can you export a module? is it possible to export module inside block?
 * [https://ponyfoo.com/articles/es6-modules-in-depth](https://ponyfoo.com/articles/es6-modules-in-depth)
 
-### <Highlight color="#0090d9">Module 13</Highlight> Proxy
+### <Highlight color="#0090d9">Module 12</Highlight> Proxy
 ------
 * ❌ What are Proxies?
 * ❌ Another Proxy Example
@@ -129,14 +124,14 @@ description: Javascript Interview preparation material
 * ❌ Proxy and Reflect
 * [https://ponyfoo.com/articles/es6-proxies-in-depth](https://ponyfoo.com/articles/es6-proxies-in-depth)
 
-### <Highlight color="#0090d9">Module 14</Highlight> Sets and WeakSets
+### <Highlight color="#0090d9">Module 13</Highlight> Sets and WeakSets
 ------
 * ❌ What is Set?
 * ❌ What is WeakSet?
 * ❌ Understanding Sets with Brunch
 * [https://www.taniarascia.com/understanding-map-and-set-javascript/](https://www.taniarascia.com/understanding-map-and-set-javascript/)
 
-### <Highlight color="#0090d9">Module 15</Highlight> Map and Weak Map
+### <Highlight color="#0090d9">Module 14</Highlight> Map and Weak Map
 ------
 * ❌ What is Map?
 * ❌ WeakMap and Garbage Collection?
@@ -144,7 +139,7 @@ description: Javascript Interview preparation material
 * [https://ponyfoo.com/articles/es6-maps-in-depth](https://ponyfoo.com/articles/es6-maps-in-depth)
 * [https://www.taniarascia.com/understanding-map-and-set-javascript/](https://www.taniarascia.com/understanding-map-and-set-javascript/)
 
-### <Highlight color="#0090d9">Module 16</Highlight> Async + Await Flow Control
+### <Highlight color="#0090d9">Module 15</Highlight> Async + Await Flow Control
 ------
 * ❌ Async Await - Native Promises Review
 * ❌ All About Async + Await
@@ -155,7 +150,7 @@ description: Javascript Interview preparation material
 * [https://flaviocopes.com/javascript-await-top-level/](https://flaviocopes.com/javascript-await-top-level/)
 * [https://flaviocopes.com/how-to-return-result-asynchronous-function/](https://flaviocopes.com/how-to-return-result-asynchronous-function/)
 
-### <Highlight color="#0090d9">Module 17</Highlight> Document Model
+### <Highlight color="#0090d9">Module 16</Highlight> Document Model
 ------
 * ❌ Browser environment, specs
 * ❌ DOM tree
@@ -164,7 +159,7 @@ description: Javascript Interview preparation material
 * ❌ Node properties: type, tag and contents
 * ❌ Attributes and properties
 
-### <Highlight color="#0090d9">Module 18</Highlight> Playing with Events
+### <Highlight color="#0090d9">Module 17</Highlight> Playing with Events
 ------
 * ❌ Introduction to browser events
 * ❌ Bubbling and capturing
@@ -178,25 +173,32 @@ description: Javascript Interview preparation material
 * [https://flaviocopes.com/javascript-event-bubbling-capturing/](https://flaviocopes.com/javascript-event-bubbling-capturing/)
 * [https://www.jstips.co/en/javascript/DOM-event-listening-made-easy/](https://www.jstips.co/en/javascript/DOM-event-listening-made-easy/)
 
-### <Highlight color="#0090d9">Module 29</Highlight> UI Events
+### <Highlight color="#0090d9">Module 18</Highlight> UI Events
 ------
 * ❌ Mouse events
 * ❌ Moving the mouse: mouseover/out, mouseenter/leave
 * ❌ Drag'n'Drop with mouse events
 
-### <Highlight color="#0090d9">Module 20</Highlight> Forms, controls
+### <Highlight color="#0090d9">Module 19</Highlight> Forms, controls
 ------
 * ❌ Form properties and methods
 * ❌ Focusing: focus/blur
 * ❌ Events: change, input, cut, copy, paste
 * ❌ Forms: event and method submit
 
-### <Highlight color="#0090d9">Module 21</Highlight> Web components
+### <Highlight color="#0090d9">Module 20</Highlight> Web components
 ------
 * ❌ From the orbital height
 * ❌ Custom elements
 * ❌ Shadow DOM
 * ❌ Template element
+
+### <Highlight color="#0090d9">Module 21</Highlight> Code Quality matter most 👌
+------
+* ❌ Polyfill for `bind()`
+* ❌ What is the difference between `Lodash` and `Underscore`
+* ❌ Code Quality with `ESlint`
+* ❌ Shim Vs Polyfill
 
 ### <Highlight color="#0090d9">Module 22</Highlight> Miscellaneous
 ------

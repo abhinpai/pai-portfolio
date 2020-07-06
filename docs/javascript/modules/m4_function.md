@@ -1,7 +1,7 @@
 ---
 id: module5_function
 title: Function
-sidebar_label: "Module 5: Function"
+sidebar_label: "Module 4: Function"
 ---
 
 :::note Questions 🤔
