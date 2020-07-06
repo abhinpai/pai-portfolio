@@ -5,8 +5,8 @@ sidebar_label: useContext
 ---
 
 :::note Questions 🤔
-1. What is context? Why it is useful?
-2. How do you declare context in class component and how its different using hooks?
+1. What is the context? Why it is useful?
+2. How do you declare context in-class component and how its different using hooks?
 3. How do you optimize re-rendering when one value of context changes which is unnecessary 
 :::
 
@@ -16,7 +16,7 @@ sidebar_label: useContext
 const value = useContext(MyContext);
 ```
 
-When the nearest `<MyContext.Provider>` above the component updates, this Hook will trigger a re-render with the latest context value passed to that MyContext provider. Even if an ancestor uses `React.memo` or `shouldComponentUpdate`, a re-render will still happen starting at the component itself using useContext.
+When the nearest `<MyContext.Provider>` above the component updates, this Hook will trigger a re-render with the latest context value passed to that MyContext provider. Even if an ancestor uses `React.memo` or `shouldComponentUpdate`, a re-render will still happen to start at the component itself using useContext.
 
 A component calling `useContext` will always re-render when the context value changes. If re-rendering the component is expensive, you can optimize it by using [memoization](https://github.com/facebook/react/issues/15156#issuecomment-474590693).
 
