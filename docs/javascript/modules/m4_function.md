@@ -41,6 +41,7 @@ sidebar_label: "Module 4: Function"
 :::
 
 ## Regular Function
+----
 
 Function in programming is one of the most basic elements. It is a set of statements that perform some activity to get the result. In lots of cases, the action is performed using the data which are provided as input. The statements in the function are executed every time the function is invoked.
 
@@ -69,6 +70,7 @@ const sum = (x, y) => x+y;
 ```
 
 ## Function Parameter
+----
 
 The function accesses the outer world using its parameters.
 
@@ -76,7 +78,7 @@ The function accesses the outer world using its parameters.
 A JavaScript function can have any number of parameters just like any other programming languages
 
 ### Default parameters
-Default parameter is very useful in more complex application. When we dont have any clarity about the parameter what will that be then its better to define a default parameter.
+The default parameter is very useful in a more complex application. When we don't have any clarity about the parameter what will that be then its better to define a default parameter.
 
 ```js
 function helloName(name = "Abhin Pai") { console.log(name) }
@@ -97,13 +99,13 @@ helloDeveloper({from: "India"}); // Abhin Pai from India
 
 ### Arguments object
 
-`Arguments` is the special object, which holds all the inocation arguments in an array-like object for a function
+`Arguments` is the special object, which holds all the invocation arguments in an array-like object for a function
 
 ```js
 function helloDeveloper(){
     console.log(arguments);
 }
-helloDeveloper("This is sample arguments"); // Arguments ["This is sample arguments", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+helloDeveloper("This is sample arguments"); // Arguments ["This is sample arguments", callee: ƒ, Symbol(Symbol.iterator): ƒ]
 ```
 ### Rest parameters
 
@@ -117,12 +119,13 @@ developerInfo("Abhin Pai",  "India");
 ```
 
 ## Arrow (Fat Arrow) Function
+----
 
 Arrow functions are not just a `shorthand` for writing small stuff. They have some very specific and useful features.
 
 We can come up with various scenario where we can find a function which executes somewhere in our service. In such a case, arrow functions will come handy
 
-Its very simple to declare an and use arrow function
+Its very simple to declare an and use the arrow function
 
 ```js
 let printMessage = () => console.log("Hello Hackers");
@@ -131,7 +134,7 @@ printMessage(); // Hello Hackers
 
 
 :::caution Things to remember about Arrow Function
-1. Arrow function do not have `this`. If we try to access `this` inside an arrow function then the function will give result `undefined`
+1. An arrow function does not have `this`. If we try to access `this` inside an arrow function then the function will give result `undefined`
 
 ```js
 let MyObject = {
@@ -142,13 +145,13 @@ let MyObject = {
 MyObject.printMyName(); // My name is undefined\
 ```
 
-2. Arrow function can't be used as constructor function which you can't create any instance for an arrow function using `this`
+2. Arrow function can't be used as constructor function which you can't create an instance for an arrow function using `this`
 
-3. Arrow have no `arguments` variable 
+3. Arrow has no `arguments` variable 
 
 ```js
 function regularFunction(arg) { console.log(arguments)}
-regularFunction("Hello There"); // Arguments ["Hello", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+regularFunction("Hello There"); // Arguments ["Hello", callee: ƒ, Symbol(Symbol.iterator): ƒ]
 
 let arrowFunction = (arg) => console.log(arguments);
 arrowFunction("Hello There"); // arguments are not defined
@@ -188,6 +191,8 @@ Here we had to create additional variables `args` and `ctx` so that the function
 :::
 
 ## `IIFE` Immediately Invoked Function Expression
+----
+
 As we know that functions are one of the building blocks of any programming language and JavaScript has taken the Functions to a whole new level.
 
 Functions that are executed as soon as they are mounted, these functions are known as Immediately Invoked Function Expressions or `IIFEs`.
@@ -218,7 +223,7 @@ message();
 // This is end
 ```
 
-2. `IIFEs` have there own scope i.e. the variables you declare in the Function Expression will not be available outside the function.
+2. `IIFEs` have there owned scope i.e. the variables you declare in the Function Expression will not be available outside the function.
 3. Similarly to other function `IIFEs` can also be named or anonymous, but even if an `IIFE` does have a name it is impossible to refer/invoke it
 4. IIFEs can also have parameters
 5. Explicitly it is not required to define return statements to an arrow function. Arrow function will do it for you out of the box
@@ -229,8 +234,9 @@ message();
 :::
 
 ## Decorators and forwarding
+----
 
-A decorator is simply a way of wrapping one piece of code with another — literally `decorating` it. This is a concept you might well have heard of previously as functional composition, or higher-order functions.
+A decorator is simply a way of wrapping one piece of code with another — literally `decorating` it. This is a concept you might well have heard of previously as functional composition or higher-order functions.
 
 ```js
 function doSomething(name) { // A usual function
@@ -258,6 +264,7 @@ Decorator function can also be treated as high order function
 For more details check out decorator example in [JavascriptInfo](https://javascript.info/call-apply-decorators)
 
 ## `Call`, `apply` and `bind`
+----
 
 ### `call` and `apply` methods also known as `Function borrowing`
 
@@ -335,6 +342,7 @@ Add pictorial Demonstration of call, bind and apply
 :::
 
 ## Method Chaining
+----
 
 There are different reasons for method chaining for different people. One of the major reasons for chaining methods is to ensure a cleaner and more readable code
 
@@ -373,8 +381,9 @@ class SnacksFactory {
  In the above example, we highlighted the `addIngredient` method which returns the current object i.e `this` which enables us to chain the methods. If we don't return `this` from the method `addIngredient` chining will throw an exception
 
  ## Scheduling: `setTimeout` and `setInterval`
+ ----
 
- Any activity that is planned at a future time interval is generally referred to as scheduling. Both the functions allow you to execute a piece of JavaScript code/function at a certain point in the future.
+ Any activity that is planned at a future time interval is generally referred to as scheduling. Both functions allow you to execute a piece of JavaScript code/function at a certain point in the future.
 
 ### setTimeout()
 
@@ -414,7 +423,7 @@ setTimeout(function() {
 setTimeout(showMotivation, 4000);
  ```
 
- **NOTE**: The function name 'message' does not have a brackets when passed in as a parameter to the setTimeout function.
+ **NOTE**: The function name 'message' does not have brackets when passed in as a parameter to the setTimeout function.
 
  When we invoke setTimeout it will return unique Id, which can be used for the tracking purpose. If any need to clear the timeout we can use that id to do so
 
@@ -434,6 +443,6 @@ setInterval ( expression, interval, param1, param2, ... );
 
 The only difference is,
 
-setTimeout() triggers the function call once. While, the setInterval() triggers the function repeatedly after the specified interval of time.
+setTimeout() triggers the function call once. While the setInterval() triggers the function repeatedly after the specified interval of time.
 
-similar to the setTimeout, setInterval function will also return unique id to track which can also used to create the expression from memory
+similar to the setTimeout, setInterval function will also return unique id to track which can also be used to create the expression from memory
