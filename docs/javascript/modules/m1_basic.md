@@ -16,6 +16,7 @@ import BulletSentence from '../../../src/components/bulletSentence/bulletSentnce
   7. What does the double negation operator `!!` do?
   8. `==` vs `===`
   9. What are the falsy values in js
+  10. What is `Coercion` with an example
 :::
 
 ## A Story of `var`, `let` and `const`
