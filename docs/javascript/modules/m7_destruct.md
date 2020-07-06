@@ -5,11 +5,11 @@ sidebar_label: "Module 7: Destructor"
 ---
 
 :::note Questions 🤔
-1. What is destructing?
+1. What is destruction?
 2. How do you destruct an array?
 3. How do you destruct an object?
 4. How do you destruct a string?
-5. How do you swap an variables?
+5. How do you swap a variable using destruction?
 6. Destructuring Functions - Multiple returns and named defaults
 :::
 
@@ -40,7 +40,7 @@ console.log(monitor); // 🖥
 
 #### 🔸 Aliasing the property
 
-It also have an flexibility to Alias a property
+It also has the flexibility to Alias a property
 
 ```js
 let gadgets = { mobile: '📱', monitor: '🖥', laptop: '💻', printer: '🖨'};
@@ -72,7 +72,7 @@ console.log(watch); // undefined
 
 #### 🔸 Assigning Default Value
 
-To avoid the risk of `Undefined` there is something cool feature i.e we can assign a default value. Its useful for the case where the pulled property evaluates to undefined
+To avoid the risk of `Undefined` there is something cool feature i.e we can assign a default value. It's useful for the case where the pulled property evaluates to undefined
 
 ```js
 let gadgets = { mobile: '📱', monitor: '🖥', laptop: '💻', printer: '🖨'};
@@ -95,14 +95,14 @@ console.log(iPhone) // 📱
 
 ### Destructing an array [...]
 
-Array destruction uses square brackets `[]` and its very similar to the object destruction 
+Array destruction uses square brackets `[]` and it's very similar to the object destruction 
 
 ```js
 let [developer] = [👨🏻‍💻];
 console.log(developer); // 👨🏻‍💻
 ```
 
-Here also we can follow the default value and get a same result
+Here also we can follow the default value and get the same result
 
 ```js 
 let [developer] = [];
@@ -112,7 +112,7 @@ let [developer = '👩🏻‍💻'] = []; // Assigned a default value
 console.log(developer); // 👩🏻‍💻 
 ```
 
-With array we have additional benefit of skipping element
+With an array, we have the additional benefit of skipping element
 
 ```js
 let occupation = ['👩🏻‍🔬', '🧑🏻‍💻', '👨🏻‍🏫'];
@@ -132,7 +132,7 @@ console.log(scientist);
 ```
 
 
-###  Destructing an "string"
+###  Destructing a "string"
 
 ```js
 let message = "Hello to all developer 👋";
@@ -217,7 +217,7 @@ Even though import statements don’t follow destructuring rules, they behave a 
 ```js
 import {pureComponent, component} from react;
 ```
-import statements have a different syntax. When compared against destructuring, none of the following import statements will work
+import statements have different syntax. When compared against destructuring, none of the following import statements will work
 
 * Use defaults values such as `import {pureComponent = component} from react` 
 * `Deep destructuring` style like `import {component: { someOtherComponent }} from react` is not possible 
@@ -229,9 +229,9 @@ import statements have a different syntax. When compared against destructuring, 
 <!-- 🔸 -->
 `Spread syntax (...)` is another helpful addition to JavaScript for working with arrays, objects, and function calls. 
 
-Spread allows objects and iterables (such as arrays) to be unpacked, or expanded, which can be used to make shallow copies of data structures to increase the ease of data manipulation
+The spread allows objects and iterables (such as arrays) to be unpacked, or expanded, which can be used to make shallow copies of data structures to increase the ease of data manipulation
 
-Spear unpack a array or object
+Spear unpack an array or object
 
 ### Spread with Arrays
 
@@ -249,7 +249,7 @@ console.log(leavingBeings); //["🦊", "🐻", "🐼", "🐯", "🦁", "🦆", "
 let leavingBeings = [...animals, ...birds];
 console.log(leavingBeings); //["🦊", "🐻", "🐼", "🐯", "🦁", "🦆", "🐔", "🐧", "🐦", "🐤"]
 ```
-You can also use spread operator with an array. 
+You can also use a spread operator with an array. 
 
 ```js
 let animals = [ 
@@ -281,7 +281,7 @@ console.log(...animalName); // ['L', 'i', 'o', 'n']
 
 ### Spread with Object
 
-When working with objects, spread can be used to shallow copy and update objects.
+When working with objects, the spread can be used to shallow copy and update objects.
 
 ```js
 // Copying object with Object.Assign();
@@ -322,9 +322,9 @@ let userInfo = {...developer, gadgets: {smartWatch: '⌚️'}};
 console.log(userInfo); // {name: "Abhin Pai", gadgets: {smartWatch: '⌚️'}, nationality: {…}}
 ```
 
-In the above example i tried to add smart-watch into existing gadget object but guess what it overwrite with the new value and we lost the original content
+In the above example, I tried to add smart-watch into existing gadget object but guess what it overwrites with the new value and we lost the original content
 
-To achieve our result we can spread inner object as well
+To achieve our result we can spread the inner object as well
 
 ```js
 let developer = {
@@ -343,7 +343,7 @@ console.log(userInfo); // {name: "Abhin Pai", gadgets: {…}, nationality: {…}
 
 ### Spread with function
 
-We can also take advantage of spread operator in function
+We can also take advantage of spread operator in the function
 
 ```js
 let developer = [
@@ -362,7 +362,7 @@ printUser(...developer);
 ## Rest Operator
 ------
 
-The syntax of rest parameter is same as spread i.e `...` but rest do have opposite effect 
+The syntax of the rest parameter is same as spread i.e `...` but rest do have the opposite effect 
 
 Rest pack an array or object by creating an array of an indefinite number of arguments.
 
@@ -401,7 +401,7 @@ gadgets("📱", "🖥", "💻", "🖨");
 
 ```js
 function gadgets() {
-  console.log(arguments); // Arguments(4) ["📱", "🖥", "💻", "🖨", callee: ƒ, Symbol(Symbol.iterator): ƒ]
+  console.log(arguments); // Arguments(4) ["📱", "🖥", "💻", "🖨", callee: ƒ, Symbol(Symbol.iterator): ƒ]
 }
 
 gadgets("📱", "🖥", "💻", "🖨");
