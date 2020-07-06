@@ -124,3 +124,6 @@ html[data-theme="dark"] .header-github-link:before {
   /* color: #333; */
 }
 
+html[data-theme="dark"] hr {
+  border-color: #bec3c936;
+}
