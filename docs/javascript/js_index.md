@@ -193,7 +193,7 @@ description: Javascript Interview preparation material
 * ❌ Shadow DOM
 * ❌ Template element
 
-### <Highlight color="#0090d9">Module 21</Highlight> Code Quality matter most 👌
+### <Highlight color="#0090d9">Module 21</Highlight> Code Quality 👌
 ------
 * ❌ Polyfill for `bind()`
 * ❌ What is the difference between `Lodash` and `Underscore`
