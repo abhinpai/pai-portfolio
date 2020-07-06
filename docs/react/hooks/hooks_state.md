@@ -6,13 +6,13 @@ sidebar_label: useState
 
 :::note Questions 🤔
 1. **What do we pass to useState as an argument?** <br/>
-  According to the React Doc useState allow only argument to set the initial state. Unlike with classes, the state doesn’t have to be an object.
+  According to the React Doc useState allow only argument to set the initial state. Unlike classes, the state doesn’t have to be an object.
 
 2. **What does useState return?** <br/>
-  It returns a pair of values, The current state and a function that updates it current state
+  It returns a pair of values, The current state and a function that updates its current state
 :::
 
-`useState()` is a replacements for the traditional way to declare a state inside class constructor. This hook method lets you add React state to function components.
+`useState()` is a replacement for the traditional way to declare a state inside the class constructor. This hook method lets you add React state to function components.
 
 Returns a stateful value, and a function to update it.
 
@@ -58,9 +58,9 @@ class App extends Component {
 ```
 
 
-In the above example we declare a new state variable, which I called "name". 
+In the above example, we declare a new state variable, which I called "name". 
 
-`useState` method return array, In that first subscript value is state (name) and the second value is a method to mutate that state (setName) and we used Javascript `Array Destructing` 
+`useState` method return array, In that first subscript value, states (name) and the second value is a method to mutate that state (setName) and we used Javascript `Array Destructing` 
 
 ```jsx
 let stateResult =  useState('Anonymous');

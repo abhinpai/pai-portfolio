@@ -1,12 +1,12 @@
 ---
 id: hooks_effect
-title: useEffect a effect hook ⚡️
+title: useEffect an effect hook ⚡️
 sidebar_label: useEffect
 ---
 
 :::note Questions 🤔 
 1. **Why is useEffect called inside a component?** <br/>
-  Placing `useEffect` inside the component lets us access state variable or any props right from the effect. We don’t need a special API to read it — it’s already in the function scope. Hooks embrace JavaScript closures and avoid introducing React-specific APIs where JavaScript already provides a solution.
+  Placing `useEffect` inside the component lets us access the state variable or any props right from the effect. We don’t need a special API to read it — it’s already in the function scope. Hooks embrace JavaScript closures and avoid introducing React-specific APIs where JavaScript already provides a solution.
 
 2. **Does useEffect run after every render?** <br/>
   Yes! By default, it runs both after the first render and after every update. 
@@ -19,7 +19,7 @@ sidebar_label: useEffect
 :::
 
 
-React's `useEffect` hook combines `componentDidMount`, `componentDidUpdate` and `componentWillUnmount` lifecycle methods. This is very useful, which reduces the amount of code, simplifies the code and allows for multiple `useEffect` hooks to be called in a single component.
+React's `useEffect` hook combines `componentDidMount`, `componentDidUpdate` and `componentWillUnmount` lifecycle methods. This is very useful, which reduces the amount of code, simplifies the code, and allows for multiple `useEffect` hooks to be called in a single component.
 
 Syntax of `useEffect` is
 
@@ -69,7 +69,7 @@ componentDidUpdate(prevProps) {
 
 ## componentWillUnmount equivalent
 
-In order to have this hook run when the component is unmounted, we need to return a function from the hook. If we want cleanup function to run only when component has unmounted, we need to set an empty array. If we set one or more variables in the dependency array, cleanup will run at every re-render.
+In order to have this hook run when the component is unmounted, we need to return a function from the hook. If we want a cleanup function to run only when the component has unmounted, we need to set an empty array. If we set one or more variables in the dependency array, cleanup will run at every re-render.
 
 ```jsx
 useEffect(() => {
@@ -97,7 +97,7 @@ export default function Example() {
 
 > "React Hook Warnings for async function in useEffect: useEffect function must return a cleanup function or nothing"
 
-To solve this issue you need to call a Synchronous method. Event if this new one are Async.
+To solve this issue you need to call a Synchronous method. Even if this new one is Async.
 
 ```jsx {5-10}
 export default function Example() { 
@@ -118,7 +118,7 @@ export default function Example() {
 
 ## Clean up using `useEffect`
 
-In the above example we tried async using react in case if we want to do some sort of cleanup like close connection, reset state, etc we need to add those logics into the anonymous function and should return 
+In the above example, we tried async using react in case if we want to do some sort of cleanup like close connection, reset state, etc we need to add those logics into the anonymous function and should return 
 
 ```jsx {12}
 export default function Example() { 
