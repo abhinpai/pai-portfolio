@@ -1,6 +1,6 @@
 ---
 id: module3_object
-title: Hello i am an Object 👋
+title: Hello I am an Object 👋
 sidebar_label: "Module 2: Object"
 description: Object description
 --- 
@@ -8,15 +8,15 @@ description: Object description
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::note Questions 🤔
-1. What is `this`? hows that works?
-2. **Why do we bind `this` key word in react application?** <br/>
-  we use `class-based components` we need to bind this keyword to the class. Because the method we are passing to the event Handler is invoked in the global environment where this keyword refers to the window object 
-3. How object works in javascript?
-4. How to make a object property undeletable?
+1. What is `this`? hows that work?
+2. **Why do we bind `this` keyword in react application?** <br/>
+  we use `class-based components` we need to bind this keyword to the class. Because the method we are passing to the Event Handler is invoked in the global environment where this keyword refers to the window object 
+3. How does object work in javascript?
+4. How to make an object property undeletable?
 5. const vs Object.freeze()
 6. What are the different ways to clone an object?
 7. Shortcut method to declare an object
-8. What are the different ways to access an object properties
+8. What are the different ways to access object properties
 9. Object.is() vs ===
 10. What are the different ways to check the existence of object property
 11. How do you loop over Objects
@@ -24,15 +24,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 :::
 
 ## What the hell is `this` 😨 
+----
 
-In simple word `this` is the object that is executing in current context. 
+In a simple word `this` is the object that is executing in the current context. 
 
 Not understanding it right let me tell you in this way. 
 
-`this` in **module 3** is quite interesting it contains quite lot of crazy stuffs. In statement this is referring to the **module 3** which means **module 3** is my current context. Now i hope you got some hint 😊
+`this` in **module 3** is quite interesting it contains quite a lot of crazy pieces of stuff. In a statement this is referring to the **module 3** which means **module 3** is my current context. Now I hope you got some hint 😊
 
 :::caution Remember 
-The value of `this` will differ how a function is invoke. So its hard to judge the value of `this`
+The value of `this` will differ in how a function is invoked. So it's hard to judge the value of `this`
 :::
 
 
@@ -46,19 +47,19 @@ There are 5 thumb rule for `this` which decide the value of `this` object
 
 ### 1. Simple Function Call
 
-If the this is part of regular / Simple function then `this` will refer to `window` object in browser and `global` object in node 
+If this is part of regular / Simple function then `this` will refer to `window` object in browser and `global` object in the node 
 
 ```js
 function playSong() {
   console.log(this);
 }
 
-playSong(); // Window {parent: Window, opener: null, top: Window, length: 2, frames: Window, …}
+playSong(); // Window {parent: Window, opener: null, top: Window, length: 2, frames: Window, …}
 ```
 
 ### 2. Implicit Binding 
 
-If the function is part of an object (We call it as a method) `this` will refer to a same function 
+If the function is part of an object (We call it as a method) `this` will refer to the same function 
 
 ```js 
 const marvel = {
@@ -104,7 +105,7 @@ let song = {
 
 song.play(); // undefined -> mp3, undefined -> mpeg, undefined -> mp4
 ```
-If you see the above example i got undefined why is that? 😢
+If you see the above example I got undefined why is that? 😢
 
 **Answer** is we have `forEach` loop inside the `play()` and only `play()` method is member of `song` object where as `forEach` is member of global/window object
 
@@ -114,12 +115,12 @@ let song = {
   fileType: ['mp3', 'mpeg', 'mp4'],
   play() {
     this.fileType.forEach(function(arg) {
-      console.log(this) // Window {parent: Window, opener: null, top: Window, length: 2, frames: Window, …}
+      console.log(this) // Window {parent: Window, opener: null, top: Window, length: 2, frames: Window, …}
     })
   }
 }
 
-song.play(); // Window {parent: Window, opener: null, top: Window, length: 2, frames: Window, …}
+song.play(); // Window {parent: Window, opener: null, top: Window, length: 2, frames: Window, …}
 ```
 
 To solve that what we can do is, Since forEach accept callback method and thisArg we can pass the `this` object to solve our problem
@@ -140,9 +141,9 @@ song.play(); // Seven Nation Army -> mp3, Seven Nation Army -> mpeg, Seven Natio
 
 ### 3. `new` binding / Constructor function
 
-If we create an object for a constructor function using `new` keyword this will refer to the construction function instead of global/window object.
+If we create an object for a constructor function using a `new` keyword this will refer to the construction function instead of the global/window object.
 
-This is because when we use `new` key word it will create an object `{}` and bind the function property that we defined
+This is because when we use the `new` keyword it will create an object `{}` and bind the function property that we defined
 
 ```js 
 function SpaceOrganization(organization) {
@@ -150,10 +151,10 @@ function SpaceOrganization(organization) {
   console.log(this);
 }
 
-var org = new SpaceOrganization('ISRO  🛰 🚀'); // SpaceOrganization {organization: "ISRO  🛰 🚀"}
+var org = new SpaceOrganization('ISRO  🛰 🚀'); // SpaceOrganization {organization: "ISRO  🛰 🚀"}
 ```
  
-In the above example it created an empty object i.e `{}` and bind `organization` into that 
+In the above example, it created an empty object i.e `{}` and bind `organization` into that 
 
 
 ### 4. Explicit Binding
@@ -177,9 +178,9 @@ heroName.call(marvel); // {hero: "Hulk"}
 heroName.apply(marvel); // {hero: "Hulk"}
 ```
 
-Both `call` and `apply` accomplish the same purpose. The first arg is the object which it want to refer in out case `marvel`
+Both `call` and `apply` accomplish the same purpose. The first arg is the object which it wants to refer in out case `marvel`
 
-`bind` is used to create a new function that’s permanently bound to a this value.
+`bind` is used to create a new function that’s permanently bound to this value.
 
 ```js 
 let marvel = {
@@ -215,7 +216,7 @@ let space = {
    }
 };
 space.SpaceOrganization(); //ISRO  🛰 🚀
-space.NationalSpaceOrg(); // SpaceOrganization {organization: "ISRO  🛰 🚀"}
+space.NationalSpaceOrg(); // SpaceOrganization {organization: "ISRO  🛰 🚀"}
 ```
 
 :::danger TBU
@@ -223,10 +224,11 @@ Update with vid or image. The detailed view of Arrow function
 :::
 
 ## Object
+----
 
 Everything in javascript is `Objects` and `Primitive`.
 
-We have seen lots of example with respect to object and there are multiple ways to create an objects 
+We have seen lots of example with respect to object and there are multiple ways to create objects 
 
 ```js
 // Simple object creation
@@ -244,7 +246,7 @@ mySuperHero.Name = "Iron Man";
 
 ### Shorthand technique to declare an Object 
 
-If we want to create an object with a same key then we can declare something like this
+If we want to create an object with the same key then we can declare something like this
 
 ```js
 let bike = "KTM";
@@ -262,7 +264,7 @@ console.log(vehicle); //{bike: "KTM", car: "Camaro", airplane: "Boeing 777"}
 
 ### Technique to deep cloning an object 🧑🏻‍🤝‍🧑🏻
 
-Cloning an objet without disturbing the original one is bit crazy in java script
+Cloning an object without disturbing the original one is a bit crazy in javascript
 
 ```js
 let myHero  = { hero: "Iron Man" };
@@ -273,21 +275,21 @@ superHero.hero = "Thor";
 console.log(myHero); // hero: "Thor" }
 ```
 
-If you see above sample code, if i change cloned object even the original object get affected this is because of both object is referring to the same address in the memory, even if we loop through and put property into the item will not solve our problem 
+If you see above sample code, if I change cloned object even the original object gets affected this is because of both object is referring to the same address in the memory, even if we loop through and put property into the item will not solve our problem 
 
 :::info Object Behavior
   1. A loop that copies each property to a new object would only copy enumerable properties on the object. Enumerable properties are properties that will show up in `for` loops and `Object.keys`. 
 
   2. The copied object has a new `Object.prototype` method, which is not what you want when you copy an object.
 
-  3. If your object has a property that is an object, your copied object will actually refer to the original instead of creating an actual copy. This means that if you change that nested object in the copied object, the original gets changed as well.
+  3. If your object has a property that is an object, your copied object will refer to the original instead of creating an actual copy. This means that if you change that nested object in the copied object, the original gets changed as well.
   4. Any property descriptors are not copied. If you set things like `configurable` or `writable` to `false`, the property descriptors in the copied object will default to `true`.
 :::
 
-to avoid that we have multiple solution those are like below
+to avoid that we have multiple solutions those are like below
 
 #### 🔸 Object.assign
-new static method on the Object constructor: Object.assign. This new method allows to easily copy values from one object to another.
+new static method on the Object constructor: Object.assign. This new method allows us to easily copy values from one object to another.
 
 ```js 
 let marvelHero = { name: "Captain America" };
@@ -331,7 +333,7 @@ console.log(marvel.villain); // Thanos
 :::
 
 
-### Technique to check existence of object property
+### Technique to check the existence of object property
 
 #### 🔸 hasOwnProperty() 
 ```js
@@ -380,7 +382,7 @@ let google = { ceo: "Sundar Pichai" };
 
 #### 🔸 Accessor Properties
 
-This properties can understood as getter and setter similar to other modern programming languages
+These properties can be understood as getter and setter similar to other modern programming languages
 
 ```js
 // Traditional way
@@ -405,7 +407,7 @@ google.ceo = "Abhin Pai";
 console.log(google.name); // Abhin Pai
 ```
 
-If we try to set a name in a objet in which we declared get than new value is can not set and vice versa
+If we try to set a name in an object in which we declared get than new value is can not set and vice versa
 
 ```js
 let google = {
@@ -449,25 +451,25 @@ function myLog (key, message) {
 myLog("randomKey", "Hello Pai"); // {"randomKey": "Hello Pai"} 
 ```
 
-Computed Properties is very help ful when we want to generate a random key for an object 
+Computed Properties is very helpful when we want to generate a random key for an object 
 
 
 ### Object Property Descriptors 
 
-Every key in object will have `Property Attribute` that define the characteristics of the value associated with the key.They can also be thought of as meta-data describing the key-value pair. In short, attributes are used to define and explain the state of object properties.
+Every key in an object will have `Property Attribute` that defines the characteristics of the value associated with the key. They can also be thought of as meta-data describing the key-value pair. In short, attributes are used to define and explain the state of object properties.
 
 :::danger TBU
-Add a object property descriptors image
+Add an object property descriptors image
 :::
 
 <!-- <p align='center'>
-<img src={useBaseUrl('img/codeshot/object_1.png')}  alt='null Propagation' />	
+<img src={useBaseUrl('img/codeshot/object_1.png')}  alt='null Propagation' /> 
 </p> -->
 
 There are total **6** property attribute
 
 #### 🔸 [[Value]]
-It stores the value retrieved by a get access of the property. Which means that when we do object.x in the above example, we actually retrieve its [[Value]] attribute. Any dot-access or square-bracket access of a Data property will work in this way.
+It stores the value retrieved by getting access to the property. This means that when we do object.x in the above example, we retrieve its [[Value]] attribute. Any dot-access or square-bracket access of a Data property will work in this way.
 
 #### 🔸 [[Get]]
 It stores the reference to the function that we declare while making a getter property. 
@@ -485,9 +487,9 @@ This is also a boolean value. This attribute dictates whether the property is go
 This is a boolean too. when its false following things will take place
   * `delete` property is not possible
   * Converting a Data Property to be an Accessor Property or vice-versa will fail
-  * It will also prevent further changing the attributes values. That is, current values of enumerable, configurable, get or set will become fixed.
+  * It will also prevent further changing the values of the attributes. That is, the current values of enumerable, configurable, get, or set will become fixed.
   * When the property is a Data Property, you can only set writable from true to false.
-  * Before writable becomes false, you can also change its [[Value]] attribute. However, once writable is false, and configurable is false too, the property becomes unwritable, undeletable and unchangeable.
+  * Before writable becomes false, you can also change its [[Value]] attribute. However, once writable is false, and configurable is false too, the property becomes unwritable, undeletable, and unchangeable.
 
 #### All six properties do not exist for each property type.
 * For Data Properties, only `value`, `writable`, `enumerable` and `configurable` exists.
@@ -546,7 +548,7 @@ console.log(myBio.name); // Abhin Pai its not updated because writable is false
 
 ### Protecting an Object 🔐
 
-We may find a use case to avoid tempering our object and JS have flexibility to do so with these following methods
+We may find a use case to avoid tempering our object and JS have the flexibility to do so with these following methods
 
 #### 🔸 Object.preventExtensions
 The Object.preventExtensions method prevents new properties from ever being added to an object. It takes an object and makes it non-extensible
@@ -574,7 +576,7 @@ delete obj.name; // doesn't work
 
 #### 🔸 Object.freeze
 
-provide maximum protection any object can have in JavaScript. Internally it seal the object using `Object.Seal`
+provide maximum protection any object can have in JavaScript. Internally it seals the object using `Object.Seal`
 
 * It also prevents modifying any existing properties at all.
 * It also prevents the descriptors from being changed as the object is already sealed.
@@ -592,7 +594,7 @@ delete obj.name; // doesn't work
 | Object\.preventExtension | ❌     | ✅    | ✅      | ✅      |
 
 :::info 
-`const` makes the variable binding immutable but it’s value can still be modified.
+`const` makes the variable binding immutable but its value can still be modified.
 `Object.freeze()` ignores the value modification to an object but there is no restriction on the binding.
 :::
 
@@ -682,12 +684,12 @@ console.log(entries); // [["basketBall", "⛹🏻‍♂️"],["swimming", "🏊�
 ```
 
 #### 🔸 Object.isExtensible
-Helps to check whether object is non-extensible or not If it returns true, you can add more properties to the object.
+Helps to check whether the object is non-extensible or not If it returns true, you can add more properties to the object.
 
 ## null Propagation Operator / Optional Chaining `?.`
 -----
 
-Ensuring any object or variable is contain any value or not is primary focus area of any developer to get rid of application crashing. To rescue that 'null Propagation Operator' is a savior else we need to check each and every element explicitly
+Ensuring any object or variable is contain any value or not is the primary focus area of any developer to get rid of application crashing. To rescue that 'null Propagation Operator' is a savior else we need to check each and every element explicitly
 
 ```ts 
 const marvel = {
@@ -723,27 +725,24 @@ The optional chaining `?.` stops the evaluation and returns undefined if the par
 
 :::caution We should use `?.` only where it’s ok that something doesn’t exist.
 
-For example, if according to our coding logic movie and infinityWar object must be there, but character(n) is optional, then marvel.movie.infinityWar?.character1 would be better.
+For example, if according to our coding logic movie and `infinity war` object must be there, but the character(s) is optional, then marvel.movie.infinityWar?.character1 would be better.
 
-So, if user happens to be undefined due to a mistake, we’ll know about it and fix it. Otherwise, coding errors can be silenced where not appropriate, and become more difficult to debug.
+So, if a user happens to be undefined due to a mistake, we’ll know about it and fix it. Otherwise, coding errors can be silenced were not appropriate, and become more difficult to debug.
 :::
 
 
 :::info Tips 😉 
-Optional chaining also works with also works with functions and square brackets.
+Optional chaining also works with functions and square brackets.
 
 `obj?.[prop]` – returns `obj[prop]` if obj exists, otherwise undefined <br/>
 `obj?.method()` – calls `obj.method()` if obj exists, otherwise returns undefined 
 :::
 
 ## Null coalescing operator `??`
+----
 
-Null coalescing operator returns its right-hand-side operand when its left-hand-side operand is null or undefined, and otherwise returns its left-hand-side operand.
+The `null` coalescing operator returns its right-hand-side operand when its left-hand-side operand is null or undefined, and otherwise returns its left-hand-side operand.
 
-#### The result of a ?? b is
-
-* a if it’s not null or undefined,
-* b, otherwise.
 
 
 ```js
@@ -771,7 +770,7 @@ console.log(`Nullish coalescing results in: ${result}`);
 
 ### Operator `||` to support `??`
 
-The OR `||` operator can be used in the same way as `??`. Actually, we can replace `??` with `||` 
+The OR `||` operator can be used in the same way as `??`. We can replace `??` with `||` 
 
 #### The important difference is that:
 
@@ -786,13 +785,14 @@ console.log(githubStar ?? 100); // 0
 ```
 
 ## `typeOf` and `instanceOf`
+----
 
-These operator are used to check the in which family that instance is belongs to
+These operators are used to check the in which family that instance belongs to
 
 ### 🔸 `typeOf`
-`typeof` is a unary operator that returns a string indicating the type of the unevaluated operand.
+`typeOf` is a unary operator that returns a string indicating the type of the unevaluated operand.
 
-Use `typeOf` operator for built in types (primitive and objects)
+Use `typeOf` operator for built-in types (primitive and objects)
 
 ```js
 'Frontend Developer' instanceof String; // false
@@ -813,9 +813,9 @@ typeof function() {} == 'function'; // true
 
 ### 🔸 `instanceOf`
 
-`instanceof` is a binary operator, accepting an object and a constructor. It returns a boolean indicating whether or not the object has the given constructor in its prototype chain.
+`instanceOf` is a binary operator, accepting an object and a constructor. It returns a boolean indicating whether or not the object has the given constructor in its prototype chain.
 
-Use `instanceof` for custom types and complex built in types
+Use `instanceOf` for custom types and complex built-in types
 
 ```js
 var ClassFirst = function () {};
@@ -840,11 +840,12 @@ typeof {}; // object
 ```
 
 ## Host Object and Native Object
+----
 
 ### Host Object
-Host Objects are created by the environment and are environment specific. Best known environment would be a web-browser or could be any other platform.
+Host Objects are created by the environment and are environment-specific. The best-known environment would be a web-browser or could be any other platform.
 
-The host objects created in web-browser could be the window object or the document. 
+The host objects created in the web-browser could be the window object or the document. 
 
 Typically a browser uses an API to create Host Objects to reflect the `Document Object Model` or `DOM` into JavaScript. (Web browser have different JavaScript Engines that do this) A host object is created automatically the moment the page renders in a browser.
 
@@ -854,6 +855,6 @@ Typically a browser uses an API to create Host Objects to reflect the `Document 
 
 A Native Object is created by the developer using predefined classes of JavaScript. These objects will have fully defined specification rather than by the host environment by
 
-Standard native objects are defined in this specification. Some native objects are built-in; others may be constructed during the course of execution of an ECMAScript program.
+Standard native objects are defined in this specification. Some native objects are built-in; others may be constructed during the execution of an ECMAScript program.
 
 **Example** `Object` (constructor), `function`, `Date`, `Math`, `parseInt`, `eval`, `string methods`, `array methods`, etc 
