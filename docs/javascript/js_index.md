@@ -220,9 +220,6 @@ description: Javascript Interview preparation material
 * [https://flaviocopes.com/javascript-hoisting/](https://flaviocopes.com/javascript-hoisting/)
 * [https://www.jstips.co/en/javascript/closures-inside-loops/](https://www.jstips.co/en/javascript/closures-inside-loops/)
 
-###  Some Tips and Tricks
-------
-* ❌ Hunting for some awesome tips and tricks  🏹
 
 ## Reference 
 ------

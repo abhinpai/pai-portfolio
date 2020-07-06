@@ -114,3 +114,13 @@ html[data-theme="dark"] .header-github-link:before {
 }
 
 
+/* Manipulated existing CSS */
+.admonition-icon{
+  display: none !important;
+}
+
+.admonition-heading> h5 {
+  font-size: 16px;
+  /* color: #333; */
+}
+
