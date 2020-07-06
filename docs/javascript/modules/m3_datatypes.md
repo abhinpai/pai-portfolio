@@ -3,22 +3,18 @@ id: module4_datatypes
 title: Does type matters 🤔
 sidebar_label: "Module 3: Data Types"
 description: Data types description
-keywords:
-    - DataType
-    - Primitive
-    - Non-Primitive
 ---
 
 import {CustomText} from '../../../src/components/customText/customText.jsx'
 
 :::note Questions 🤔
-  1. Does JS have have any type or is it strongly typed?
-  2. What are the primitive and non-primitive datatypes?
-  3. What is difference between global.isFinite and Number.isFinite?
+  1. Does JS have any type or is it strongly typed?
+  2. What are the primitive and non-primitive data types?
+  3. What is the difference between global.isFinite and Number.isFinite?
   4. What is difference between global.parseInt/parseFloat and Number.parseInt/parseFloat?
   5. `null` vs `undefined`
-  6. What is array and its methods?
-  7. What is string and its methods?
+  6. What is an array and its methods?
+  7. What is a string and its methods?
   8. Template Literals in JS or String Interpolation?
   9. What is the difference between map and foreach
   10. What are the different ways to iterate over an array?
@@ -28,24 +24,24 @@ import {CustomText} from '../../../src/components/customText/customText.jsx'
   14. Remove duplicated from an array
   15. How do you flatten an array
   16. What are the different ways to merge and concat an array? 
-  17. What is symbol and what are the benefit of using `symbol`
+  17. What is a symbol and what is the benefit of using `symbol`
 :::
 
-Yes, type matters a lot in all of the programming language. which is an identity to a variable.
+Yes, type matters a lot in all of the programming languages. which is an identity to a variable.
 
-There is overall 8 different datatype present in Javascript which is further divide into primitive and non-primitive
+There is an overall 8 different datatype present in Javascript which is further divided into primitive and non-primitive
 
 ## Primitive Datatype
 ----
 
-There are 7 primitive datatypes and these datatypes are immutable
+There are 7 primitive data types and these datatypes are immutable
 
 ### 1. Boolean
 
-Boolean is just a true and false like any other programming language
+Boolean is just true and false like any other programming language
 
 ### 2. Number 
-🔸 Numbers represent both integer and floating value along with this two there there are many other types like
+🔸 Numbers represent both integer and floating value along with this two there are many other types like
 
 `Infinity` represent mathematical ♾️ which is special value greater than any number
 
@@ -58,7 +54,7 @@ console.log(Infinity); // Infinity
 
 :::info Mathematical operations are safe
 
-Doing Math is safe in Js. We can divide 1/0, treat non-numeric string or number to the expression, script will never not with fatal error (die). At worst case you can get NaN as a  result
+Doing Math is safe in Js. We can divide 1/0, treat non-numeric string or number to the expression, the script will never not with a fatal error (die). At worst case, you can get NaN as a  result
 :::
 
 <CustomText styleClass="primary-bold-head">Number Extension Methods</CustomText>
@@ -128,7 +124,7 @@ console.log(Number.isInteger(-1000)); // True
 
 #### 🔸 Number.EPSILON
 
-This is literally small number. 
+This is a literally small number. 
 
 ```js
 // Default EPSILON Value
@@ -139,7 +135,7 @@ Number.EPSILON.toFixed(20); // "0.00000000000000022204"
 
 ### 3. BigInt
 
-Number type can not allow value larger than (2^53-1) and lesser than -(2^53-1) for this BigInt is rescuer. 
+Number type can not allow value larger than (2^53-1) and lesser than -(2^53-1) for this BigInt is the rescuer. 
 
 ```js
 const bigInt = 12345678901234567890n; // 'n' at the end represent bigint
@@ -147,14 +143,14 @@ const bigInt = 12345678901234567890n; // 'n' at the end represent bigint
 
 ### 4. Null
 
-Null is a special value which doesn't belongs to any of the type. Its separate type all together.
-Which simply represent zero, empty or nothing.
+Null is a special value that doesn't belong to any of the types. Its separate type altogether.
+Which simply represents zero, empty, or nothing.
 
 > In javascript `null` is a **Existing Object** and doesn't lead to **Null Pointer Exception**
 
 ### 5. Undefined
 
-Undefined in like a null which stand out of the group. Undefined means **not assigned any value**
+Undefined in like a null which stands out of the group. Undefined means **not assigned any value**
 
 If any variable is declared and used that variable without assigning any value that that will return undefined
 
@@ -188,7 +184,7 @@ double equal test for the loose equality and perform `type coercion`.
 
 ### 6. String
 
-String datatype is most commonly used datatype to store textual data. In javascript there is no separate type for single character `char` like any other programming language.
+A string datatype is the most commonly used datatype to store textual data. In javascript, there is no separate type for single character `char` like any other programming language.
 
 <CustomText styleClass="primary-bold-head">String Extension Methods</CustomText>
 
@@ -211,7 +207,7 @@ Get the index of given character from the end of the string  <br/>
 Check if string include given string or not and return true or false <br/>
 
 #### 🔸 startWith 
-Check if any string start with given string or not and return true or false <br/>
+Check if any string starts with given string or not and return true or false <br/>
 
 #### 🔸 endsWith 
 Check if any string ends with given string or not and return true or false <br/>
@@ -234,9 +230,9 @@ Add space at the beginning of the string based on the given value <br/>
 ### 7. Symbol
 
 It’s a very peculiar data type. Once you create a `symbol`, its value is kept private and for internal use.
-It represent as `unique` identifier.
+It represents a `unique` identifier.
 
-One can create a symbol just by calling the Symbol() global factory function and upon creation, we can give symbol a description (also called a symbol name)
+One can create a symbol just by calling the Symbol() global factory function and upon creation, we can give the symbol a description (also called a symbol name)
 
 ```js
 const hero = Symbol(); // Create a symbol
@@ -261,9 +257,9 @@ let id = Symbol("id");
 alert(id); // TypeError: Cannot convert a Symbol value to a string
 ```
 
-That’s a “language guard” against messing up, because strings and symbols are fundamentally different and should not accidentally convert one into another.
+That’s a “language guard” against messing up because strings and symbols are fundamentally different and should not accidentally convert one into another.
 
-If we really want to show a symbol, we need to explicitly call .toString() on it
+If we want to show a symbol, we need to explicitly call .toString() on it
 
 ```js
 let id = Symbol("id");
@@ -279,7 +275,7 @@ alert(id.description); // id
 
 #### Hidden properties of symbol
 
-Symbols allow us to create `hidden` properties of an object, that no other part of code can accidentally access or overwrite.
+Symbols allow us to create the `hidden` properties of an object, that no other part of code can accidentally access or overwrite.
 
 ```js
 let user = { name: "John" };
@@ -292,9 +288,9 @@ alert( user[id] ); // we can access symbol as a key
 ```
 
 #### What’s the benefit of using Symbol("id") over a string "id"?
-The best benefit is to avoid the name clash since symbol create a new instance even with a same name we can eliminate the risk of name collision and this hidden properties can be use for the internal functionality purpose.
+The best benefit is to avoid the name clash since symbol creates a new instance even with the same name we can eliminate the risk of name collision and these hidden properties can be used for the internal functionality purpose.
 
-Consider you have a user object which is used by many other class in your project but you want to add one more key with a same property present in a user object you can achieve that with symbol. 
+Consider you have a user object which is used by much other class in your project but you want to add one more key with the same property present in a user object you can achieve that with the symbol. 
 
 This is also called `symbol literal` for an object
 
@@ -325,13 +321,13 @@ console.log(user); // {name: "Abhin", Symbol(name): "Abhin"}
 
 #### Global Symbol
 
-Usually all symbols are different, even if they have the same name. But sometimes we want same-named symbols to be same entities. For instance, different parts of our application want to access symbol "name" meaning exactly the same property.
+Usually, all symbols are different, even if they have the same name. But sometimes we want same-named symbols to be the same entities. For instance, different parts of our application want to access symbol "name" meaning exactly the same property.
 
 To achieve that, there exists a global symbol registry. We can create symbols in it and access them later, and it guarantees that repeated accesses by the same name return exactly the same symbol.
 
 In order to read (create if absent) a symbol from the registry, use Symbol.for(key).
 
-This checks the global registry if there is symbol described by a key then it will return else it will create a new one byt he given key in registry and return it 
+This checks the global registry if there is a symbol described by a key then it will return else it will create a new one by the given key in the registry and return it 
 
 ```js
 // read from the global registry
@@ -347,7 +343,7 @@ console.log( id === idAgain ); // true
 Symbols inside the registry are called global symbols. If we want an application-wide symbol, accessible everywhere in the code – that’s what they are for.
 :::
 
-There are various other `symbol` method which serve different purposes
+There are various other `symbol` method which serves different purposes
 
 #### * Symbol.keyFor
 Not only Symbol.for(key) returns a symbol by name, but there’s a reverse call: Symbol.keyFor(sym), that does the reverse: returns a name by a global symbol
@@ -358,12 +354,14 @@ Not only Symbol.for(key) returns a symbol by name, but there’s a reverse call:
 #### * Symbol.toPrimitive
 
 ## Non-Primitive Datatype
+----
+
 Apart from 7 primitive datatype everything else is an Object in javascript <br/>
 **Ex:** Array, function, Object, Set, Regexp etc are Object
 
 ### 1. Array
 
-An array is most commonly used data type in all of the programming language to store list of objects.
+An array is the most commonly used data type in all of the programming languages to store a list of objects.
 
 <CustomText styleClass="primary-bold-head">Array Extension Methods</CustomText>
 
@@ -386,7 +384,7 @@ console.log(sports); // ['⛹🏻‍♂️', '🏋🏻‍♀️', '🚵🏻‍�
 ```
 
 #### 🔸 Array.shift
-Add an object from front and push all the element
+Add an object from the front and push all the element
 
 ```js
 let sports = ['⛹🏻‍♂️', '🏋🏻‍♀️', '🚵🏻‍♂️', '🤽🏻‍♀️'];
@@ -395,7 +393,7 @@ console.log(sports); // ['🤾🏻‍♂️', '⛹🏻‍♂️', '🏋🏻‍�
 ```
 
 #### 🔸 Array.unshift
-Remove element from the first and shift all the element one step before
+Remove element from the first and shift all the elements one step before
 
 ```js
 let sports = ['⛹🏻‍♂️', '🏋🏻‍♀️', '🚵🏻‍♂️', '🤽🏻‍♀️'];
@@ -410,7 +408,7 @@ console.log(sports); // ['🏋🏻‍♀️', '🚵🏻‍♂️', '🤽🏻‍�
 
 **Fact 2:** Both push and unshift can add multiple items at once
 
-**Fact 3:** Internally `sports[0]` is nothing but `object[0]` since array is an object everything behind the scene deals with an object. 
+**Fact 3:** Internally `sports[0]` is nothing but `object[0]` since the array is an object everything behind the scene deals with an object. 
 
 ```js
   let expression = ['🤣','🥳','😡'];
@@ -425,9 +423,9 @@ console.log(sports); // ['🏋🏻‍♀️', '🚵🏻‍♂️', '🤽🏻‍�
   console.log(expression); // ['🤣','🥳']
   console.log(humanExpression); // ['🤣','🥳']
 ```
-Notice above snippet i declared `expression` array and assigned to `humanExpression` array and did comparison and the result is true. Then i removed one element from the `expression` array and logged both array and the changes is also reflected in `humanExpression` array. This is because when we assign one object to another object both object will refer to same address 
+Notice above snippet I declared `expression` array and assigned to `humanExpression` array and did a comparison and the result is true. Then I removed one element from the `expression` array and logged both array and the changes are also reflected in `humanExpression` array. This is because when we assign one object to another object both object will refer to the same address 
 
-**Fact 4:** Since array is object we can add different kind of property to an array as a property
+**Fact 4:** Since an array is an object we can add a different kind of property to an array as a property
 
 ```js
 let expressions = ['🤣','🥳','😡'];
@@ -436,7 +434,7 @@ expressions.totalEmoji = 3; // create property with arbitrary name
 console.log(expressions); // ["🤣", "🥳", "😡", empty × 9996, "humanExp", totalEmoji: 3]
 ```
 
-In the log we can see `empty x 9996` since we have added a value at position 9999 js engine left the remaining empty positioned value
+In the log, we can see `empty x 9996` since we have added value at position 9999 js engine left the remaining empty positioned value
 :::
 
 #### 🔸 Array.spice
@@ -449,8 +447,8 @@ console.log(message); // ❤️ 3000
 console.log(message.length) // 3 WTF 🤷🏻‍♂️  
 ```
 
-In the above code we created array and then we deleted item from position one but the length of the array si still 3.
-This is because `delete` keyword will just delete a content but space will remain. Which cost the memory hence `delete` keyword is not recommend solution to delete any item
+In the above code, we created an array, and then we deleted an item from position one but the length of the array is still 3.
+This is because the `delete` keyword will just delete content but space will remain. Which cost the memory hence `delete` keyword is not recommended solution to delete any item
 
 So to solve this problem we can use `splice`
 
@@ -472,7 +470,7 @@ console.log(message) // ["I", "❤️", "India"]
 
 #### 🔸 Array.concat
 
-To merge two array different array into one single array
+To merge two arrays different array into one single array
 
 #### 🔸 Array.slice
 
@@ -485,15 +483,15 @@ console.log(hero); // ['H', 'K']
 console.log(removedItem); // ['U', 'L']
 ```
 
-We can use `slice` without any arg to create copy of an original array without affecting the original one 
+We can use `slice` without an arg to create a copy of an original array without affecting the original one 
 
 #### 🔸 Array.indexOf
 
-Look for an array item based on given index and return item else it will return -1
+Look for an array item based on a given index and return item else it will return -1
 
 #### 🔸 Array.lastIndexOf
 
-Same as indexof but Look for an array item from the end and based on given index and return item else it will return -1
+Same as indexof but Look for an array item from the end and based on a given index and return item else it will return -1
 
 #### 🔸 Array.includes
 
@@ -512,8 +510,8 @@ let numbers = [1, 15, 2];
 console.log(numbers.sort((a,b) => a-b)); // [1, 2, 15] peace ✌️
 ```
 
-Am i lying? 🤔 even after sort it dint sort why? 🤯
-This is because, javascript converts an array element to string for comparison and for sort it in string lexicographic order (Like Dictionary order)
+Am I lying? 🤔 even after sorting it dint sort why? 🤯
+This is because javascript converts an array element to string for comparison and for sort it in string lexicographic order (Like Dictionary order)
 
 to achieve sorting we need to struggle a bit 
 
@@ -551,7 +549,7 @@ forEach(let expression in expressions) {
 }
 ```
 
-> `forEach` loop do not provide index of item
+> `forEach` loop does not provide an index of an item
 
 #### 🔸 map
 
@@ -566,7 +564,7 @@ console.log(result) // object {expression:'🤣', index: 0 } ......
 > `map` will provide an index of an item
 
 #### 🔸 reduce
-as name says it reduce the array item and resulting a single result 
+as the name says it reduces the array item and resulting in a single result 
 
 ```js
 const marks = [87, 98, 55, 67, 70, 59];
@@ -586,7 +584,7 @@ console.log(numberList.filter(getEvenNumbers)); // [98, 70]
 
 #### 🔸 every
 
-When we want to check given condition is satisfied with all array element or not 
+When we want to check the given condition is satisfied with all array element or not 
 
 ```js
 const numberList = [-87, 98, 0, Infinity, NaN, 59];
@@ -596,7 +594,7 @@ console.log(numberList.every(checkPositiveNumber)); // false
 
 #### 🔸 some
 
-When we want to check given condition is satisfied with at least some array element or not 
+When we want to check the given condition is satisfied with at least some array element or not 
 
 ```js
 const numberList = [-87, 98, 0, Infinity, NaN, 59];
@@ -605,8 +603,9 @@ console.log(numberList.some(checkPositiveNumber)); // true
 ```
 
 ## Template Literals - Expression Interpolation 
+----
 
-🔸 We can use `+` to concat a multiple string to construct a single string 
+🔸 We can use `+` to concat multiple strings to construct a single string 
 
 ```js
 let number = '3000';
