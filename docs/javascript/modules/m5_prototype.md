@@ -1,5 +1,5 @@
 ---
-id: module6_prototype
+id: module5_prototype
 title: Prototype Inheritance ⛓
 sidebar_label: "Module 5: Prototype"
 ---

@@ -1,5 +1,5 @@
 ---
-id: module5_function
+id: module4_function
 title: Function
 sidebar_label: "Module 4: Function"
 ---

@@ -87,17 +87,12 @@ description: Javascript Interview preparation material
 * ❌ Error handling, `try..catch`
 * ❌ Custom errors, extending Error
 
-### <Highlight color="#0090d9">Module 9</Highlight> Promises its super cool [😎](js_index.md)
+### <Highlight color="#0090d9">Module 9</Highlight> Promises
 ------
-* ❌ ntroduction: callbacks
-* ❌ Promise
-* ❌ Promises chaining
-* ❌ Error handling with promises
-* ❌ Promise API
-* ❌ Promisification
-* ❌ Microtasks
-* [https://ponyfoo.com/articles/es6-promises-in-depth](https://ponyfoo.com/articles/es6-promises-in-depth)
-* [https://www.jstips.co/en/javascript/passing-arguments-to-callback-functions/](https://www.jstips.co/en/javascript/passing-arguments-to-callback-functions/)
+* ✅ callbacks
+* ✅ Promise
+* ✅ Promises chaining
+* ✅ Promise API
 
 ### <Highlight color="#0090d9">Module 10</Highlight> Generators and Iterators
 ------

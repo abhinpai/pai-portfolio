@@ -1,5 +1,5 @@
 ---
-id: module7_classes
+id: module6_classes
 title: It's a Classsssss 😎
 sidebar_label: "Module 6: Class"
 ---

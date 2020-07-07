@@ -1,11 +1,11 @@
 ---
-id: module4_datatypes
+id: module3_datatypes
 title: Does type matters 🤔
 sidebar_label: "Module 3: Data Types"
 description: Data types description
 ---
 
-import {CustomText} from '../../../src/components/customText/customText.jsx'
+import CustomText from '../../../src/components/customText/customText.jsx'
 
 :::note Questions 🤔
   1. Does JS have any type or is it strongly typed?

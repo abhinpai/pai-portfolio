@@ -45,6 +45,13 @@
   color: #890381;
 }
 
+.story-actor{
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  padding-right: 6px;
+}
+
 /* document styles */
 .heading-1 {
   font-weight: bold;

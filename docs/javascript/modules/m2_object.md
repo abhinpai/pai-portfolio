@@ -1,5 +1,5 @@
 ---
-id: module3_object
+id: module2_object
 title: Hello I am an Object 👋
 sidebar_label: "Module 2: Object"
 description: Object description
