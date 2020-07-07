@@ -244,6 +244,10 @@ var mySuperHero = new myHero();
 mySuperHero.Name = "Iron Man";
 ``` 
 
+<p align='center'>
+<img className="gif-img" src={useBaseUrl('https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/gifs%2Fobject-clone.gif?alt=media&token=88c9bae9-0051-4c8e-aada-b32c739b7211')}  alt='object-clone' />
+</p>
+
 ### Shorthand technique to declare an Object 
 
 If we want to create an object with the same key then we can declare something like this
