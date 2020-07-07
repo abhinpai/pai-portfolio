@@ -5,6 +5,7 @@ sidebar_label: "Module9: Promise"
 ---
 
 import Story from '../../../src/components/story/story.jsx';
+import CustomText from '../../../src/components/customText/customText.jsx';
 
 :::note Questions 🤔
 1. What is callback? how do you pass an argument to a callback?
@@ -167,6 +168,8 @@ let myPromise = new Promise((resolve, reject) => {
 
 In the above callback section, we try to demonstrate a bicycle manufacturing process and we finally came up with a callback solution that is messy and looks very ugly. To solve that problem ES6 also provided a way to chain them using `promise chining` 
 
+`then()` isn't the end of the story, we can chain thens together to transform values or run additional async actions one after another
+
 Let's try to achieve the above solution using Promise chaining
 
 ```js
@@ -233,3 +236,10 @@ Add illustration for promise APIs
 :::
 
 For more visualized demonstration read the [blog](https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke) written by [Lydia Hallie](https://twitter.com/lydiahallie) 
+
+
+<CustomText styleClass="heading-1">Reference</CustomText>
+
+* [Web Dev](https://web.dev/promises/)
+* [Lydia Hallie Blog](https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke)
+* [Javascript Info](https://javascript.info/promise-basics)

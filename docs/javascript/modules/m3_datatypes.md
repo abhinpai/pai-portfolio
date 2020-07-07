@@ -57,7 +57,7 @@ console.log(Infinity); // Infinity
 Doing Math is safe in Js. We can divide 1/0, treat non-numeric string or number to the expression, the script will never not with a fatal error (die). At worst case, you can get NaN as a  result
 :::
 
-<CustomText styleClass="primary-bold-head">Number Extension Methods</CustomText>
+<CustomText styleClass="heading-1 primary">Number Extension Methods</CustomText>
 
 #### 🔸 Binary and Octal Literals 
  
@@ -186,7 +186,7 @@ double equal test for the loose equality and perform `type coercion`.
 
 A string datatype is the most commonly used datatype to store textual data. In javascript, there is no separate type for single character `char` like any other programming language.
 
-<CustomText styleClass="primary-bold-head">String Extension Methods</CustomText>
+<CustomText styleClass="heading-1 primary">String Extension Methods</CustomText>
 
 #### 🔸 charAt 
 Return character for a given index (subscript) value <br/>
@@ -363,7 +363,7 @@ Apart from 7 primitive datatype everything else is an Object in javascript <br/>
 
 An array is the most commonly used data type in all of the programming languages to store a list of objects.
 
-<CustomText styleClass="primary-bold-head">Array Extension Methods</CustomText>
+<CustomText styleClass="heading-1 primary">Array Extension Methods</CustomText>
 
 #### 🔸 Array.push
 Pushing new element at the end of the queue AKA `enqueue`

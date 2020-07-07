@@ -66,22 +66,6 @@
   color: #ed9002;
 }
 
-.primary-bold {
-  color: #ed9002;
-  font-weight: bold;
-}
-
-.primary-bold-head {
-  color: #ed9002;
-  font-weight: bold;
-  font-size: 24px !important;
-}
-
-.primary-bold-subhead {
-  color: #ed9002;
-  font-weight: bold;
-  font-size: 18px !important;
-}
 
 .message{
   margin: 150px auto 0 auto;
