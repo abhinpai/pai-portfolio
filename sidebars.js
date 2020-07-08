@@ -19,6 +19,7 @@ module.exports = {
             'javascript/modules/module6_classes',
             'javascript/modules/module7_destruct',
             'javascript/modules/module9_promise',
+            'javascript/modules/module15_async_await',
           ],
         },
       ],

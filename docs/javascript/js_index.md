@@ -136,14 +136,9 @@ description: Javascript Interview preparation material
 
 ### <Highlight color="#0090d9">Module 15</Highlight> Async + Await Flow Control
 ------
-* ❌ Async Await - Native Promises Review
-* ❌ All About Async + Await
-* ❌ Waiting on Multiple Promises
-* ❌ Promisifying Callback Based Functions
-* [https://ponyfoo.com/articles/understanding-javascript-async-await](https://ponyfoo.com/articles/understanding-javascript-async-await)
-* [https://www.taniarascia.com/promise-all-with-async-await/](https://www.taniarascia.com/promise-all-with-async-await/)
-* [https://flaviocopes.com/javascript-await-top-level/](https://flaviocopes.com/javascript-await-top-level/)
-* [https://flaviocopes.com/how-to-return-result-asynchronous-function/](https://flaviocopes.com/how-to-return-result-asynchronous-function/)
+* ✅ Async-Await
+* ✅ Async-Await with other syntax
+* ✅ Error Handling with async and await
 
 ### <Highlight color="#0090d9">Module 16</Highlight> Document Model
 ------
