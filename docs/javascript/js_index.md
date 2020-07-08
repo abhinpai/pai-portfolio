@@ -55,6 +55,7 @@ description: Javascript Interview preparation material
 * ✅ Pure Functions
 * ✅ Function Chaining
 * ✅ Scheduling: `setTimeout` and `setInterval`
+* ❌ Function Currying
 
 ### <Highlight color="#0090d9">Module 5</Highlight> Prototypes, inheritance
 ------
@@ -105,11 +106,11 @@ description: Javascript Interview preparation material
 
 ### <Highlight color="#0090d9">Module 11</Highlight> Modules
 ------
-* ❌ Modules, introduction
-* ❌ Export and Import
-* Where can you import a module? is it possible to import module inside block?
-* Where can you export a module? is it possible to export module inside block?
-* [https://ponyfoo.com/articles/es6-modules-in-depth](https://ponyfoo.com/articles/es6-modules-in-depth)
+* ✅ Modules, introduction
+* ✅ Core module features
+* ✅ Export and Import (as, *, default)
+* ✅ Build tools and its anatomy
+* ✅ Dynamic Imports
 
 ### <Highlight color="#0090d9">Module 12</Highlight> Proxy
 ------
@@ -193,7 +194,6 @@ description: Javascript Interview preparation material
 ### <Highlight color="#0090d9">Module 22</Highlight> Miscellaneous
 ------
 * ❌ Eval: run a code string
-* ❌ Currying
 * ❌ Mutation observer
 * ❌ Selection and Range
 * ❌ What is Debounce and how do you implement it?
@@ -206,6 +206,12 @@ description: Javascript Interview preparation material
 * ❌ Closure
 * ❌ Coercion
 * ❌ How Garbage collection works
+* ❌ Atomics
+* ❌ Dataview
+* ❌ Typed Array
+* ❌ Underscore.js
+* ❌ Lexical Scope
+* ❌ Tress-Shaking
 * [https://www.taniarascia.com/understanding-variables-scope-hoisting-in-javascript/](https://www.taniarascia.com/understanding-variables-scope-hoisting-in-javascript/)
 * [https://www.jstips.co/en/javascript/hoisting/](https://www.jstips.co/en/javascript/hoisting/)
 * [https://www.jstips.co/en/javascript/curry-vs-partial-application/](https://www.jstips.co/en/javascript/curry-vs-partial-application/)

@@ -165,7 +165,7 @@ console.log(marvelHero); // { actorName: "Robert, Jr.", characterName: "Tony Sta
 ## Hey I'm very strict 👮🏻‍♂️
 ---- 
 
-`use strict` is a literal expression to enable strict mode in coding. This strict context prevents certain actions from being taken and throws more exceptions.
+In the ES6 module system, strict mode is turned on by default. `use strict` is a literal expression to enable strict mode in coding. This strict context prevents certain actions from being taken and throws more exceptions.
 
 🔸In early javascript, it was allowed to use write code however we want 
 ```js
@@ -180,6 +180,25 @@ console.log(year); // 'year' is not declared
 ```
 🔸Strict mode will help to prevent the unexpected errors, exception which can arise during runtime of the application<br/>
 🔸**use strict** is very helpful to avoid a conflict between variables. If we missed declaring it will notify a developer
+
+### Some consideration of strict mode
+
+🔸 Variables can’t be left undeclared <br/>
+🔸 Function parameters must have unique names (or are considered syntax errors) <br/>
+🔸 `with` keyword is forbidden <br/>
+🔸 Errors are thrown on assignment to `read-only` properties <br/>
+🔸 Octal numbers like `00840` are syntax errors <br/>
+🔸 Attempts to `delete` undeletable properties throw an error <br/>
+🔸 delete prop is a syntax error, instead of assuming delete global[prop] <br/>
+🔸 `eval` doesn’t introduce new variables into its surrounding scope <br/>
+🔸 `eval` and `arguments` can’t be bound or assigned to <br/>
+🔸 `arguments` doesn’t magically track changes to method parameters <br/>
+🔸 `arguments.callee` throws a TypeError, no longer supported <br/>
+🔸 `arguments.caller` throws a TypeError, no longer supported <br/>
+🔸 Context passed as this in method invocations is not `boxed` (forced) into becoming an Object <br/>
+🔸 No longer able to use `fn.caller` and `fn.arguments` to access the JavaScript stack <br/>
+🔸 Reserved words (e.g protected, static, interface, etc) cannot be bound
+
 
 :::caution Remember 🧠
 * `use strict` should always declare at the top of a script to enable throughout the script or declare inside a block to enable only for a block. It won't work if we declare somewhere else
