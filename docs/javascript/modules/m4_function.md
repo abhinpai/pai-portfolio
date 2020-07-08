@@ -336,11 +336,6 @@ devDetails(); // Abhin Pai you can reach me via www.abhinpai.github.io from Indi
 
 We can also pass the additional parameters via `bind` methods like `call` and `apply`
 
-
-:::danger TBU
-Add pictorial Demonstration of call, bind and apply
-:::
-
 ## Method Chaining
 ----
 

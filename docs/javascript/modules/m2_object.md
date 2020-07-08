@@ -219,9 +219,9 @@ space.SpaceOrganization(); //ISRO  🛰 🚀
 space.NationalSpaceOrg(); // SpaceOrganization {organization: "ISRO  🛰 🚀"}
 ```
 
-:::danger TBU
-Update with vid or image. The detailed view of Arrow function
-:::
+<p align='center'>
+<img className="gif-img" src={useBaseUrl('https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/gifs%2Farrow-this-scope.gif?alt=media&token=5c4d3f74-eba7-4b73-a685-50ea394023c9')}  alt='this-arrow-scope' />
+</p>
 
 ## Object
 ----
@@ -243,10 +243,6 @@ function myHero (){}
 var mySuperHero = new myHero();
 mySuperHero.Name = "Iron Man";
 ``` 
-
-<p align='center'>
-<img className="gif-img" src={useBaseUrl('https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/gifs%2Fobject-clone.gif?alt=media&token=cfab892d-f8bc-4af9-84ef-8320e98543ec')}  alt='object-clone' />
-</p>
 
 ### Shorthand technique to declare an Object 
 
@@ -331,11 +327,9 @@ console.log(marvelDeepCopy.villain); // Ultron
 console.log(marvel.villain); // Thanos
 ```
 
-:::danger 
-1. Add Object ref image (How normal object copy work)
-2. Add other technique to copy an object
-:::
-
+<p align='center'>
+<img className="gif-img" src={useBaseUrl('https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/gifs%2Fobject-clone.gif?alt=media&token=cfab892d-f8bc-4af9-84ef-8320e98543ec')}  alt='object-clone' />
+</p>
 
 ### Technique to check the existence of object property
 
@@ -462,13 +456,9 @@ Computed Properties is very helpful when we want to generate a random key for an
 
 Every key in an object will have `Property Attribute` that defines the characteristics of the value associated with the key. They can also be thought of as meta-data describing the key-value pair. In short, attributes are used to define and explain the state of object properties.
 
-:::danger TBU
-Add an object property descriptors image
-:::
-
-<!-- <p align='center'>
-<img src={useBaseUrl('img/codeshot/object_1.png')}  alt='null Propagation' /> 
-</p> -->
+<p align='center'>
+<img className="gif-img" src={useBaseUrl('https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/gifs%2Fobject-descriptor.gif?alt=media&token=1be8e1ae-d6e0-4813-b252-253cc5d30ba6')}  alt='object-descriptor' />
+</p>
 
 There are total **6** property attribute
 

@@ -5,6 +5,7 @@ sidebar_label: "Module 5: Prototype"
 ---
 
 import GlowBullet from '../../../src/components/glowBullet/glowBullet.jsx';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::note Questions 🤔
 1. What is Prototypal inheritance
@@ -63,7 +64,15 @@ let mac = new Macbook16();
 mac.__proto__ // {backlitKeyboard: ƒ, touchbar: ƒ, touchid: ƒ, constructor: ƒ}
 ```
 
+<p align='center'>
+<img className="gif-img" src={useBaseUrl('https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/gifs%2FFunction-prototype.gif?alt=media&token=fbfba218-41fa-4832-bb31-00ece36503c7')}  alt='function-prototype' />
+</p>
+
 > The `prototype` for a constructor function will be the constructor of its own function itself
+
+<p align='center'>
+<img className="gif-img" src={useBaseUrl('https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/gifs%2Ffunction-ins-proto.gif?alt=media&token=c8ae2cc8-5a63-4bcf-a6a4-8a8ee637de76')}  alt='function-obj-prototype' />
+</p>
 
 Now the question is. Why are these features stored in an object called `__proto__`, and not stored directly as properties of `mac` instance?
 
@@ -86,11 +95,6 @@ This is nothing but `PROTOTYPE INHERITANCE`
 Both `__proto__` and `prototype` belong to the prototypal inheritance but both are not the same.
 
 `__proto__` is a property of `class instance` whereas prototype is a `property` of `class constructor`
-:::
-
-:::danger TBU
-Demonstrate above example with GIF
-Demonstrate constructor function synthetic sugar
 :::
 
 So far we have seen a prototype inheritance with constructor function and class. So the other way to add a prototype to object is using `Object.create()` method. 
