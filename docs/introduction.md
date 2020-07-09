@@ -1,9 +1,11 @@
 ---
 id: introduction
-title: Introduction
+title: " "
 sidebar_label: Introduction
 ---
 
-<p className={"message"} align='center'>
-    An introduction content will be updated soon
-</p>
+import Intro from '../src/components/intro/intro.jsx'
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+
+<Intro/>

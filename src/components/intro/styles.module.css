@@ -1,0 +1,19 @@
+.namaste {
+  font-size: 68px;
+}
+
+.paddingTop{
+  padding-top: 3rem;
+}
+
+.intoMsg{
+  display: block;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: calc(18px + 1vw);
+}
+
+.twitterNamespace{
+  color: #02beff;
+}
