@@ -5,7 +5,9 @@ import styles from './styles.module.css';
 export default function Intro() {
   return (
     <div>
-      <h1 className={styles.namaste}>Namaste 🙏🏼</h1>
+      <h1 className={styles.namaste}>
+        <span style={{ verticalAlign: 'middle' }}>Namaste</span> 🙏🏼
+      </h1>
       <p className={styles.intoMsg} style={{ paddingTop: '1rem' }}>
         Hello Developer, In this application I'm trying to unify the majority of
         the <span style={{ color: '#e45405' }}>Frontend</span>,{' '}

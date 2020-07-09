@@ -17,3 +17,9 @@
 .twitterNamespace{
   color: #02beff;
 }
+
+@media screen and (max-width: 622px) {
+  .namaste {
+    font-size: 50px;
+  }
+}
