@@ -9,20 +9,19 @@ export default function Intro() {
         <span style={{ verticalAlign: 'middle' }}>Namaste</span> 🙏🏼
       </h1>
       <p className={styles.intoMsg} style={{ paddingTop: '1rem' }}>
-        Hello Developer, In this application I'm trying to unify the majority of
-        the <span style={{ color: '#e45405' }}>Frontend</span>,{' '}
+        Hello Developer, In this application, I'm trying to unify the majority
+        of the <span style={{ color: '#e45405' }}>Frontend</span>,{' '}
         <span style={{ color: '#e87604' }}>Backend</span>,{' '}
-        <span style={{ color: '#ed9002' }}>DevOps</span> and{' '}
-        <span style={{ color: '#f0ab00' }}>other topics</span> related to the
-        development of the best, high quality, and versatile application under a
-        single umbrella. and I'm pretty sure you'll learn the lurks and perks in
-        these contents
+        <span style={{ color: '#ed9002' }}>DevOps</span> and,{' '}
+        <span style={{ color: '#f0ab00' }}>other topics</span> with respect to
+        application development. These contents may help you to develop the
+        best, high quality, and versatile application. and I'm pretty sure
+        you'll learn the lurks and perks in these contents
       </p>
 
       <p className={classnames(styles.intoMsg, styles.paddingTop)}>
-        If you find a room for improvements or if you spot any mistake I'm or
-        incase if my efforts help you somewhere in your development then, please
-        feel free to reach to me{' '}
+        If you find these content useful and want to appreciate my work then
+        please reach me out{' '}
         <a
           href='https://twitter.com/paiabhin'
           target='_blank'

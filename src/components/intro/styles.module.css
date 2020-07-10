@@ -3,7 +3,7 @@
 }
 
 .paddingTop{
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 
 .intoMsg{
@@ -16,6 +16,10 @@
 
 .twitterNamespace{
   color: #02beff;
+}
+
+.twitterNamespace:hover {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 622px) {
