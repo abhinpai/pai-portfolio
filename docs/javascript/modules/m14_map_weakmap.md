@@ -66,9 +66,9 @@ When a Map is created, we can pass an array (or another iterable) with key/value
 ```js
 // array of [key, value] pairs
 let map = new Map([
-  ['1',  'str1'],
-  [1,    'num1'],
-  [true, 'bool1']
+  ['hero',  'Batman'],
+  [007,    'James Bond'],
+  [true, 'Indian']
 ]);
 
 console.log(map.get('1')); // str1
