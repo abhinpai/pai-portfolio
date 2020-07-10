@@ -20,6 +20,8 @@ module.exports = {
             'javascript/modules/module7_destruct',
             'javascript/modules/module9_promise',
             'javascript/modules/module11_module',
+            'javascript/modules/module13_set_weakset',
+            'javascript/modules/module14_map_weakmap',
             'javascript/modules/module15_async_await',
           ],
         },
