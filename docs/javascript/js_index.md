@@ -122,18 +122,18 @@ description: Javascript Interview preparation material
 
 ### <Highlight color="#0090d9">Module 13</Highlight> Sets and WeakSets
 ------
-* ❌ What is Set?
-* ❌ What is WeakSet?
-* ❌ Understanding Sets with Brunch
-* [https://www.taniarascia.com/understanding-map-and-set-javascript/](https://www.taniarascia.com/understanding-map-and-set-javascript/)
+* ✅ Set
+* ✅ Methods of Set 
+* ✅ Features of Set
+* ✅ WeakSet
 
 ### <Highlight color="#0090d9">Module 14</Highlight> Map and Weak Map
 ------
-* ❌ What is Map?
-* ❌ WeakMap and Garbage Collection?
-* ❌ Map Metadata with DOM Node Keys?
-* [https://ponyfoo.com/articles/es6-maps-in-depth](https://ponyfoo.com/articles/es6-maps-in-depth)
-* [https://www.taniarascia.com/understanding-map-and-set-javascript/](https://www.taniarascia.com/understanding-map-and-set-javascript/)
+* ✅ Map
+* ✅ Methods of Map
+* ✅ Features of Map
+* ✅ WeakMap
+* ✅ Applications of WeakMap
 
 ### <Highlight color="#0090d9">Module 15</Highlight> Async + Await Flow Control
 ------
