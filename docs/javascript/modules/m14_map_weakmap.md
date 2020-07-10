@@ -74,17 +74,13 @@ let map = new Map([
 console.log(map.get('1')); // str1
 ```
 
-<!-- Object and Map difference 
-
-Use maps over objects when keys are unknown until run time, and when all keys are the same type and all values are the same type.
-
-Use objects when there is logic that operates on individual elements.
-
-An Object has a prototype, so there are default keys in the map. However, this can be bypassed using map = Object.create(null). The keys of an Object are Strings, where they can be any value for a Map. You can get the size of a Map easily while you have to manually keep track of size for an Object.
 
 
-Show a benchmark of object and key iteration  -->
-
+|                | Map                                                  | Object                                 |
+| -------------- | ---------------------------------------------------- | -------------------------------------- |
+| Key Type       | Accepts any type as Key                              | Only accept string as a key            |
+| Traversal      | Maps are traversal can traverse easily with for...of | Traversal is possible by obtaining key |
+| Default Values | None                                                 | Inherited keys from object             |
 
 ## WeakMap
 ----
@@ -199,3 +195,4 @@ if (typeof WeakMap != undefined) {
 <CustomText styleClass="heading-1">Reference</CustomText>
 
 * [Javascript  Info](https://javascript.info/weakmap-weakset)
+* [Stackoverflow Answer on Map vs Object](https://stackoverflow.com/a/60108544/8555490)
