@@ -4,6 +4,8 @@ title: Function
 sidebar_label: "Module 4: Function"
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 :::note Questions 🤔
 1. How arrow function is different from regular function
 2. Explain `call`, `apply` and `bind`
@@ -443,6 +445,7 @@ setTimeout() triggers the function call once. While the setInterval() triggers t
 similar to the setTimeout, setInterval function will also return unique id to track which can also be used to create the expression from memory
 
 ## Function Composition
+----
 
 We may find a situation where we need to use have a composition of multiple functions to do a job. for example, I want to format a string inside an HTML element by removing all the blank space, converting it to lowercase.
 
@@ -524,6 +527,7 @@ Like `composition` `pipe` also a high order function which takes functions as ar
 
 
 ## Function Currying 
+----
 
 So far we have learned about the function and came to know that the functions are the first-class citizen in the Javascript Programming language. And we also know the one function can accept n number of arguments and we can return almost anything from a function like any primitive values, objects or function itself
 
@@ -531,7 +535,7 @@ So far we have learned about the function and came to know that the functions ar
 
 Confused haan!! Lets dive dipper 
 
-Let's understand using multiplication function
+Let's understand using code snippet
 
 ```js
 function Multiplication(value1, value2) {
@@ -539,7 +543,9 @@ function Multiplication(value1, value2) {
 }
 ```
 
-In function currying `Multiplication` take one value and return another function
+The above snippet contain a simple function which takes two input and multiply and then return the value
+
+Lets see now Function currying using `closures`.
 
 ```js
 function Multiplication(value1) {
@@ -551,7 +557,7 @@ let mul = Multiplication(2); // Where mul is a function returned by Multiplicati
 mul(5); // Return is 10
 ```
 
-If we simplify the above code, we can rewrite something like this 
+We can further simplify the above code by rewriting something like this 
 
 ```js
 function Multiplication(value1) {
@@ -562,7 +568,12 @@ function Multiplication(value1) {
 Multiplication(2)(5); // Return is 10
 ```
 
+<p align='center'>
+<img className="gif-img" src={useBaseUrl('https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/gifs%2Ffunction-curry.gif?alt=media&token=85c5fd1f-0110-488a-901c-38921bd746ae')}  alt='function currying' />
+</p>
+
 ### So why Currying?
+
 It makes use of code reusability. Less code, Less Error. You may ask how it is less code?
 
 **Yes** we with the power of Arrow Function we still trim the no of a line to achieve function currying
@@ -573,6 +584,10 @@ Multiplication(5)(10); // Return 50
 ```
 
 Woooow, it's just two lines of code that's great 🤩
+
+<p align='center'>
+<img className="gif-img" src={useBaseUrl('https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Ffunction_curry.png?alt=media&token=df387c49-7ac5-4310-a9a7-65af9f01c5d7')}  alt='function currying using arrow' />
+</p>
 
 
 ### Function currying using `function binding` method (`bind`)
