@@ -441,3 +441,150 @@ The only difference is,
 setTimeout() triggers the function call once. While the setInterval() triggers the function repeatedly after the specified interval of time.
 
 similar to the setTimeout, setInterval function will also return unique id to track which can also be used to create the expression from memory
+
+## Function Composition
+
+We may find a situation where we need to use have a composition of multiple functions to do a job. for example, I want to format a string inside an HTML element by removing all the blank space, converting it to lowercase.
+
+```js {12}
+function trimString(str) {
+  return str.trim();
+}
+
+function convertString(str) {
+  return str.toLowerCase();
+}
+
+function formatString(str) {
+  return `<div>${str}</div>`;
+}
+let result = formatString(convertString(trimString('    Hello Hackers     ')));
+console.log(result); // "<div>hello hackers</div>"
+```
+
+If you observe above code snippet a `formatString` method takes the output from `convertString` and which takes the output from `trimString` where we pass an actual `string`. This is nothing but `function composition`
+
+But, there is a problem here this code looks a bit messy and but we can write clean code by using `Arrow Function`
+
+```js {5}
+const trimString = (str) => str.trim();
+const convertString = (str) => str.toLowerCase();
+const formatString = (str) => `<div>${str}</div>`;
+
+let result = formatString(convertString(trimString('    Hello Hackers     ')));
+console.log(result); // "<div>hello hackers</div>"
+```
+
+Now, it looks clean and crystal. but still, we are leaving with one more problem here. That is the readability of code if you see the highlighted code in above code snippet we have to read it from right to left which is kind of weird but we can simplify that as well using `Lodash`
+
+A `Lodash` is a utility library for a javascript
+
+Let's use `Composition` and `Pipe` from `Lodash` Library
+
+```js 
+// highlight-next-line
+import { composition } from 'lodash/fp';
+
+let trimString = (str) => str.trim();
+let convertString = (str) => str.toLowerCase();
+let formatString = (str) => `<div>${str}</div>`;
+
+// highlight-next-line
+const compositedFunction = composition(formatString, convertString, trimString);
+
+// highlight-next-line
+let result = compositedFunction('    Hello Hackers     ');
+console.log(result);
+```
+
+In the above example, we used `composition` from `lodash/fp` where `fp` stands for `Functional Programming`. 
+
+`composition` is a high order function which takes a function as an argument and returns a composited function and later we can use the single composited function in which we need to pass a string
+
+
+But still, we have not our actual problem of readability that we can solve using `pipe`
+
+```js
+// highlight-next-line
+import { pipe } from 'lodash/fp';
+
+let trimString = (str) => str.trim();
+let convertString = (str) => str.toLowerCase();
+let formatString = (str) => `<div>${str}</div>`;
+
+// highlight-next-line
+const compositedFunction = pipe(trimString, convertString, formatString);
+
+// highlight-next-line
+let result = compositedFunction('    Hello Hackers     ');
+console.log(result);
+```
+
+Like `composition` `pipe` also a high order function which takes functions as arguments but now we solved our problem.
+
+
+## Function Currying 
+
+So far we have learned about the function and came to know that the functions are the first-class citizen in the Javascript Programming language. And we also know the one function can accept n number of arguments and we can return almost anything from a function like any primitive values, objects or function itself
+
+`Currying` is a function of many arguments that are rewritten such that it takes the first argument and returns a function which in turn uses the remaining arguments and returns the value.
+
+Confused haan!! Lets dive dipper 
+
+Let's understand using multiplication function
+
+```js
+function Multiplication(value1, value2) {
+  return value1* value2;
+}
+```
+
+In function currying `Multiplication` take one value and return another function
+
+```js
+function Multiplication(value1) {
+  return function (value2) {
+    return value1 * value2;
+  };
+}
+let mul = Multiplication(2); // Where mul is a function returned by Multiplication
+mul(5); // Return is 10
+```
+
+If we simplify the above code, we can rewrite something like this 
+
+```js
+function Multiplication(value1) {
+  return function (value2) {
+    return value1 * value2;
+  };
+}
+Multiplication(2)(5); // Return is 10
+```
+
+### So why Currying?
+It makes use of code reusability. Less code, Less Error. You may ask how it is less code?
+
+**Yes** we with the power of Arrow Function we still trim the no of a line to achieve function currying
+
+```js
+const Multiplication = (value1) => (value2) => value1 * value2;
+Multiplication(5)(10); // Return 50
+```
+
+Woooow, it's just two lines of code that's great 🤩
+
+
+### Function currying using `function binding` method (`bind`)
+
+We already came across the `bind` method by which we can also achieve currying
+
+```js {5}
+function Multiplication(value1, value2) {
+  return value1 * value2;
+}
+
+let mul = Multiplication.bind(this, 2);
+mul(5); // Return 10 
+```
+

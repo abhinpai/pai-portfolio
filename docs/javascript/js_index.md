@@ -55,7 +55,9 @@ description: Javascript Interview preparation material
 * ✅ Pure Functions
 * ✅ Function Chaining
 * ✅ Scheduling: `setTimeout` and `setInterval`
-* ❌ Function Currying
+* ❌ High Order Function 
+* ✅ Function Composition
+* ✅ Function Currying
 
 ### <Highlight color="#0090d9">Module 5</Highlight> Prototypes, inheritance
 ------
