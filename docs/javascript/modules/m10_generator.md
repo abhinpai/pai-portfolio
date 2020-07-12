@@ -103,7 +103,10 @@ console.log(gen.next());  // {value: "Hi Beautiful People", done: true}
 In the above code, the generator `myGenerator` returns 3 different results **highlighted one**, and the in the third log value of `done` is `true` which means generator notifies that there is no other value left to return. This is the real beauty of the generator
 
 :::info Remember
-a generator will remember the last returned value. When we call next time it will not return the previously returned value instead it will return next value if any value present 
+* A generator will remember the last returned value. When we call next time it will not return the previously returned value instead it will return next value if any value present 
+
+* We can't make anonymous function and arrow function as a generator function if we do so Javascript will throw an error 
+_**Function statements require a function name / Unexpected token '*'**_
 :::
 
 ## `yield` Operators
