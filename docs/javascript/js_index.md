@@ -99,12 +99,15 @@ description: Javascript Interview preparation material
 
 ### <Highlight color="#0090d9">Module 10</Highlight> Generators and Iterators
 ------
-* ❌ Generators
-* ❌ Async iterators and generators
-* ❌ Looping Generators with for of
-* [https://ponyfoo.com/articles/es6-iterators-in-depth](https://ponyfoo.com/articles/es6-iterators-in-depth)
-* [https://codeburst.io/a-simple-guide-to-es6-iterators-in-javascript-with-examples-189d052c3d8e](https://codeburst.io/a-simple-guide-to-es6-iterators-in-javascript-with-examples-189d052c3d8e)
-* [https://www.taniarascia.com/understanding-generators-in-javascript/](https://www.taniarascia.com/understanding-generators-in-javascript/)
+* ✅ Generators
+* ✅ Generator functions
+* ✅ `Yield` keyword
+* ✅ Generator Composition 
+* ✅ Iterating Over a Generator
+* ✅ Generator using iterator 
+* ✅ Closing Generators
+* ❌ async/await with Generators
+<!-- https://www.taniarascia.com/understanding-generators-in-javascript/ -->
 
 ### <Highlight color="#0090d9">Module 11</Highlight> Modules
 ------

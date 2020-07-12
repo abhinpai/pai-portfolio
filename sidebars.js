@@ -19,6 +19,7 @@ module.exports = {
             'javascript/modules/module6_classes',
             'javascript/modules/module7_destruct',
             'javascript/modules/module9_promise',
+            'javascript/modules/module10_generator',
             'javascript/modules/module11_module',
             'javascript/modules/module13_set_weakset',
             'javascript/modules/module14_map_weakmap',
