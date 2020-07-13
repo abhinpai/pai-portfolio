@@ -14,7 +14,8 @@ description: Javascript Interview preparation material
 * ✅ `==` vs `===` operator [🔗](modules/module1_basic#untold-story-of-operator-%F0%9F%A7%91)
 * ✅ `!!` double negation operator [🔗](modules/module1_basic#untold-story-of-operator-%F0%9F%A7%91)
 * ✅ List of Falsy values
-
+* ❌ Multi threading and Javascript
+<!-- https://stackoverflow.com/questions/39879/why-doesnt-javascript-support-multithreading -->
 
 
 ### <Highlight color="#0090d9">Module 2</Highlight> Object
@@ -105,7 +106,7 @@ description: Javascript Interview preparation material
 * ✅ Generator Composition 
 * ✅ Iterating Over a Generator
 * ✅ Generator using iterator 
-* ✅ Closing Generators
+* ✅Closing Generators
 * ❌ async/await with Generators
 <!-- https://www.taniarascia.com/understanding-generators-in-javascript/ -->
 

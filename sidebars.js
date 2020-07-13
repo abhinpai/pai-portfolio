@@ -6,6 +6,11 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Interview Questions',
+      items: ['questions/intrvw_fe'],
+    },
+    {
+      type: 'category',
       label: 'Javascript',
       items: [
         'javascript/js_index',
@@ -62,9 +67,9 @@ module.exports = {
         'gemBox/react_res',
       ],
     },
-    {
-      type: 'doc',
-      id: 'misc/credits',
-    },
+    // {
+    //   type: 'doc',
+    //   id: 'misc/credits',
+    // },
   ],
 };
