@@ -6,8 +6,18 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Interview Questions',
-      items: ['questions/intrvw_fe'],
+      label: 'Interview Hub',
+      items: [
+        'questions/js',
+        'questions/dom',
+        'questions/web',
+        'questions/html',
+        'questions/style',
+        'questions/package',
+        'questions/ts',
+        'questions/react',
+        'questions/webpack',
+      ],
     },
     {
       type: 'category',
