@@ -40,7 +40,7 @@ module.exports = {
           position: "right",
         },
         { to: "blog", label: "Blogs", position: "right" },
-        { to: "about/Abhin-Pai", label: "About Me", position: "right" },
+        { to: "about/about", label: "About Me", position: "right" },
         {
           href: 'https://github.com/abhinpai',
           position: 'right',

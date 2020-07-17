@@ -1,1 +1,48 @@
+.container {
+  padding: 12px;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 1rem;
+}
 
+.container > div {
+  border: 1px dashed peru;
+}
+
+.profile {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.profile > .name{
+  padding-top: 12px;
+  font-size: 50px;
+  font-weight: 200;
+}
+
+.profile > .desc {
+  font-size: large;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+}
+
+@media screen and (max-width: 622px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .avatar {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+@media screen, (min-width: 622px) and (max-width: 966px) {
+  .container {
+    /* grid-template-columns: repeat(2, 1fr); */
+  }
+}
