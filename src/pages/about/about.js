@@ -31,6 +31,7 @@ export default function About() {
           <div className={styles.col2}>
             <div>
               <h1 className={styles.heading}> Work Experience 🧑🏻‍💻</h1>
+              <p className="message" style={{textAlign:"center"}}>contents will be updated soon</p>
             </div>
           </div>
           <div className={styles.col3}>
@@ -56,6 +57,8 @@ export default function About() {
                 {profile.technologies.learning.map((item) => {
                   return (
                     <img
+                      key={item.name}
+                      loading='lazy'
                       className={styles.techLogo}
                       src={item.logo}
                       alt={item.name}

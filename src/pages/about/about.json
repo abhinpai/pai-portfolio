@@ -19,61 +19,65 @@
   "technologies": {
     "experienced": [
       {
-        "logo": "../../../static/img/techs/react.svg",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Freact.svg?alt=media&token=b2d65fce-b5cb-4300-b2a6-b6c7da1c0235",
         "name": "React"
       },
       {
-        "logo": "../../../static/img/techs/css.svg",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Fcss.svg?alt=media&token=a4b5adcb-0b8a-4f95-b02c-fe8ee044305a",
         "name": "CSS 3"
       },
       {
-        "logo": "../../../static/img/techs/js.svg",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Fjs.svg?alt=media&token=04f58af7-08e7-41cc-bbca-43cfc5ed6e3e",
         "name": "Javascript"
       },
       {
-        "logo": "../../../static/img/techs/dotnet.svg",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Fdotnet.svg?alt=media&token=0d0cc155-a84b-46b0-8e2d-a87b4b5f89af",
         "name": "C# .Net"
       },
       {
-        "logo": "../../../static/img/techs/flutter.svg",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Fflutter.svg?alt=media&token=fcbe2149-33c2-48ba-811b-4dc58bcae8e8",
         "name": "Flutter"
       },
       {
-        "logo": "../../../static/img/techs/firebase.svg",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Ffirebase.svg?alt=media&token=96663914-1b69-4697-b3e6-0feb28199eec",
         "name": "Firebase"
       },
       {
-        "logo": "../../../static/img/techs/graphql.svg",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Fgraphql.svg?alt=media&token=9f98e5af-026e-4d52-9938-1b75330c6655",
         "name": "GraphQl"
       },
       {
-        "logo": "../../../static/img/techs/neo4j.svg",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Fneo4j.svg?alt=media&token=ae5cc5a0-a919-40e2-8862-2a20f9edf94f",
         "name": "Neo4J"
       },
       {
-        "logo": "../../../static/img/techs/docusaurus.svg",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Fdocusaurus.svg?alt=media&token=17188e68-fd2c-4f15-9aa5-83d25365ebc5",
         "name": "Docusaurus"
+      },
+      {
+        "logo": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Fmobx.svg?alt=media&token=25ab17c9-ffa8-4995-86e2-cb5161849089",
+        "name": "MobX"
       }
     ],
     "learning": [
       {
-        "logo": "../../../static/img/techs/docker.svg",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Fdocker.svg?alt=media&token=72e1bbca-16d5-4660-b647-f6eaf65b589b",
         "name": "Docker"
       },
       {
-        "logo": "../../../static/img/techs/k8.svg",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Fk8.svg?alt=media&token=14d3af1e-6bc3-46c1-a50e-ccda4205a8d8",
         "name": "Kubernetes"
       },
       {
-        "logo": "../../../static/img/techs/spring2.svg",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Fspring2.svg?alt=media&token=36c317f0-ad25-4b5d-8c66-0d50f1275025",
         "name": "Spring Boot"
       },
       {
-        "logo": "../../../static/img/techs/redux.svg",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Fredux.svg?alt=media&token=cf899d2b-9f14-4db8-9091-d589a9e961d2",
         "name": "Redux"
       },
       {
-        "logo": "../../../static/img/techs/webpack.svg",
+        "logo": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Fwebpack.svg?alt=media&token=3d0e6ad2-8e71-4c5f-b5cb-3ebb8036fb3d",
         "name": "Webpack"
       }
     ]
