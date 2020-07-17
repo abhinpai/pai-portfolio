@@ -5,15 +5,7 @@ sidebar_label: "Javascript"
 ---
 
 
-
-### What is polyfill why is that required
-### Write a polyfill for `bind()`
-### Arrow function vs regular function
-### Regular functions vs Generator functions
-### What is promise? How it works?
-### Promise vs async/await
-### call, bind and apply
-### Function Currying
+## Operators, Datatypes
 ### Spread and Rest operator
 ### Undefined vs Null
 ### What is Execution Context
@@ -22,30 +14,10 @@ sidebar_label: "Javascript"
 ### Purpose of `use strict`
 ### Scope
 ### What is `this`
-### High Order Function
-### Function Decomposition 
 ### Object.assign vs Object.clone 
 ### Template Literals
-### Callback function 
-### Promise Chaining 
 ### How to check the certain property is present in the object or not 
-### What does `new` keyword do
-### Prototype inheritance
-### Immediate Invoke Function Expression
-### Clousers
-### Map vs Loop
-### Pure function 
 ### let vs var vs const
-### Anonymous vs Named function 
-### What is generators
-### How to create private function 
-### prototype design pattern
-### Transpiling in JS
-### Function Borrowing
-### typeOf vs instanceOf
-### Symbols and Iterators
-### Temporals Dead Zone
-### Modules in Javascript
 ### Decorators in javascript
 ### Property decorator
 ### Computed properties 
@@ -55,12 +27,53 @@ sidebar_label: "Javascript"
 ### Null Coalescing Operator
 ### How do you achieve both queue and stack using an array
 ### Coercion in javascript 
-### What happens when you call a constructor function with the new keyword
 ### Array and Object destructors
-### Promise.race vs Promise.all
+
+
+## Function, Generators
+### Arrow function vs regular function
+### Regular functions vs Generator functions
+### call, bind and apply
+### Function Currying
+### Function Decomposition 
+### High Order Function
+### Callback function 
+### Immediate Invoke Function Expression
+### Clousers
+### Pure function 
+### Anonymous vs Named function 
+### What is generators
+### How to create private function 
+
+
+## Classes, Prototype Inheritance, Set and Map
+### Map vs Loop
+### prototype design pattern
 ### Map vs WeakMap
 ### Set vs WeakSet
+### What happens when you call a constructor function with the new keyword
 
+## Promise, Async and Await
+### What is promise? How it works?
+### Promise vs async/await
+### Promise Chaining 
+### Promise.race vs Promise.all
+
+## Polyfill and Modules
+### Write a polyfill for `bind()`
+### What is polyfill why is that required
+
+
+## General
+### What does `new` keyword do
+### Prototype inheritance
+### Transpiling in JS
+
+### Function Borrowing
+### typeOf vs instanceOf
+### Symbols and Iterators
+### Temporals Dead Zone
+### Modules in Javascript
 
 ## Javascript Concepts
 

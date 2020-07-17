@@ -1,0 +1,81 @@
+{
+  "name": "Abhin Pai",
+  "description": "A FullStack Software Engineer 🧑🏻‍💻 @Honeywell. A Self-paced learner 🤓 always hunt for an opportunity to hone my skill ⚔️",
+  "avatar_url": "https://avatars0.githubusercontent.com/u/15942876",
+  "social": [
+    {
+      "image_url": "Github",
+      "link": "https://github.com/abhinpai"
+    },
+    {
+      "image_url": "Twitter",
+      "link": "https://twitter.com/paiabhin"
+    },
+    {
+      "image_url": "LinkedIn",
+      "link": "https://www.linkedin.com/in/abhinpai"
+    }
+  ],
+  "technologies": {
+    "experienced": [
+      {
+        "logo": "../../../static/img/techs/react.svg",
+        "name": "React"
+      },
+      {
+        "logo": "../../../static/img/techs/css.svg",
+        "name": "CSS 3"
+      },
+      {
+        "logo": "../../../static/img/techs/js.svg",
+        "name": "Javascript"
+      },
+      {
+        "logo": "../../../static/img/techs/dotnet.svg",
+        "name": "C# .Net"
+      },
+      {
+        "logo": "../../../static/img/techs/flutter.svg",
+        "name": "Flutter"
+      },
+      {
+        "logo": "../../../static/img/techs/firebase.svg",
+        "name": "Firebase"
+      },
+      {
+        "logo": "../../../static/img/techs/graphql.svg",
+        "name": "GraphQl"
+      },
+      {
+        "logo": "../../../static/img/techs/neo4j.svg",
+        "name": "Neo4J"
+      },
+      {
+        "logo": "../../../static/img/techs/docusaurus.svg",
+        "name": "Docusaurus"
+      }
+    ],
+    "learning": [
+      {
+        "logo": "../../../static/img/techs/docker.svg",
+        "name": "Docker"
+      },
+      {
+        "logo": "../../../static/img/techs/k8.svg",
+        "name": "Kubernetes"
+      },
+      {
+        "logo": "../../../static/img/techs/spring2.svg",
+        "name": "Spring Boot"
+      },
+      {
+        "logo": "../../../static/img/techs/redux.svg",
+        "name": "Redux"
+      },
+      {
+        "logo": "../../../static/img/techs/webpack.svg",
+        "name": "Webpack"
+      }
+    ]
+  }
+}

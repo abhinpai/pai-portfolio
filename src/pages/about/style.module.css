@@ -1,27 +1,52 @@
-.container {
+.container,
+.socialContainer, .techs {
   padding: 12px;
   display: grid;
+}
+
+.container {
   overflow: hidden;
+  gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 1rem;
 }
 
-.container > div {
-  border: 1px dashed peru;
+.socialContainer {
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.profile {
+.techs {
+  overflow: auto;
+  padding: 12px 0;
+  place-items: center;
   text-align: center;
-  padding-top: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
 }
 
-.profile > .name{
+.techLogo{
+  padding-bottom: 20px;
+  max-height: 38px;
+  max-width: 38px;
+}
+
+.container > div,
+.item {
+  background: #4040401c;
+  border-radius: 8px;
+}
+
+.col1 {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.col1 > .name {
   padding-top: 12px;
   font-size: 50px;
   font-weight: 200;
 }
 
-.profile > .desc {
+.col1 > .desc {
+  padding: 4px;
   font-size: large;
 }
 
@@ -31,6 +56,15 @@
   height: 280px;
 }
 
+.col2, .col3 {
+  padding: 20px;
+}
+
+.heading{
+  font-size: 28px;
+  font-weight: 300;
+}
+
 @media screen and (max-width: 622px) {
   .container {
     grid-template-columns: repeat(1, 1fr);
@@ -38,11 +72,5 @@
   .avatar {
     width: 270px;
     height: 270px;
-  }
-}
-
-@media screen, (min-width: 622px) and (max-width: 966px) {
-  .container {
-    /* grid-template-columns: repeat(2, 1fr); */
   }
 }
