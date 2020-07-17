@@ -9,14 +9,19 @@ export default function Intro() {
         <span style={{ verticalAlign: 'middle' }}>Namaste</span> 🙏🏼
       </h1>
       <p className={styles.intoMsg} style={{ paddingTop: '1rem' }}>
-        Hello Developer, In this application, I'm trying to unify the majority
-        of the <span style={{ color: '#e45405' }}>Frontend</span>,{' '}
-        <span style={{ color: '#e87604' }}>Backend</span>,{' '}
+        <a
+          href='https://twitter.com/paiabhin'
+          target='_blank'
+          className={styles.twitterNamespace}
+        >
+          @abhinpai
+        </a>{' '}
+        here. As part of my learning activity, I have documented few topics on{' '}
+        <span style={{ color: '#e45405' }}>Frontend</span> and planning to add
+        few more contents on <span style={{ color: '#e87604' }}>Backend</span>,{' '}
         <span style={{ color: '#ed9002' }}>DevOps</span> and,{' '}
-        <span style={{ color: '#f0ab00' }}>other topics</span> with respect to
-        application development. These contents may help you to develop the
-        best, high quality, and versatile application. and I'm pretty sure
-        you'll learn the lurks and perks in these contents
+        <span style={{ color: '#f0ab00' }}>and other concepts</span> which may
+        also help you guys to hone your skills
       </p>
 
       <p className={classnames(styles.intoMsg, styles.paddingTop)}>
