@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import styles from './style.module.css';
-import classnames from 'classnames';
 import profile from './about.json';
 
 export default function About() {
@@ -11,7 +10,7 @@ export default function About() {
         <div className={styles.container}>
           <div className={styles.col1}>
             <img
-              src={'https://avatars0.githubusercontent.com/u/15942876'}
+              src={profile.avatar_url}
               loading='lazy'
               className={styles.avatar}
             />
@@ -31,7 +30,9 @@ export default function About() {
           <div className={styles.col2}>
             <div>
               <h1 className={styles.heading}> Work Experience 🧑🏻‍💻</h1>
-              <p className="message" style={{textAlign:"center"}}>contents will be updated soon</p>
+              <p className='message' style={{ textAlign: 'center' }}>
+                contents will be updated soon
+              </p>
             </div>
           </div>
           <div className={styles.col3}>
