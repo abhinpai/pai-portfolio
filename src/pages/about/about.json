@@ -77,10 +77,6 @@
         "name": "Docker"
       },
       {
-        "logo": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Fk8.svg?alt=media&token=14d3af1e-6bc3-46c1-a50e-ccda4205a8d8",
-        "name": "Kubernetes"
-      },
-      {
         "logo": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Fspring2.svg?alt=media&token=36c317f0-ad25-4b5d-8c66-0d50f1275025",
         "name": "Spring Boot"
       },
