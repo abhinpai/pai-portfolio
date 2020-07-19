@@ -123,3 +123,35 @@ html[data-theme='dark'] .header-github-link:before {
 html[data-theme='dark'] hr {
   border-color: #bec3c936;
 }
+
+
+.blob {
+  background: #f0ab00;
+  border-radius: 50%;
+  margin: 8px 10px;
+  height: 14px;
+  width: 14px;
+  min-width: 14px;
+  max-height: 14px;
+
+  box-shadow: 0 0 0 0 rgba(240, 171, 0, 1);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(240, 171, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(240, 171, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(240, 171, 0, 0);
+  }
+}

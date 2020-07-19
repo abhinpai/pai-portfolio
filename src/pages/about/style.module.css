@@ -1,5 +1,6 @@
 .container,
-.socialContainer, .techs {
+.socialContainer,
+.techs {
   padding: 12px;
   display: grid;
 }
@@ -11,7 +12,9 @@
 }
 
 .socialContainer {
-  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  padding-bottom: 28px;
 }
 
 .techs {
@@ -22,10 +25,8 @@
   grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
 }
 
-.techLogo{
-  padding-bottom: 20px;
-  max-height: 38px;
-  max-width: 38px;
+.techLogo {
+  border-radius: 4px;
 }
 
 .container > div,
@@ -54,15 +55,57 @@
   border-radius: 50%;
   width: 280px;
   height: 280px;
+  margin: auto;
 }
 
-.col2, .col3 {
+.col2,
+.col3 {
   padding: 20px;
 }
 
-.heading{
+.heading {
   font-size: 28px;
   font-weight: 300;
+}
+
+.timelineContainer {
+  display: flex;
+}
+
+.marker {
+  margin-right: 14px;
+  margin-top: 10px;
+}
+
+.timelineContent {
+  width: 100%;
+}
+
+.timelineContent > h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.timelineContent > p {
+  display: inline-flex;
+  color: rgb(136, 136, 136);
+}
+
+.period {
+  font-size: 12px;
+  color: #848282;
+  font-style: inherit;
+  float: right;
+  padding: 12px 8px;
+}
+
+.socialIcon {
+  border-radius: 4px;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 622px) {
@@ -72,5 +115,11 @@
   .avatar {
     width: 270px;
     height: 270px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .heading {
+    font-size: 24px;
   }
 }

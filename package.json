@@ -16,7 +16,8 @@
     "@docusaurus/preset-classic": "^2.0.0-alpha.56",
     "classnames": "^2.2.6",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "react-simple-img": "^2.3.9"
   },
   "browserslist": {
     "production": [

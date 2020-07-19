@@ -8,12 +8,24 @@
       "link": "https://github.com/abhinpai"
     },
     {
-      "image_url": "Twitter",
+      "image_url": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Ftwitter.svg?alt=media&token=aa84a544-6497-49e6-b823-ffa2baa49827",
       "link": "https://twitter.com/paiabhin"
     },
     {
-      "image_url": "LinkedIn",
+      "image_url": "https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/imgs%2Flinkedin.svg?alt=media&token=ce5f26bf-d464-4b8a-b6ed-fc04de26ffba",
       "link": "https://www.linkedin.com/in/abhinpai"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Honeywell",
+      "role": "Software Engineer I",
+      "period": "July 2018 - Present"
+    },
+    {
+      "company": "Think201",
+      "role": "Mobile Application Developer, Intern",
+      "period": "Jan 2018 - May 2018"
     }
   ],
   "technologies": {

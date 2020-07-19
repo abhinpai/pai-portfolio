@@ -2,6 +2,10 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import styles from './style.module.css';
 import profile from './about.json';
+import classnames from 'classnames';
+import { SimpleImg } from 'react-simple-img';
+
+const openWindow = (url) => window.open(url);
 
 export default function About() {
   return (
@@ -9,19 +13,35 @@ export default function About() {
       <div>
         <div className={styles.container}>
           <div className={styles.col1}>
-            <img
-              src={profile.avatar_url}
-              loading='lazy'
+            <SimpleImg
               className={styles.avatar}
+              placeholder={'#333'}
+              importance={'high'}
+              width={280}
+              height={280}
+              src={profile.avatar_url}
             />
             <h2 className={styles.name}>{profile.name}</h2>
             <p className={styles.desc}>{profile.description}</p>
             <div className={styles.socialContainer}>
               {profile.social.map((item, index) => {
-                return (
-                  <span className={styles.item} key={index}>
-                    {' '}
-                    {item.image_url}
+                return item.image_url === 'Github' ? (
+                  <span
+                    onClick={() => openWindow(item.link)}
+                    key={index}
+                    className={classnames(styles.pointer, 'header-github-link')}
+                  />
+                ) : (
+                  <span onClick={() => openWindow(item.link)}>
+                    <SimpleImg
+                      key={index}
+                      className={classnames(styles.pointer, styles.socialIcon)}
+                      placeholder={'#333'}
+                      importance={'high'}
+                      width={24}
+                      height={24}
+                      src={item.image_url}
+                    />
                   </span>
                 );
               })}
@@ -30,9 +50,20 @@ export default function About() {
           <div className={styles.col2}>
             <div>
               <h1 className={styles.heading}> Work Experience 🧑🏻‍💻</h1>
-              <p className='message' style={{ textAlign: 'center' }}>
-                contents will be updated soon
-              </p>
+              {profile.experience.map((item) => {
+                return (
+                  <div key={item.company} className={styles.timelineContainer}>
+                    <div className={classnames('blob', styles.marker)}></div>
+                    <div className={styles.timelineContent}>
+                      <h3>
+                        {item.company}
+                        <span className={styles.period}>{item.period}</span>
+                      </h3>
+                      <p>{item.role}</p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
           <div className={styles.col3}>
@@ -41,11 +72,16 @@ export default function About() {
               <div className={styles.techs}>
                 {profile.technologies.experienced.map((item) => {
                   return (
-                    <img
-                      className={styles.techLogo}
-                      src={item.logo}
-                      alt={item.name}
-                    ></img>
+                    <span key={item.name} style={{ paddingBottom: '20px' }}>
+                      <SimpleImg
+                        className={styles.techLogo}
+                        placeholder={'#333'}
+                        importance={'high'}
+                        width={38}
+                        height={38}
+                        src={item.logo}
+                      />
+                    </span>
                   );
                 })}
               </div>
@@ -57,13 +93,17 @@ export default function About() {
               <div className={styles.techs}>
                 {profile.technologies.learning.map((item) => {
                   return (
-                    <img
-                      key={item.name}
-                      loading='lazy'
-                      className={styles.techLogo}
-                      src={item.logo}
-                      alt={item.name}
-                    ></img>
+                    <span style={{ paddingBottom: '20px' }}>
+                      <SimpleImg
+                        key={item.name}
+                        className={styles.techLogo}
+                        placeholder={'#333'}
+                        importance={'high'}
+                        width={38}
+                        height={38}
+                        src={item.logo}
+                      />
+                    </span>
                   );
                 })}
               </div>
