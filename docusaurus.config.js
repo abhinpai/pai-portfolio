@@ -7,6 +7,7 @@ module.exports = {
   organizationName: "abhinpai",
   projectName: "pai-portfolio",
   themeConfig: {
+    defaultDarkMode: true,
     sidebarCollapsible: true,
     googleAnalytics: {
       trackingID: "G-61TLB4TLQ6",
