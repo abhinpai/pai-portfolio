@@ -66,6 +66,14 @@
   color: #ed9002;
 }
 
+.no-padding{
+  padding: 0;
+}
+
+.no-margin{
+  margin: 0;
+}
+
 .message {
   margin: 150px auto 0 auto;
   font-size: 50px;
