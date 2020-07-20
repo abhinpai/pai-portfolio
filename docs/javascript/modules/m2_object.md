@@ -28,9 +28,9 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 In a simple word `this` is the object that is executing in the current context. 
 
-Not understanding it right let me tell you in this way. 
+Not understanding it right! let me tell you in this way. 
 
-`this` in **module 3** is quite interesting it contains quite a lot of crazy pieces of stuff. In a statement this is referring to the **module 3** which means **module 3** is my current context. Now I hope you got some hint 😊
+Lets say `this` in **module 2** is quite interesting it contains quite a lot of crazy pieces of stuff. In a statement this is referring to the **module 2** which means **module 2** is my current context. Now I hope you got some hint 😊
 
 :::caution Remember 
 The value of `this` will differ in how a function is invoked. So it's hard to judge the value of `this`
@@ -203,7 +203,10 @@ myHero(); // {hero: "Hulk"}
 
 ### 5. Arrow function / Lexical environment
 
-With arrow functions, this keeps the same value as its parent scope i.e and Object `space`
+Before arrow functions, every new function defined its own this value based on how the function was called but Arrow functions do not have their own `this` value
+
+With an arrow functions, this keeps the same value as its parent scope i.e and Object `space`
+
 
 ```js
 let space = {
