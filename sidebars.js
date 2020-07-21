@@ -6,21 +6,6 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Interview Hub',
-      items: [
-        'questions/js',
-        // 'questions/dom',
-        // 'questions/web',
-        // 'questions/html',
-        // 'questions/style',
-        // 'questions/package',
-        // 'questions/ts',
-        // 'questions/react',
-        // 'questions/webpack',
-      ],
-    },
-    {
-      type: 'category',
       label: 'Javascript',
       items: [
         'javascript/js_index',
@@ -63,6 +48,21 @@ module.exports = {
             'react/hooks/hooks_rules',
           ],
         },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Interview Hub',
+      items: [
+        'questions/js',
+        // 'questions/dom',
+        // 'questions/web',
+        // 'questions/html',
+        // 'questions/style',
+        // 'questions/package',
+        // 'questions/ts',
+        // 'questions/react',
+        // 'questions/webpack',
       ],
     },
     {
