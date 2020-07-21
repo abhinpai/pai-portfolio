@@ -1,18 +1,42 @@
-import React, { useState, useEffect } from 'react';
-import styles from './style.module.css';
+import React, { useState } from "react";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+import "./Collapsible.css";
 
 const Collapsible = ({ children, title }) => {
   const [collapse, setCollapse] = useState(false);
+  const [headerStyle, setHeaderStyle] = useState("header round-header");
 
   return (
-    <div>
+    <div className="disable-user-select">
       <div
-        onClick={() => setCollapse(!collapse)}
-        className={styles.header}
+        onClick={() => {
+          setCollapse(!collapse),
+            setHeaderStyle(collapse ? "header round-header" : "header");
+        }}
+        className={headerStyle}
       >
-        {title != null ? title : 'Answer'}
+        {title != null ? title : "Answer"}
       </div>
-      {collapse ? <div className={styles.content}>{children}</div> : null}
+
+      <Toggle hidden={collapse}>{children}</Toggle>
+    </div>
+  );
+};
+
+export const Toggle = ({ hidden, children }) => {
+  return (
+    <div>
+      <TransitionGroup>
+        {hidden ? (
+          <CSSTransition classNames="fade" timeout={500}>
+            <div key={"answer"} className="toggle-base">
+              {children}
+            </div>
+          </CSSTransition>
+        ) : (
+          <div />
+        )}
+      </TransitionGroup>
     </div>
   );
 };

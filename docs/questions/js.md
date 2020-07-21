@@ -5,28 +5,50 @@ sidebar_label: "Javascript"
 ---
 
 import CB from '../../src/components/customText/customText.jsx';
-
 import Collapsible from '../../src/components/collapsable/Collapsible.jsx';
-
-<Collapsible title="Header">
-    <div> <h2>Content of Collapsible</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur</p>
-    </div>
-</Collapsible>
 
 
 ### 🔸 Are semicolons required in JavaScript?
-Semicolons in JavaScript divide the community. Some prefer to use them always, no matter what. Others like to avoid them.
 
-JavaScript does not strictly require semicolons. When there is a place where a semicolon was needed, it adds it behind the scenes.
+<Collapsible>
+  <div>
+    <p>
+      Semicolons in JavaScript divide the community. Some prefer to use them
+      always, no matter what. Others like to avoid them.
+    </p>
+    <p>
+      JavaScript does not strictly require semicolons. When there is a place
+      where a semicolon was needed, it adds it behind the scenes.
+    </p>
+    <p>
+      The process that does this is called {' '}
+      <span className="chip">Automatic Semicolon Insertion </span>
+    </p>
+  </div>
+</Collapsible>
 
-The process that does this is called `Automatic Semicolon Insertion`
 
 ### 🔸 Explain how `this` works
 
-*Refer* [Javascript Object](../../javascript/modules/module2_object#what-the-hell-is-this-) for detail elaboration 
+<Collapsible>
+  <div>
+    <p>
+      <i>Refer </i
+      ><a href="../javascript/modules/module2_object#what-the-hell-is-this-">
+        Javascript Object </a
+      >for detail elaboration
+    </p>
+    <p>
+      <i>Refer </i
+      ><a
+        href="https://stackoverflow.com/questions/3127429/how-does-the-this-keyword-work"
+        >Stackoverflow Post
+      </a>
+    </p>
+  </div>
+</Collapsible>
 
-*Stackoverflow* https://stackoverflow.com/questions/3127429/how-does-the-this-keyword-work
+
 
 ### 🔸 Explain how prototypal inheritance works.
 
@@ -67,7 +89,7 @@ In JavaScript, closures are created every time a function is created, at functio
 2. Outer Functions Scope
 3. Global Scope
 
-```js
+```js {2}
 // global scope
 var e = 10;
 function sum(a){
