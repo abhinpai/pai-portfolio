@@ -7,7 +7,7 @@ const Collapsible = ({ children, title }) => {
   const [headerStyle, setHeaderStyle] = useState("header round-header");
 
   return (
-    <div>
+    <div className="disable-user-select">
       <div
         onClick={() => {
           setCollapse(!collapse),

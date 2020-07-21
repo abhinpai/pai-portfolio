@@ -11,18 +11,44 @@ import Collapsible from '../../src/components/collapsable/Collapsible.jsx';
 ### 🔸 Are semicolons required in JavaScript?
 
 <Collapsible>
-    <div> 
-      <p>Semicolons in JavaScript divide the community. Some prefer to use them always, no matter what. Others like to avoid them.</p>
-      <p>JavaScript does not strictly require semicolons. When there is a place where a semicolon was needed, it adds it behind the scenes.</p>
-      <p>The process that does this is called `Automatic Semicolon Insertion`</p>
-    </div>
+  <div>
+    <p>
+      Semicolons in JavaScript divide the community. Some prefer to use them
+      always, no matter what. Others like to avoid them.
+    </p>
+    <p>
+      JavaScript does not strictly require semicolons. When there is a place
+      where a semicolon was needed, it adds it behind the scenes.
+    </p>
+    <p>
+      The process that does this is called {' '}
+      <span className="chip">Automatic Semicolon Insertion </span>
+    </p>
+  </div>
 </Collapsible>
+
 
 ### 🔸 Explain how `this` works
 
-*Refer* [Javascript Object](../../javascript/modules/module2_object#what-the-hell-is-this-) for detail elaboration 
+<Collapsible>
+  <div>
+    <p>
+      <i>Refer </i
+      ><a href="../javascript/modules/module2_object#what-the-hell-is-this-">
+        Javascript Object </a
+      >for detail elaboration
+    </p>
+    <p>
+      <i>Refer </i
+      ><a
+        href="https://stackoverflow.com/questions/3127429/how-does-the-this-keyword-work"
+        >Stackoverflow Post
+      </a>
+    </p>
+  </div>
+</Collapsible>
 
-*Stackoverflow* https://stackoverflow.com/questions/3127429/how-does-the-this-keyword-work
+
 
 ### 🔸 Explain how prototypal inheritance works.
 
