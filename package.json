@@ -18,7 +18,8 @@
     "react": "^16.8.4",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.8.4",
-    "react-simple-img": "^2.3.9"
+    "react-simple-img": "^2.3.9",
+    "react-transition-group": "^4.4.1"
   },
   "browserslist": {
     "production": [
