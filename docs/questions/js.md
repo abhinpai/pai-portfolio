@@ -7,25 +7,16 @@ sidebar_label: "Javascript"
 import CB from '../../src/components/customText/customText.jsx';
 import Collapsible from '../../src/components/collapsable/Collapsible.jsx';
 
-<Collapsible title="Answer">
-    <div> 
-      <h2>Content of Collapsible</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur</p>
-       <h2>Content of Collapsible</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur</p>
-       <h2>Content of Collapsible</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur</p>
-       <h2>Content of Collapsible</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur</p>
-    </div>
-</Collapsible>
 
 ### 🔸 Are semicolons required in JavaScript?
-Semicolons in JavaScript divide the community. Some prefer to use them always, no matter what. Others like to avoid them.
 
-JavaScript does not strictly require semicolons. When there is a place where a semicolon was needed, it adds it behind the scenes.
-
-The process that does this is called `Automatic Semicolon Insertion`
+<Collapsible>
+    <div> 
+      <p>Semicolons in JavaScript divide the community. Some prefer to use them always, no matter what. Others like to avoid them.</p>
+      <p>JavaScript does not strictly require semicolons. When there is a place where a semicolon was needed, it adds it behind the scenes.</p>
+      <p>The process that does this is called `Automatic Semicolon Insertion`</p>
+    </div>
+</Collapsible>
 
 ### 🔸 Explain how `this` works
 
@@ -72,7 +63,7 @@ In JavaScript, closures are created every time a function is created, at functio
 2. Outer Functions Scope
 3. Global Scope
 
-```js
+```js {2}
 // global scope
 var e = 10;
 function sum(a){

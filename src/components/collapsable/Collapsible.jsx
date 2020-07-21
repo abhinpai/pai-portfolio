@@ -1,13 +1,20 @@
 import React, { useState } from "react";
-import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import "./Collapsible.css";
 
 const Collapsible = ({ children, title }) => {
   const [collapse, setCollapse] = useState(false);
+  const [headerStyle, setHeaderStyle] = useState("header round-header");
+
   return (
     <div>
-      <div onClick={() => setCollapse(!collapse)} className="header">
+      <div
+        onClick={() => {
+          setCollapse(!collapse),
+            setHeaderStyle(collapse ? "header round-header" : "header");
+        }}
+        className={headerStyle}
+      >
         {title != null ? title : "Answer"}
       </div>
 
@@ -21,10 +28,7 @@ export const Toggle = ({ hidden, children }) => {
     <div>
       <TransitionGroup>
         {hidden ? (
-          <CSSTransition
-            classNames="fade"
-            timeout={500}
-          >
+          <CSSTransition classNames="fade" timeout={500}>
             <div key={"answer"} className="toggle-base">
               {children}
             </div>
@@ -38,16 +42,3 @@ export const Toggle = ({ hidden, children }) => {
 };
 
 export default Collapsible;
-
-
-{/* <ReactCSSTransitionGroup
-transitionName="toggle"
-transitionEnterTimeout={300}
-transitionLeaveTimeout={300}
->
-{this.props.hidden ? (
-  <div key={"answer"} className="toggle-base">
-    {this.props.children}
-  </div>
-) : null}
-</ReactCSSTransitionGroup> */}

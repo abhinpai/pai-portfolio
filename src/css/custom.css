@@ -17,13 +17,6 @@
   --ifm-code-font-size: 95%;
 }
 
-.docusaurus-highlight-code-line {
-  background-color: rgb(72, 77, 91);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
-}
-
 .plateletSet1 {
   color: #008fd3;
   color: #5f9a7f;
@@ -82,8 +75,8 @@
 
 .gif-img {
   width: 100%;
-  width: -moz-available; /* WebKit-based browsers will ignore this. */
-  width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  width: -moz-available; 
+  width: -webkit-fill-available;
   width: fill-available;
 }
 
@@ -118,7 +111,7 @@ html[data-theme='dark'] .header-github-link:before {
     no-repeat;
 }
 
-/* Manipulated existing CSS */
+/* Notification text and icon */
 .admonition-icon {
   display: none !important;
 }
@@ -132,7 +125,7 @@ html[data-theme='dark'] hr {
   border-color: #bec3c936;
 }
 
-
+/* Glowing bullet */
 .blob {
   background: #f0ab00;
   border-radius: 50%;

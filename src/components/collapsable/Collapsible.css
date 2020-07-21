@@ -1,12 +1,15 @@
 .header {
   cursor: pointer;
-  padding: 6px;
   background-color: #0089cc;
   color: #fff;
   text-align: center;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 16px;
   border-radius: 8px 8px 0 0;
+}
+
+.round-header {
+  border-radius: 8px;
 }
 
 .toggle-base {
@@ -52,13 +55,16 @@
 .fade-enter {
   opacity: 0.01;
 }
+
 .fade-enter-active {
   opacity: 1;
   transition: all 1s;
 }
+
 .fade-exit {
   opacity: 1;
 }
+
 .fade-exit-active {
   opacity: 0.01;
   transition: all 1s;
