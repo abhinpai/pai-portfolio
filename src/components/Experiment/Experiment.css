@@ -1,0 +1,39 @@
+.toggle-base {
+  height: 100%;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 0 0 8px 8px;
+  border-bottom: 0.5px solid #80808057;
+  border-left: 0.5px solid #80808057;
+  border-right: 0.5px solid #80808057;
+}
+
+.toggle-enter {
+  animation: fade-in 1s;
+}
+
+.toggle-leave {
+  animation: fade-out 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    height: 0px;
+  }
+  to {
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    height: 100%;
+  }
+  to {
+    opacity: 0;
+    height: 0px;
+  }
+}
