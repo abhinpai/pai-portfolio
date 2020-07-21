@@ -5,15 +5,20 @@ sidebar_label: "Javascript"
 ---
 
 import CB from '../../src/components/customText/customText.jsx';
-
 import Collapsible from '../../src/components/collapsable/Collapsible.jsx';
 
-<Collapsible title="Header">
-    <div> <h2>Content of Collapsible</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur</p>
+<Collapsible title="Answer">
+    <div> 
+      <h2>Content of Collapsible</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur</p>
+       <h2>Content of Collapsible</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur</p>
+       <h2>Content of Collapsible</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur</p>
+       <h2>Content of Collapsible</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur</p>
     </div>
 </Collapsible>
-
 
 ### 🔸 Are semicolons required in JavaScript?
 Semicolons in JavaScript divide the community. Some prefer to use them always, no matter what. Others like to avoid them.
