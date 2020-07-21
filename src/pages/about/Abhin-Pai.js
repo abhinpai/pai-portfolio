@@ -68,7 +68,7 @@ export default function About() {
           </div>
           <div className={styles.col3}>
             <div>
-              <h1 className={styles.heading}>🛡 My weapons ⚔️</h1>
+              <h1 className={styles.heading}> My skills on 💻</h1>
               <div className={styles.techs}>
                 {profile.technologies.experienced.map((item) => {
                   return (
@@ -88,7 +88,7 @@ export default function About() {
             </div>
             <div>
               <h1 className={styles.heading} style={{ paddingTop: '20px' }}>
-                🤓 Current Learnings 📝
+                 Current Learnings 🤓
               </h1>
               <div className={styles.techs}>
                 {profile.technologies.learning.map((item) => {
