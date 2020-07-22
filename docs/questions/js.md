@@ -295,3 +295,122 @@ console.log(counter.value()); // 1.
 </Collapsible>
 
 
+### 🔸 Explain how `Event Loop` works and explain the individual component that take a part in it 
+
+<Collapsible>
+  <div>
+    <p>
+      You’ve probably heard that JavaScript is a single-threaded language. You
+      may have even heard the terms <span className="chip">Call Stack</span>,
+      <span className="chip"> Event Table</span> and <span className="chip">Event Queue</span>.
+    </p>
+    <p>
+      The concept of event loop is very simple. There’s an endless loop, when
+      JavaScript engine waits for tasks, executes them and then sleeps waiting
+      for more tasks.
+    </p>
+    <p><b>Lets see in more details one by one</b></p>
+    <h3>The Call Stack</h3>
+    <p>
+      JavaScript has a single call stack in which it keeps track of what script
+      is to be executed and if the scripts belong to the event queue it will
+      dispatch to the respective queue and when an event present in the call
+      stack is completed it will popup eventually making room for next task. The
+      call stack is made up of <span className="chip">stack frames—one</span> for each method
+      call
+    </p>
+    <p>
+      When you’re about to execute a function it is added on the call stack.
+      Then if that function calls another function — the other function will be
+      on top of the first one in the call stack. When you get an error in the
+      console you get a long message that shows you the path of execution — this
+      is what the stack looked in that exact moment. But what if we make a
+      request or put a timeout on something? In theory that should freeze the
+      entire browser until it is executed so the call stack can continue? In
+      practice however, you know that this doesn’t happen — because of the {' '}
+      <span className="chip">Event Table</span> and <span className="chip">Event Queue</span>.
+    </p>
+    <h3>The Execution Context Stack</h3>
+    <p>
+      Сall Stack and Execution Stack are different names for the same thing. It
+      is a LIFO stack that is used to store execution contexts created during
+      code execution.
+    </p>
+    <p>
+      <b>Wikipedia says: </b>
+      <i
+        >"This kind of stack is also known as an execution stack, program stack,
+        control stack, run-time stack, or machine stack" </i
+      ><a href="https://en.wikipedia.org/wiki/Call_stack"> Link </a>
+    </p>
+    <p>
+      <b>One more quote: </b>
+      <i>
+        "In reality, the JavaScript engine creates what’s called an {' '}
+        <span className="chip">Execution Stack</span> (also known as the “Call Stack”)."</i
+      ><a
+        href="https://tylermcginnis.com/ultimate-guide-to-execution-contexts-hoisting-scopes-and-closures-in-javascript/"
+      >
+        Link
+      </a>
+    </p>
+    <h4>What's stored in a stack frame?</h4>
+    <ul>
+      <li>Local variables</li>
+      <li>Arguments passed into the method</li>
+      <li>Information about the caller's stack frame</li>
+      <li>
+        The return address—what the program should do after the function returns
+        (i.e.: where it should <b>"return to"</b> ). This is - usually somewhere
+        in the middle of the caller's code.
+      </li>
+    </ul>
+    <h3>The Event Table</h3>
+    <p>
+      Every time you call a setTimeout function or you do some async
+      operation — it is added to the <b>Event Table</b>. This is a data
+      structure which knows that a certain function should be triggered after a
+      certain event. Once that event occurs
+      <b> (timeout, click, mouse move)</b> it sends a notice. Bear in mind that
+      the Event Table does not execute functions and does not add them to the
+      call stack on it’s own. It’s sole purpose is to keep track of events and
+      send them to the Event Queue.
+    </p>
+    <h3>
+      The Event Queue
+    </h3>
+    <p>
+      The Event Queue is a data structure similar to the stack — again you add
+      items to the back but can only remove them from the front. It kind of
+      stores the correct order in which the functions should be executed. It
+      receives the function calls from the Event Table, but it needs to somehow
+      send them to the Call Stack? This is where the Event Loop comes in
+    </p>
+    <p>
+      Event Queue is again divided into two that is {' '}
+      <span className="chip">Micro Tasks Queue</span> and {' '}
+      <span className="chip">Macro Task Queue (Task Queue)</span>
+    </p>
+    <h3>The Event Loop</h3>
+    <p>
+      We’ve finally reached the infamous Event Loop. This is a constantly
+      running process that checks if the call stack is empty. Imagine it like a
+      clock and every time it ticks it looks at the Call Stack and if it is
+      empty it looks into the Event Queue. If there is something in the event
+      queue that is waiting it is moved to the call stack. If not, then nothing
+      happens.
+    </p>
+    <p>
+      Here are a couple of interesting cases. In what order do you think the
+      following code will run?
+    </p>
+    <div>
+      <p><b>setTimeout(() => console.log('first'), 0)</b> <br/>
+       <b>console.log('second')</b></p>
+    </div>
+    <p>Some people think that because set timeout is called with <b>0 (zero)</b> it should run immediately. In fact in this specific example you will see <b>“second”</b> printed out before <b>“first”</b>. JavaScript sees the setTimeout and says “Well, I should add this to my Event Table and continue executing”. It will then go through the Event Table, Event Queue and wait for the Event Loop to tick in order to run.</p>
+    <p align='center'>
+      <img src={'https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/gifs%2Fevent-looping.gif?alt=media&token=82bdd78b-9a9e-46f7-a5ec-7db815d2f015'}  alt='Event Loop' />
+    </p>
+  </div>
+</Collapsible>
