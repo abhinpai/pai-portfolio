@@ -1,0 +1,80 @@
+<Collapsible>
+  <div>
+    <ul>
+      <li> closure can be used for function currying</li>
+        <li> Situations where you might want to do this are particularly common on the web. Much of the code written in front-end JavaScript is event-based. You define some behavior, and then attach it to an event that is triggered by the user (such as a click or a keypress). The code is attached as a callback (a single function that is executed in response to the event).</li>
+        <li> You can emulate private methods with closures. Languages such as Java allow you to declare methods as private but JavaScript does not provide a native way of doing this, but it is possible to emulate private methods using closures, this resulting the modularization</li>
+    </ul>
+   <pre>
+     <code>
+      var counter = (function () {
+        var privateCounter = 0;
+        function changeBy(val) {
+          privateCounter += val;
+        }
+      
+        return {
+          increment: function () {
+            changeBy(1);
+          },
+      
+          decrement: function () {
+            changeBy(-1);
+          },
+      
+          value: function () {
+            return privateCounter;
+          },
+        };
+      })();
+      
+      console.log(counter.value()); // 0.
+      
+      counter.increment();
+      counter.increment();
+      console.log(counter.value()); // 2.
+      
+      counter.decrement();
+      console.log(counter.value()); // 1.
+     </code>
+   </pre>
+  </div>
+</Collapsible>
+
+
+
+
+
+
+
+
+```js
+sample_code
+```
+
+<Collapsible>
+  <div>
+    
+  </div>
+</Collapsible>
+
+<p>In <a href="url">Module </a> some</p>
+
+
+<Collapsible>
+  <div>
+    <table>
+      <thead>
+        <th>
+          <h3 className="no-margin"></h3>
+        </th>
+        <th>
+          <h3 className="no-margin"></h3>
+        </th>
+      </thead>
+      <tr>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+</Collapsible>
