@@ -410,7 +410,7 @@ console.log(counter.value()); // 1.
     </div>
     <p>Some people think that because set timeout is called with <b>0 (zero)</b> it should run immediately. In fact in this specific example you will see <b>“second”</b> printed out before <b>“first”</b>. JavaScript sees the setTimeout and says “Well, I should add this to my Event Table and continue executing”. It will then go through the Event Table, Event Queue and wait for the Event Loop to tick in order to run.</p>
     <p align='center'>
-      <img src={'https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/gifs%2Fevent-looping.gif?alt=media&token=82bdd78b-9a9e-46f7-a5ec-7db815d2f015'}  alt='Event Loop' />
+      <img className="gif-img" src={'https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/gifs%2Fevent-looping.gif?alt=media&token=82bdd78b-9a9e-46f7-a5ec-7db815d2f015'}  alt='Event Loop' />
     </p>
   </div>
 </Collapsible>
