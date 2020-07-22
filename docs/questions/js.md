@@ -516,6 +516,124 @@ console.log(counter.value()); // 1.
     </p>
     <p>Where <span className="chip">key</span> can be any expression as long as it’s wrapped in brackets, <span className="chip">[]</span>.</p>
     <h3>What is the advantage of computed property names</h3>
-    <p><b>?</b></p>
+    <ul>
+      <li>Computed property names are useful when we want to set a key for an object dynamically</li>
+    </ul>
+  </div>
+</Collapsible>
+
+### 🔸 What is generators and how is it different from function
+
+<Collapsible>
+  <div>
+    <p>
+      Generators are defined almost like normal functions, but instead of function,
+      you use <span className="chip">function*</span>. Also in the body, a new keyword, <span className="chip">yield</span> can be used to
+      return a stream of values from the generator.
+    </p>
+    <p> Unlike regular function generator is a special function which have a power to return multiple values from a single function and which can be control as per demand </p>
+    <p>
+      I have already documented lot of things about generator in  {' '}
+      <a href="../javascript/modules/module10_generator">Module 10 Generator</a> please have a look once 
+    </p>
+    <p>
+      There are some good articles floating around  {' '}
+      <a href="https://medium.com/javascript-scene/the-hidden-power-of-es6-generators-observable-async-flow-control-cfa4c7f31435">Link-1</a> {' '}
+      <a href="https://codeburst.io/what-are-javascript-generators-and-how-to-use-them-c6f2713fd12e">Link-2</a> 
+    </p>
+  </div>
+</Collapsible>
+
+### 🔸 What are the real use-case of the generators
+
+1. Generators can be implement in replacement for an iterators
+
+  Let me show you with a simple example. 
+
+  Here i am just trying to generate natural no from 1, 10 using an `Symbol.Iterator`
+
+  ```js
+  let range = {
+    from: 1,
+    to: 10,
+
+    [Symbol.iterator]() {
+      return {
+        current: this.from,
+        last: this.to,
+        next() {
+          if (this.current < this.last) {
+            return { done: false, value: this.current++ };
+          } else {
+            return { done: true };
+          }
+        },
+      };
+    },
+  };
+
+  console.log([...range]); // [1,2,3,4,5,6,7,8,9]
+  ```
+
+  Now the above can be simplified using generator
+
+  ```js
+  let range = {
+    from: 1,
+    to: 10,
+    *[Symbol.iterator]() {
+      for (let i = this.from; i < this.to; i++) {
+        yield i;
+      }
+    },
+  };
+
+  console.log([...range]);
+  ```
+
+2. Better Async functionality
+
+  Code using promises and callbacks such as
+
+  ```js
+  function fetchJson(url) {
+    return fetch(url)
+      .then((request) => request.text())
+      .then((text) => {
+        return JSON.parse(text);
+      })
+      .catch((error) => {
+        console.log(`ERROR: ${error.stack}`);
+      });
+  }
+  ```
+
+  can be written as (with the help of libraries such as `co.js`) which uses the generator
+
+  ```js
+    const fetchJson = co.wrap(function* (url) {
+    try {
+      let request = yield fetch(url);
+      let text = yield request.text();
+      return JSON.parse(text);
+    } catch (error) {
+      console.log(`ERROR: ${error.stack}`);
+    }
+  });
+  ```
+  
+  There are more applications of generators like
+  3. Lazy Evaluation
+  4. Memory efficiency
+  5. Data streaming
+
+### 🔸 How `symbol` works explain its use-case
+
+<Collapsible>
+  <div>
+    <p>
+     There is whole lot of things covered about symbol in {' '}
+      <a href="../javascript/modules/module3_datatypes/#7-symbol">Module 3 Object</a> please have a look once 
+    </p>
   </div>
 </Collapsible>
