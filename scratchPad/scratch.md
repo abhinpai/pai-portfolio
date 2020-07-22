@@ -3,15 +3,10 @@
 
 
 
-### 🔸 Explain `Promise`, `Promise Chain` and `Async` and `Await`
-### 🔸 Promise.race vs Promise.all
-### 🔸 How Callback function different then Promise and what problem promise can solve
+
 ### 🔸 What is generators and how is it different from function
 - When to use generators
-### 🔸 What is Computed properties what us the typical use cases of this
-### 🔸 What is event loop?
-- What is the difference between call stack and task queue?
-- Spot the difference between Micro Task Queue and Macro Task Queue
+
 
 
 

@@ -1,65 +1,51 @@
 <Collapsible>
   <div>
-    <ul>
-      <li> closure can be used for function currying</li>
-        <li> Situations where you might want to do this are particularly common on the web. Much of the code written in front-end JavaScript is event-based. You define some behavior, and then attach it to an event that is triggered by the user (such as a click or a keypress). The code is attached as a callback (a single function that is executed in response to the event).</li>
-        <li> You can emulate private methods with closures. Languages such as Java allow you to declare methods as private but JavaScript does not provide a native way of doing this, but it is possible to emulate private methods using closures, this resulting the modularization</li>
-    </ul>
-   <pre>
-     <code>
-      var counter = (function () {
-        var privateCounter = 0;
-        function changeBy(val) {
-          privateCounter += val;
-        }
-      
-        return {
-          increment: function () {
-            changeBy(1);
-          },
-      
-          decrement: function () {
-            changeBy(-1);
-          },
-      
-          value: function () {
-            return privateCounter;
-          },
-        };
-      })();
-      
-      console.log(counter.value()); // 0.
-      
-      counter.increment();
-      counter.increment();
-      console.log(counter.value()); // 2.
-      
-      counter.decrement();
-      console.log(counter.value()); // 1.
-     </code>
-   </pre>
-  </div>
-</Collapsible>
+    <p>
+      <b>Computed Property Names</b> feature allows you to have an expression (a
+      piece of code that results in a single value like a variable or function
+      invocation) be computed as a property name on an object.
+    </p>
 
+    <p>
+      For example, say you wanted to create a function that took in two
+      arguments (<span className="chip">key</span>,
+      <span className="chip">value</span> ) and returned an object using those
+      arguments. Before Computed Property Names, because the property name on
+      the object was a variable (<span className="chip">key</span> ), you’d have
+      to create the object first, then use bracket notation to assign that
+      property to the value.
+    </p>
 
+    <p>
+      function objectify (key, value) { let obj = {} obj[key] = value return obj
+      } objectify('name', 'Tyler') // { name: 'Tyler' }
+    </p>
 
+    <p>
+      However, now with Computed Property Names, you can use object literal
+      notation to assign the expression as a property on the object without
+      having to create it first. So the code above can now be rewritten like
+      this.
+    </p>
 
-
-
-
-
-```js
-sample_code
-```
-
-<Collapsible>
-  <div>
+    <p>function objectify (key, value) {
+      return {
+        [key]: value
+      }
+    }
     
+    objectify('name', 'Tyler') // { name: 'Tyler' }</p>
+    <p>Where <span className="chip">key</span> can be any expression as long as it’s wrapped in brackets, <span className="chip">[]</span>.</p>
+
+    <h3>What is the advantage of computed property names</h3>
+    <p><b>?</b></p>
   </div>
 </Collapsible>
 
-<p>In <a href="url">Module </a> some</p>
-
+<p>
+  Follow this link for more lurks of <b>Promise</b>
+  <a href="../javascript/modules/module9_promise/#promise-apis">Link </a>
+</p>
 
 <Collapsible>
   <div>

@@ -294,7 +294,6 @@ console.log(counter.value()); // 1.
   </div>
 </Collapsible>
 
-
 ### 🔸 Explain how `Event Loop` works and explain the individual component that take a part in it 
 
 <Collapsible>
@@ -412,5 +411,111 @@ console.log(counter.value()); // 1.
     <p align='center'>
       <img className="gif-img" src={'https://firebasestorage.googleapis.com/v0/b/pai-profile.appspot.com/o/gifs%2Fevent-looping.gif?alt=media&token=82bdd78b-9a9e-46f7-a5ec-7db815d2f015'}  alt='Event Loop' />
     </p>
+  </div>
+</Collapsible>
+
+### 🔸 Explain `Promise`, `Promise Chain` and its methods
+
+<Collapsible>
+  <div>
+    <p>
+      Detailed explanation is present in the
+      <a href="../javascript/modules/module9_promise/#promise-its-crazy"
+        > Module 9 Promise {' '}
+      </a>
+       please visit this page to learn more
+    </p>
+  </div>
+</Collapsible>
+
+### 🔸 Promise.race vs Promise.all
+
+<Collapsible>
+  <div>
+    <table>
+      <thead>
+        <th>
+          <h3 className="no-margin">Promise.race</h3>
+        </th>
+        <th>
+          <h3 className="no-margin">Promise.all</h3>
+        </th>
+      </thead>
+      <tr>
+        <td>
+          If we want to execute a number of promise parallelly then we can go
+          ahead with promise.all which accepts an array of promise and process
+          the contents once all are done
+        </td>
+        <td>
+          Waits only for the first settled promise and gets its result (or
+          error). If anyone promise process fast that became the result and
+          remaining promise will be ignored
+        </td>
+      </tr>
+      <tr>
+        <td>In C# <span className="chip">Task.WhenAll()</span> is similar</td>
+        <td>In C# <span className="chip">Task.WhenAny()</span> is similar</td>
+      </tr>
+    </table>
+    <p>
+      Follow this link for more lurks of <b>Promise</b>
+      <a href="../javascript/modules/module9_promise/#promise-apis"> Link </a>
+    </p>
+  </div>
+</Collapsible>
+
+### 🔸 How Callback function different then Promise and what problem promise can solve
+
+<Collapsible>
+  <div>
+    <p>
+     Find a below link for the answer with respect to 
+      <a href="../javascript/modules/module9_promise/#the-callback"
+        > Callback from Module 9 Promise {' '}
+      </a>
+    </p>
+  </div>
+</Collapsible>
+
+### 🔸 How `async` and `await` works and how it solved the problem of promise
+
+<Collapsible>
+  <div>
+    <p>
+     There is an entire chapter which explains the working scene and advantages over promise in 
+      <a href="../javascript/modules/module15_async_await/"
+        > Module 16 {' '}
+      </a>
+      Refer this module to borden your knowledge on async and await
+    </p>
+  </div>
+</Collapsible>
+
+### 🔸 What is Computed properties what us the typical use cases of this
+<Collapsible>
+  <div>
+    <p>
+      <b>Computed Property Names</b> feature allows you to have an expression (a
+      piece of code that results in a single value like a variable or function
+      invocation) be computed as a property name on an object.
+    </p>
+    <p>
+      For example, say you wanted to create a function that took in two
+      arguments (<span className="chip">key</span>,
+      <span className="chip">value</span> ) and returned an object using those
+      arguments. Before Computed Property Names, because the property name on
+      the object was a variable (<span className="chip">key</span> ), you’d have
+      to create the object first, then use bracket notation to assign that
+      property to the value.
+    </p>
+    <p>
+      However, now with Computed Property Names, you can use object literal
+      notation to assign the expression as a property on the object without
+      having to create it first
+    </p>
+    <p>Where <span className="chip">key</span> can be any expression as long as it’s wrapped in brackets, <span className="chip">[]</span>.</p>
+    <h3>What is the advantage of computed property names</h3>
+    <p><b>?</b></p>
   </div>
 </Collapsible>
