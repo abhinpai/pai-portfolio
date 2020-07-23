@@ -637,3 +637,301 @@ console.log(counter.value()); // 1.
     </p>
   </div>
 </Collapsible>
+
+### 🔸 Explain Function Decomposition
+
+<Collapsible>
+  <div>
+    <p>
+      Functional Decomposition is the process of taking a complex process and
+      breaking it down into its smaller, simpler parts.
+    </p>
+    <p>
+      For instance, think about using an ATM. You could decompose the process
+      into:
+    </p>
+    <ul>
+      <li>
+        Walk up to the ATM
+      </li>
+      <li>Insert your bank card</li>
+      <li>Enter your pin</li>
+    </ul>
+    <p>well...you get the point.</p>
+    <p>
+      You can think of programming the same way. Think of the software running
+      that ATM:
+    </p>
+    <ul>
+      <li>Code for reading the card</li>
+      <li>PIN verification</li>
+      <li>Transfer Processing</li>
+    </ul>
+    <p>
+      Each of which can be broken down further. Once you've reached the most
+      decomposed pieces of a subsystem, you can think about how to start coding
+      those pieces. You then compose those small parts into the greater whole.
+      Check out this Wikipedia Article:
+    </p>
+  </div>
+</Collapsible>
+
+
+### 🔸 What is the difference between a parameter and an argument?
+
+<Collapsible>
+  <div>
+    <table>
+      <thead>
+        <th>
+          <h3 className="no-margin">Parameter</h3>
+        </th>
+        <th>
+          <h3 className="no-margin">Argument</h3>
+        </th>
+      </thead>
+      <tr>
+        <td>
+          A parameter is a variable in a method definition. When a method is
+          called
+        </td>
+        <td>
+          the arguments are the data you pass into the method's parameters.
+        </td>
+      </tr>
+      <tr>
+        <td>A value that is already "built in" to a function</td>
+        <td>An input to a function</td>
+      </tr>
+      <tr>
+        <td>
+          Parameters can be changed so that the function can be used for other
+          things
+        </td>
+        <td>A variable that affects a functions result.</td>
+      </tr>
+    </table>
+    <h3>Simple Explanations without code</h3>
+    <p>
+      A "parameter" is a very general, broad thing, but an "argument: is a very
+      specific, concrete thing. This is best illustrated via everyday examples:
+    </p>
+    <h4>
+      Example 1: Vending Machines - Money is the parameter, $2.00 is the
+      argument
+    </h4>
+    <p>
+      Most machines take an input and return an output. For example a vending
+      machine takes as an input: money, and returns: fizzy drinks as the output.
+      In that particular case, it accepts as a parameter: money.
+    </p>
+    <p>
+      What then is the argument? Well if I put $2.00 into the machine, then the
+      argument is: $2.00 - it is the very specific input used.
+    </p>
+    <h4>Example 2: Cars - Petrol is the parameter</h4>
+    <p>
+      Let's consider a car: they accept petrol (unleaded gasoline) as an input.
+      It can be said that these machines accept parameters of type: petrol. The
+      argument would be the exact and concrete input I put into my car. e.g. In
+      my case, the argument would be: 40 litres of unleaded petrol/gasoline.
+    </p>
+    <h4>Example 3 - Elaboration on Arguments</h4>
+    <p>
+      An argument is a particular and specific example of an input. Suppose my
+      machine takes a person as an input and turns them into someone who isn't a
+      liar.
+    </p>
+    <p>
+      What then is an argument? The argument will be the particular person who
+      is actually put into the machine. e.g. if Colin Powell is put into the
+      machine then the argument would be Colin Powell.
+    </p>
+    <p>
+      So the parameter would be a person as an abstract concept, but the
+      argument would always be a particular person with a particular name who is
+      put into the machine. The argument is specific and concrete.
+    </p>
+  </div>
+</Collapsible>
+
+### 🔸 Does JavaScript pass by value or by reference?
+
+<Collapsible>
+  <div>
+    <p>The primitive types (number, string, etc.) are passed by value, but objects are unknown, because they can be both passed-by-value (in case we consider that a variable holding an object is in fact a reference to the object) and passed-by-reference (when we consider that the variable to the object holds the object itself).</p>
+  </div>
+</Collapsible>
+
+### 🔸 What is `IIFE` and what are the use case of this?
+
+<Collapsible>
+  <div>
+    <p>An Immediately-invoked Function Expression (IIFE for friends) is a way to execute functions immediately, as soon as they are created.</p>
+    <p>IIFEs are very useful because they don’t pollute the global object, and they are a simple way to isolate variables declarations.</p>
+    <p>
+      There is great article on IIFE {' '}
+      <a href="https://mariusschulz.com/blog/disassembling-javascripts-iife-syntax">Link</a>
+    </p>
+  </div>
+</Collapsible>
+
+### 🔸 What is the reason for wrapping the entire contents of a JavaScript source file in a function that is immediately invoked?
+
+<Collapsible>
+  <div>
+    <p>
+      In its simplest form, this technique aims to wrap code inside a
+      <b>function scope.</b>
+    </p>
+    <p>It helps decreases chances of:</p>
+    <ul>
+      <li>clashing with other applications/libraries</li>
+      <li>polluting superior (global most likely) scope</li>
+    </ul>
+    <p>
+      It does not detect when the document is ready - it is not some kind of
+      <b>document.onload</b> nor <b>window.onload</b>
+    </p>
+  </div>
+</Collapsible>
+
+### 🔸 Can you offer a use case for the new arrow => function syntax? How does this new syntax differ from other functions?
+
+<Collapsible>
+  <div>
+    <p>
+      Arrow functions were created to simplify function scope and solving the
+      this keyword by making it more simpler. They utilize the => syntax, which
+      looks like an arrow.
+    </p>
+    <p>
+      <b>
+        Note: It does not replace the existing functions. If you replace every
+        function syntax with arrow functions, its not going to work in all
+        cases.
+      </b>
+    </p>
+    <p>
+      <span className="chip">Arrow functions</span> are more like function
+      statements, except that they <span className="chip">bind</span> the
+      <span className="chip">this</span> to parent scope. If the arrow function
+      is in op scope <span className="chip">this</span>, argument will refer to
+      <span className="chip">window/global scope</span>, while an arrow function
+      inside a regular function will have its this argument the same as its
+      outer function.
+    </p>
+    <h3>When not to Arrow functions</h3>
+    <h5>1. Inside object function</h5>
+    <p>
+      If we use arrow function inside an object then on use of <b>this</b> it
+      may result to <b>undefined</b>
+    </p>
+    <h5>2. Object prototype</h5>
+    <p>
+      The same rule applies when defining methods on a prototype object. Instead
+      of using an arrow function for defining method, which brings an incorrect
+      context window
+    </p>
+    <h5>3. Invoking constructors</h5>
+    <p>
+      this in a construction invocation is the newly created object. When
+      executing new Fn(), the context of the constructor Fn is a new object:
+      this instanceof Fn === true.
+    </p>
+    <p>
+      this is setup from the enclosing context, i.e the outer scope which makes
+      it not assigned to newly created object.
+    </p>
+  </div>
+</Collapsible>
+
+### 🔸 What is `Decorators` in javascript and When its suitable to use decorators
+
+<Collapsible>
+  <div>
+    <p>
+      Follow this link to know about decorators {' '}
+      <a href="javascript/modules/module4_function/#decorators-and-forwarding"
+        >Link</a
+      >
+    </p>
+  </div>
+</Collapsible>
+
+
+## Need to update an answer from here onwards
+
+### 🔸 How does `hoisting` and `scoping` works
+
+### 🔸 What is the difference between `lexical scoping` and `dynamic scoping`?
+
+### 🔸 Pure function, Anonymous and Named function
+
+### 🔸 Explain Function Borrowing and when it occur or can be implement
+
+### 🔸 What is the definition of a higher-order function?
+
+### 🔸 Explain the difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
+
+### 🔸 Can you explain what `.call` and `.apply` do? What's the notable difference between the two?
+
+### 🔸 Explain `Function.prototype.bind`
+
+### 🔸 Arrow function vs Regular function
+
+### 🔸 Explain Map vs WeakMap
+
+### 🔸 Explain Set vs WeakSet
+
+### 🔸 Explain is Execution Context
+
+### 🔸 What is the difference between `Object.assign` vs `Object.clone`
+
+### 🔸 `const` vs `Object.freeze()`
+
+### 🔸 Null propagation operator / Optional Chaining and Null Coalescing Operator
+
+### 🔸 What is the term `Coercion` in javascript
+
+### 🔸 typeOf vs instanceOf
+
+### 🔸 What is Temporals Dead Zone `(TDZ)` when it can occur
+
+### 🔸 What's the difference between an `attribute` and a `property`?
+
+### 🔸 What are the pros and cons of extending built-in JavaScript objects?
+
+### 🔸 What is the difference between `==` and `===`?
+
+### 🔸 Why is it called a Ternary operator, what does the word `Ternary` indicate?
+
+### 🔸 What is `strict mode`? What are some of the advantages/disadvantages of using it?
+
+### 🔸 What are the different `truthy` and `falsy` values in JS
+
+### 🔸 Explain the difference between mutable and immutable objects
+
+### 🔸 Can you give an example of generating a string with ES6 Template Literals?
+
+### 🔸 Can you describe the main difference between the Array.forEach() loop and Array.map() methods and why you would pick one versus the other?
+
+### 🔸 Explain Modules in Javascript
+
+### 🔸 Why you might want to create static class members?
+
+### 🔸 How do you create static class in JS
+
+### 🔸 What are the differences between variables created using `let`, `var` or `const`?
+
+### 🔸 Can you give an example for destructuring an object and an array?
+
+### 🔸 What are the benefits of using spread syntax and how is it different from rest syntax?
+
+### 🔸 Explain the difference between synchronous and asynchronous functions
+
+### 🔸 What language constructions do you use for iterating over object properties and array items?
+
+### 🔸 How can you achieve immutability in your own code?
+
+### 🔸 What are the pros and cons of immutability?
