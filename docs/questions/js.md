@@ -945,6 +945,64 @@ Here the highlighted code is a `polyfill for bind` which does same things as nat
   </div>
 </Collapsible>
 
+### 🔸 Explain Debounce and its applications
+
+The `debounce` function forces a function to wait a certain amount of time before running again. The function is built to limit the number of times a function is called.
+
+```js
+function debounce(func, wait, immediate) {
+  var timeout; // To keep track of when the event occurred
+
+  return function executedFunction() {
+    var context = this; // window / global context
+    var args = arguments; // additional arguments it will in array
+	    
+    var later = function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args); // looks for condition incase of immediate invocation
+    };
+
+    var callNow = immediate && !timeout;
+	
+    clearTimeout(timeout); // clear the previous timeout if any 
+
+    timeout = setTimeout(later, wait);
+	
+    if (callNow) func.apply(context, args); // Incase of immediate function invocation
+  };
+};
+
+var returnedFunction = debounce(function() {
+    // The function's code
+}, 250);
+
+window.addEventListener('resize', returnedFunction);
+```
+
+
+simplified version of `debounce`
+
+```js
+function debounce(func, wait) {
+  var timeout;
+
+  return function() {
+    var context = this; // window / global context
+    var args = arguments; // additional arguments it will in array
+	
+    clearTimeout(timeout); // clear the previous timeout if any 
+
+    timeout = setTimeout(later.apply(context, args), wait);
+  };
+};
+
+var returnedFunction = debounce(function() {
+    // The function's code
+}, 250);
+
+window.addEventListener('resize', returnedFunction);
+```
+
 ## Need to update an answer from here onwards
 
 ### 🔸 How does `hoisting` and `scoping` works
