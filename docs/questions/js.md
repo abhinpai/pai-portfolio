@@ -859,6 +859,91 @@ console.log(counter.value()); // 1.
   </div>
 </Collapsible>
 
+### 🔸 Write a polyfill for `bind()`
+
+A `bind()` using ES6 looks something like this
+
+```js
+let userInfo = {
+  name: 'Abhin',
+  nationality: 'India 🇮🇳',
+};
+
+function displayDetails() {
+  console.log(`${arguments[0]} ${this.name} from ${this.nationality}`);
+}
+
+let display = displayDetails.bind(userInfo, "Hello");
+display(); // Hello Abhin from India 🇮🇳
+```
+
+Now the **Polyfill** for the **bind** will look something like this 
+
+```js {10-15}
+let userInfo = {
+  name: 'Abhin',
+  nationality: 'India 🇮🇳',
+};
+
+function displayDetails() {
+  console.log(`${arguments[0]} ${this.name} from ${this.nationality}`);
+}
+
+Function.prototype.myBind = function (context, ...arg) {
+    let fn = this;
+    return function() {
+        fn.apply(context, [...arg, ])
+    }
+}
+
+let display = displayDetails.myBind(userInfo, "Hello");
+display(); // Hello Abhin from India 🇮🇳
+```
+
+Here the highlighted code is a `polyfill for bind` which does same things as native `bind`
+
+### 🔸 What is polyfill why is that required
+
+<Collapsible>
+  <div>
+    <p>
+      A polyfill is a browser fallback, made in JavaScript, that allows
+      functionality you expect to work in modern browsers to work in older
+      browsers, e.g., to support canvas (an HTML5 feature) in older browsers.
+    </p>
+    <p></p>
+    <p>
+      Here's a comprehensive list of <b>Polyfills and Shims</b> {' '}
+      <a
+        href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills"
+        >Link
+      </a>
+    </p>
+  </div>
+</Collapsible>
+
+### 🔸 What is Transpiling in JS
+
+<Collapsible>
+  <div>
+    <p>
+      <b>Transpilers</b> are also known as source-to-source compilers. So in
+      essence they are a subset of compilers which take in a source code file
+      and convert it to another source code file in some other language or a
+      different version of the same language. The ouput is generally
+      understandable by a human. This output still has to go through a compiler
+      or interpreter to be able to run on the machine.
+    </p>
+    <h4>Some examples of transpilers:</h4>
+    <ul>
+      <li><b>Emscripten</b>: Transpiles C/C++ to JavaScript</li>
+      <li>
+        <b>Babel</b>: Transpiles ES6+ code to ES5 (ES6 and ES5 are different versions
+        or generations of the JavaScript language)
+      </li>
+    </ul>
+  </div>
+</Collapsible>
 
 ## Need to update an answer from here onwards
 
