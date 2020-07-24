@@ -5,15 +5,9 @@
 ### 🔸 What's the difference between `feature detection`, `feature inference`, and using the `UA string`?
 
 ### 🔸 What is Polyfill and Shim
-### 🔸 Write a polyfill for `bind()`
-### 🔸 What is polyfill why is that required
-### 🔸 What is Transpiling in JS
 
-### 🔸 Debounce and its advantage
-### 🔸 Throttling and its advantage
-### 🔸 How can you share code between files?
-### 🔸 How compiler and transpiler are different
-### 🔸 Shallow Copy and Deep Copy
+
+
 ### 🔸 How Spider Monkey works
 ### 🔸 V8 vs SpiderMonkey
 ### 🔸 How V8 engine works

@@ -1003,6 +1003,46 @@ var returnedFunction = debounce(function() {
 window.addEventListener('resize', returnedFunction);
 ```
 
+#### Applications of Debouncing
+- Debouncing can be use to limit the no of API calls in a website
+- It also used to keep the track of user scroll event (Infinity Scroll)
+- Its helpful for to keep track of the window resize 
+
+### 🔸 Explain Throttling and its applications
+
+Throttling enforces a maximum number of times a function can be called over time. For example, “execute this function at most once every 100 milliseconds.”
+
+```js
+function debounce(func, wait) {
+  var timeout;
+  var flag = true;
+
+  return function() {
+    var context = this; // window / global context
+    var args = arguments; // additional arguments it will in array
+    if(flag) {
+      later.apply(context, args);
+      flag = false;  
+    }
+
+    clearTimeout(timeout); // clear the previous timeout if any 
+    timeout = setTimeout(() => flag= true, wait);
+  };
+};
+
+var returnedFunction = debounce(function() {
+    // The function's code
+}, 250);
+
+window.addEventListener('resize', returnedFunction);
+```
+
+#### Applications of Throttling
+
+- Throttling can be used the action based polling system
+- It can also fit in when there is use cases to hit a button multiple time
+
+
 ## Need to update an answer from here onwards
 
 ### 🔸 How does `hoisting` and `scoping` works
@@ -1078,3 +1118,7 @@ window.addEventListener('resize', returnedFunction);
 ### 🔸 How can you achieve immutability in your own code?
 
 ### 🔸 What are the pros and cons of immutability?
+
+### 🔸 How compiler and transpiler are different
+
+### 🔸 Shallow Copy and Deep Copy
