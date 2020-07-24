@@ -1042,6 +1042,34 @@ window.addEventListener('resize', returnedFunction);
 - Throttling can be used the action based polling system
 - It can also fit in when there is use cases to hit a button multiple time
 
+### 🔸 Explain Scope Chain
+
+<Collapsible>
+  <div>
+    <p>
+      There is beautiful visual demonstration of <b>Scope chain</b> posted by {' '}
+      <a href="https://dev.to/lydiahallie/javascript-visualized-scope-chain-13pd"
+        >@lydiahallie</a
+      >
+    </p>
+  </div>
+</Collapsible>
+
+
+### 🔸 Explain the working of JS Engine
+
+<Collapsible>
+  <div>
+    <p>
+      There is one more awesome visual demonstration of {' '}
+      <b>Working of JS engine blog</b> posted by {' '}
+      <a
+        href="https://dev.to/lydiahallie/javascript-visualized-the-javascript-engine-4cdf"
+        >@lydiahallie</a
+      >
+    </p>
+  </div>
+</Collapsible>
 
 ## Need to update an answer from here onwards
 
@@ -1122,3 +1150,5 @@ window.addEventListener('resize', returnedFunction);
 ### 🔸 How compiler and transpiler are different
 
 ### 🔸 Shallow Copy and Deep Copy
+
+### 🔸 `ES5` vs `ES6`
