@@ -158,17 +158,14 @@ description: Javascript Interview preparation material
 
 ### <Highlight color="#0090d9">Module 17</Highlight> Playing with Events
 ------
-* ❌ Introduction to browser events
-* ❌ Bubbling and capturing
-* ❌ Event delegation
-* ❌ Event Looping
-* ❌ Event Propagation
-* ❌ event.preventDefault()
-* ❌ event.stopPropagation()
-* ❌ event.target and event.currenttarget
-* [https://flaviocopes.com/events-stoppropagation-preventdefault/](https://flaviocopes.com/events-stoppropagation-preventdefault/)
-* [https://flaviocopes.com/javascript-event-bubbling-capturing/](https://flaviocopes.com/javascript-event-bubbling-capturing/)
-* [https://www.jstips.co/en/javascript/DOM-event-listening-made-easy/](https://www.jstips.co/en/javascript/DOM-event-listening-made-easy/)
+* ✅ Introduction to browser events
+* ✅ Bubbling and capturing
+* ✅ Event delegation
+* ✅ Event Looping
+* ✅ Event Propagation
+* ✅ event.preventDefault()
+* ✅ event.stopPropagation()
+* ✅ event.target and event.currenttarget
 
 ### <Highlight color="#0090d9">Module 18</Highlight> UI Events
 ------
@@ -192,25 +189,19 @@ description: Javascript Interview preparation material
 
 ### <Highlight color="#0090d9">Module 21</Highlight> Code Quality 👌
 ------
-* ❌ Polyfill for `bind()`
+* ✅ Polyfill for `bind()`
+* ✅ Code Quality with `ESlint`
 * ❌ What is the difference between `Lodash` and `Underscore`
-* ❌ Code Quality with `ESlint`
 * ❌ Shim Vs Polyfill
 
 ### <Highlight color="#0090d9">Module 22</Highlight> Miscellaneous
 ------
+* ✅ Hoisting
 * ❌ Eval: run a code string
 * ❌ Mutation observer
 * ❌ Selection and Range
-* ❌ What is Debounce and how do you implement it?
-* ❌ What are the advantage of debounce?
-* ❌ What is Throttling and how do you implement it?
-* ❌ What are the advantage of Throttling?
 * ❌ Execution Context
-* ❌ Hoisting
 * ❌ Memorization
-* ❌ Closure
-* ❌ Coercion
 * ❌ How Garbage collection works
 * ❌ Atomics
 * ❌ Dataview
@@ -218,14 +209,8 @@ description: Javascript Interview preparation material
 * ❌ Underscore.js
 * ❌ Lexical Scope
 * ❌ Tress-Shaking
-* [https://www.taniarascia.com/understanding-variables-scope-hoisting-in-javascript/](https://www.taniarascia.com/understanding-variables-scope-hoisting-in-javascript/)
-* [https://www.jstips.co/en/javascript/hoisting/](https://www.jstips.co/en/javascript/hoisting/)
-* [https://www.jstips.co/en/javascript/curry-vs-partial-application/](https://www.jstips.co/en/javascript/curry-vs-partial-application/)
-* [https://flaviocopes.com/javascript-hoisting/](https://flaviocopes.com/javascript-hoisting/)
-* [https://www.jstips.co/en/javascript/closures-inside-loops/](https://www.jstips.co/en/javascript/closures-inside-loops/)
 
-
-## Reference 
+<!-- ## Reference 
 ------
 * [https://www.taniarascia.com/blog/](https://www.taniarascia.com/blog/)
 * [https://es6.io/](https://es6.io/)
@@ -237,7 +222,7 @@ description: Javascript Interview preparation material
 * [https://www.jstips.co/](https://www.jstips.co/)
 * [https://www.jstips.co/en/javascript/preventing-unapply-attacks/](https://www.jstips.co/en/javascript/preventing-unapply-attacks/)
 * [https://www.jstips.co/en/javascript/tip-to-measure-performance-of-a-javascript-block/](https://www.jstips.co/en/javascript/tip-to-measure-performance-of-a-javascript-block/)
-* [https://www.taniarascia.com/es6-syntax-and-feature-overview/](https://www.taniarascia.com/es6-syntax-and-feature-overview/)
+* [https://www.taniarascia.com/es6-syntax-and-feature-overview/](https://www.taniarascia.com/es6-syntax-and-feature-overview/) -->
 
 <br/><br/><br/><br/>
 

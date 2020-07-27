@@ -1152,3 +1152,7 @@ window.addEventListener('resize', returnedFunction);
 ### 🔸 Shallow Copy and Deep Copy
 
 ### 🔸 `ES5` vs `ES6`
+
+### 🔸 event.stopPropagation vs event.preventDefault
+
+### 🔸 event.currentTarget.value vs event.target.value

@@ -1,5 +1,10 @@
-Promise.all(
-  ['module1', 'module2', 'module3'].map((x) => System.import(x))
-).then(function ([module1, module2, module3]) {
-  // my code...
-});
+let userInfo = {
+  name: 'Abhin',
+  nationality: 'India 🇮🇳',
+};
+
+function displayDetails() {
+  console.log(`${this.name} from ${this.nationality}`);
+}
+
+let display = displayDetails.bind(userInfo);
