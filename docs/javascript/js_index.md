@@ -210,8 +210,7 @@ description: Javascript Interview preparation material
 * ❌ Lexical Scope
 * ❌ Tress-Shaking
 
-<!-- ## Reference 
-------
+<!--Reference 
 * [https://www.taniarascia.com/blog/](https://www.taniarascia.com/blog/)
 * [https://es6.io/](https://es6.io/)
 * [https://javascript.info](https://javascript.info/)
