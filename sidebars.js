@@ -55,12 +55,12 @@ module.exports = {
       label: 'Interview Hub',
       items: [
         'questions/js',
+        'questions/ts',
         // 'questions/dom',
         // 'questions/web',
         // 'questions/html',
         // 'questions/style',
         // 'questions/package',
-        // 'questions/ts',
         // 'questions/react',
         // 'questions/webpack',
       ],
