@@ -1,6 +1,6 @@
 ---
 id: ts
-title: Interview questions on Typescript
+title: 👨🏻‍💻 Typescript Questions
 sidebar_label: "Typescript"
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: js
-title: Javascript Questions
+title: 🦸🏻‍♂️ Javascript Questions
 sidebar_label: 'Javascript'
 ---
 
@@ -1156,3 +1156,11 @@ window.addEventListener('resize', returnedFunction);
 ### 🔸 event.stopPropagation vs event.preventDefault
 
 ### 🔸 event.currentTarget.value vs event.target.value
+
+### 🔸 Explain `Event Delegation` or `DOM Event Delegation`
+
+### 🔸 Describe `Event Bubbling` and `Event Capturing`
+
+### 🔸 What is Polyfill and Shim
+
+### 🔸 What is `short-circuit evaluation` in JavaScript?

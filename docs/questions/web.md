@@ -1,15 +1,17 @@
 ---
 id: web
-title: Interview questions on Web & Web Security
-sidebar_label: "Web & Security"
+title: 🕵🏻‍♂️ Web & Web Security Questions
+sidebar_label: 'Web & Security'
 ---
 
-### Web and Web Security
-### What is `CROS` explain its working
-### Basic Authentication
-### What are the different type of authentication available
-### Authentication vs Authorization
-### Explain JWT and basic implementation of JWT
-### OAuth concept and basic implementation
-### Same origin policy with respect to JS
-### Character Encoding 
+- ❌ Localstorage vs SessionStorage
+- ❌ Explain IndexDb
+- ❌ How do you develope an application to a physically challenged person
+- ❌ Explain the `same-origin policy`, `CORS` and `Preflight`
+- ❌ Basic Authentication
+- ❌ What are the different type of authentication available
+- ❌ Authentication vs Authorization
+- ❌ Explain JWT and basic implementation of JWT
+- ❌ OAuth concept and basic implementation
+- ❌ Character Encoding
+- ❌ How to get better index by search engine
