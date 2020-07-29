@@ -155,7 +155,7 @@ Using decorator there are 5 things which we can decorate using decorator
 - Parameters
 
 
-### 🔸 What is the use of decorators in TypeScript?
+### 🔸 What is the use of decorators in TypeScript? Why its is required?
 
 In TypeScript, decorators are used to offering a way to add both meta-programming syntax and annotations for members and declarations.
 
@@ -166,9 +166,26 @@ To enable decorators in TypeScript, developers first have to enable the option o
 - `$tsc --target ES5 --experimentalDecorators`
 - For tsconfig.json, use the following syntax.`{ "compilerOptions": { "target": "ES5", "experimentalDecorators": true }}`
 
-### 🔸 What is the difference between "interface vs type" statements?
 
 ### 🔸 Explain when to use `declare` keyword in TypeScript
+
+`Declare` keyword helps to declare something at global level which will be accessible throughout the application.
+
+`declare` with some variable 
+
+```tsx
+declare let language: String = "EN";
+```
+
+Here language can access throughout the application similarly we can do with class or modules
+
+```tsx
+  declare namespace Theme {
+    interface ITheme {
+      // interface body
+    }
+  }
+```
 
 ### 🔸 What are Ambients in TypeScripts and when to use them?
 
@@ -177,8 +194,6 @@ Is it possible to generate TypeScript declaration files from JS library? Is it p
 ### 🔸 What is the prototype in TypeScript?
 
 The prototype property in TypeScript allows users to include methods and properties to an object. It allows cloning objects (complex ones also) without coupling to their specific classes. Prototype objects can create full copies due to the accessibility of objects to each other’s private field.
-
-### 🔸 How to declare a module in TypeScript?
 
 ### 🔸 Declaring any of the external modules having no exposed types or values
 
@@ -311,3 +326,66 @@ What are all the JSX modes TypeScript supports?
 TypeScript ships with three JSX modes: `preserve`, `react`, and `react-native`.
 
 The `preserve` mode will keep the JSX as part of the output to be further consumed by another transform step (e.g. *Babel*). Additionally the output will have a `.jsx` file extension. The `react` mode will emit `React.createElement`, does not need to go through a JSX transformation before use, and the output will have a `.js` file extension. The `react-native` mode is the equivalent of preserve in that it keeps all JSX, but the output will instead have a `.js` file extension.
+
+
+### 🔸 Is it possible to generate TS declaration file from JS
+
+`Yes`, declaration file is required inorder for the Typescript compiler to understand the Javascript.
+
+### 🔸 What is the purpose of Typescript declaration file
+
+Fantastic `Moment.js` Example
+
+Lucky for us, the `Moment.js` core contributors have created their own typescript definition files. These definition files are bundled with the moment npm package. Lets look at the moment definition file
+
+```tsx
+declare namespace moment {
+  //..
+  interface Moment extends Object {
+    format(format?: string): string;
+
+    startOf(unitOfTime: unitOfTime.StartOf): Moment;
+    endOf(unitOfTime: unitOfTime.StartOf): Moment;
+    //..
+  }
+  //..
+}
+```
+
+There are three things that have been done here, in order for this declaration file to take hold
+
+
+1. We created a global namespace called `moment`. Whenever Typescript imports the Javascript `moment` library, it immediately taps into the types for `Moment`, contained within the global moment namespace.
+
+2. We create a type annotation for all of our methods. Here we are showing one of the more commonly used one’s, `format`(along with `startof` and `endOf`). Wherein the library specifies that it can optionally take in string parameter, and returns a string.
+
+3. The actual file has the suffix `.d.ts`. When a file has a suffix of `.d.ts`, the Typescript compiler will not immediately know of it’s existence. Instead you will have to use a reference path similar to:
+
+``` ///<reference path=”path/to/file.d.ts” /> ```
+
+The current practice is to place all reference paths in an `package.json` with `types/typings`
+
+```json
+{
+  "name": "moment",
+  ...
+  "typings": "./moment.d.ts", 
+  ...
+}
+```
+
+### Create declaration file for a Javascript 
+
+There are multiple ways to generate the declaration file for a javascript code one is using `JSDoc`, `npm-dts`, `Microsoft/dts-gen`, `dtsmake`,  and another simple way is paste the JavaScript into a new TypeScript file, fix any trivial errors you may get and compile it using the definition flag, it may be able to get you a file that would at least be a starting point.
+
+```
+tsc --declaration js.ts
+```
+
+I found an amazing article on typescript declaration by [Stevefen Ton](https://www.stevefenton.co.uk/2013/01/complex-typescript-definitions-made-easy/)
+
+### 🔸 How to declare a module in TypeScript?
+
+### 🔸 What is the difference between "interface vs type" statements?
+
+
