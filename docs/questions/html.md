@@ -12,6 +12,7 @@ sidebar_label: "HTML"
 * ❌ What is `OG` tag why is that required and how that works
 * ❌ Why `meta` tag and what it serve
 * ❌ Why its important to use the `nav`, `article`, `aside`,  `menu`, `header`, `footer` when every things can be achieve just by `div`
+* ❌ HTML Data attributes
 * ❌ What does `pre` and `code` tag does 
 * ❌ `span` vs `div`
 * ❌ Why `samp` and `kbd` tags
